@@ -1,0 +1,7 @@
+package com.rickhanberryfinal.services;
+
+/**
+ * Created by rhanberry on 2/22/2016.
+ */
+public interface StubService {
+}
