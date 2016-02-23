@@ -1,0 +1,62 @@
+
+<div>
+    <h2><span>Bakedgood</span> {{bakedgood.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Field</th>
+                <th>Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span>Bakedgoodname</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{bakedgood.bakedgoodname}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Bakeryprice</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{bakedgood.bakeryprice}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>vendor</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="vendor.detail({id:bakedgood.vendor.id})">{{bakedgood.vendor.vendorname}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>allergen</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="allergens.detail({id:bakedgood.allergen.id})">{{bakedgood.allergen.allergens}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>categorys</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="category.detail({id:bakedgood.categorys.id})">{{bakedgood.categorys.category}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+</div>

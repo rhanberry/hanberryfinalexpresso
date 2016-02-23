@@ -1,0 +1,70 @@
+<div>
+    <h2>Bakedgoods</h2>
+    <jh-alert></jh-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="bakedgood.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span 
+                       >Create new Bakedgood
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span>ID</span></th>
+                    <th><span>Bakedgoodname</span></th>
+                    <th><span>Bakeryprice</span></th>
+                    <th><span>vendor</span></th>
+                    <th><span>allergen</span></th>
+                    <th><span>categorys</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="bakedgood in bakedgoods track by bakedgood.id">
+                    <td><a ui-sref="bakedgood.detail({id:bakedgood.id})">{{bakedgood.id}}</a></td>
+                    <td>{{bakedgood.bakedgoodname}}</td>
+                    <td>{{bakedgood.bakeryprice}}</td>
+                    <td>
+                        <a ui-sref="vendor.detail({id:bakedgood.vendor.id})">{{bakedgood.vendor.vendorname}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="allergens.detail({id:bakedgood.allergen.id})">{{bakedgood.allergen.allergens}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="category.detail({id:bakedgood.categorys.id})">{{bakedgood.categorys.category}}</a>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="bakedgood.detail({id:bakedgood.id})"
+                                    class="btn btn-info btn-sm"> 
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="bakedgood.edit({id:bakedgood.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="bakedgood.delete({id:bakedgood.id})"
+                                    class="btn btn-danger btn-sm">                                    
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

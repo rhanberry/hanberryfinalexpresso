@@ -1,0 +1,84 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myIngredientsLabel">Create or edit a Ingredients</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="ingredients.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_ingredientname">Ingredientname</label>
+            <input type="text" class="form-control" name="ingredientname" id="field_ingredientname"
+                    ng-model="ingredients.ingredientname"
+                    required ng-maxlength="255" />
+            <div ng-show="editForm.ingredientname.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.ingredientname.$error.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.ingredientname.$error.maxlength" translate-value-max="255">
+                    This field cannot be longer than 255 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_ingredientprice">Ingredientprice</label>
+            <input type="number" class="form-control" name="ingredientprice" id="field_ingredientprice"
+                    ng-model="ingredients.ingredientprice"
+                    required min="0" />
+            <div ng-show="editForm.ingredientprice.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.ingredientprice.$error.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.ingredientprice.$error.min" translate-value-min="0">
+                    This field should be more than 0.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.ingredientprice.$error.number">
+                    This field should be a number.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_ingredientunit">Ingredientunit</label>
+            <input type="text" class="form-control" name="ingredientunit" id="field_ingredientunit"
+                    ng-model="ingredients.ingredientunit"
+                    required ng-maxlength="255" />
+            <div ng-show="editForm.ingredientunit.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.ingredientunit.$error.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.ingredientunit.$error.maxlength" translate-value-max="255">
+                    This field cannot be longer than 255 characters.
+                </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="field_ingredients">ingredients</label>
+            <select class="form-control" id="field_ingredients" name="ingredients" ng-model="ingredients.ingredients" ng-options="drinkRecipe as drinkRecipe.drinkname for drinkRecipe in drinkrecipes track by drinkRecipe.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>
