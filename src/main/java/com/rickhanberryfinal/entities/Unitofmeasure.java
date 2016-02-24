@@ -11,15 +11,12 @@ import java.util.Objects;
 import java.util.Set;
 
 /**
- *
- * Created by rhanberry on 2/22/2016.
- * @author rhanberry
- * This entity represents the baked good category.
+ * Created by rhanberry on 2/24/2016.
+ * Entity class for units of coffee ingredients
  */
-
 @Entity
-@Table(name = "category")
-public class Category implements Serializable {
+@Table(name = "unitofmeasure")
+public class Unitofmeasure implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -27,12 +24,12 @@ public class Category implements Serializable {
 
     @NotNull
     @Size(max = 255)
-    @Column(name = "bakerycategory", length = 255, nullable = false)
-    private String bakerycategory;
+    @Column(name = "unit", length = 255, nullable = false)
+    private String unit;
 
-    @OneToMany(mappedBy = "bakcat")
+    @OneToMany(mappedBy = "ingredientunit")
     @JsonIgnore
-    private Set<Bakedgood> bakcats = new HashSet<>();
+    private Set<Ingredients> ingredientunits = new HashSet<>();
 
     public Long getId() {
         return id;
@@ -42,20 +39,20 @@ public class Category implements Serializable {
         this.id = id;
     }
 
-    public String getBakerycategory() {
-        return bakerycategory;
+    public String getUnit() {
+        return unit;
     }
 
-    public void setBakerycategory(String bakerycategory) {
-        this.bakerycategory = bakerycategory;
+    public void setUnit(String unit) {
+        this.unit = unit;
     }
 
-    public Set<Bakedgood> getBakcats() {
-        return bakcats;
+    public Set<Ingredients> getIngredientunits() {
+        return ingredientunits;
     }
 
-    public void setBakcats(Set<Bakedgood> bakedgoods) {
-        this.bakcats = bakedgoods;
+    public void setIngredientunits(Set<Ingredients> ingredientss) {
+        this.ingredientunits = ingredientss;
     }
 
     @Override
@@ -66,11 +63,11 @@ public class Category implements Serializable {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        Category category = (Category) o;
-        if(category.id == null || id == null) {
+        Unitofmeasure unitofmeasure = (Unitofmeasure) o;
+        if(unitofmeasure.id == null || id == null) {
             return false;
         }
-        return Objects.equals(id, category.id);
+        return Objects.equals(id, unitofmeasure.id);
     }
 
     @Override
@@ -80,9 +77,9 @@ public class Category implements Serializable {
 
     @Override
     public String toString() {
-        return "Category{" +
+        return "Unitofmeasure{" +
                 "id=" + id +
-                ", bakerycategory='" + bakerycategory + "'" +
+                ", unit='" + unit + "'" +
                 '}';
     }
 }

@@ -11,20 +11,20 @@
         <div class="form-group">
             <label for="id">ID</label>
             <input type="text" class="form-control" id="id" name="id"
-                    ng-model="allergens.id" readonly />
+                    ng-model="allergen.id" readonly />
         </div>
         <div class="form-group">
             <label class="control-label" for="field_allergens">Allergens</label>
-            <input type="text" class="form-control" name="allergens" id="field_allergens"
-                    ng-model="allergens.allergens"
+            <input type="text" class="form-control" name="allergen" id="field_allergens"
+                    ng-model="allergen.allergen"
                     required ng-maxlength="255" />
-            <div ng-show="editForm.allergens.$invalid">
+            <div ng-show="editForm.allergen.$invalid">
                 <p class="help-block"
-                    ng-show="editForm.allergens.$error.required">
+                    ng-show="editForm.allergen.$error.required">
                     This field is required.
                 </p>
                 <p class="help-block"
-                    ng-show="editForm.allergens.$error.maxlength" translate-value-max="255">
+                    ng-show="editForm.allergen.$error.maxlength" translate-value-max="255">
                     This field cannot be longer than 255 characters.
                 </p>
             </div>

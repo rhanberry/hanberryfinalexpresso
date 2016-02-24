@@ -1,11 +1,14 @@
 package com.rickhanberryfinal.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
-import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 /**
  * Created by rhanberry on 2/22/2016.
@@ -28,18 +31,16 @@ public class Ingredients implements Serializable {
     private String ingredientname;
 
     @NotNull
-    @Min(value = 0)
-    @Column(name = "ingredientprice", nullable = false)
-    private Double ingredientprice;
-
-    @NotNull
-    @Size(max = 255)
-    @Column(name = "ingredientunit", length = 255, nullable = false)
-    private String ingredientunit;
+    @Column(name = "ingredientcost", nullable = false)
+    private Double ingredientcost;
 
     @ManyToOne
-    @JoinColumn(name = "ingredients_id")
-    private DrinkRecipe ingredients;
+    @JoinColumn(name = "ingredientunit_id")
+    private Unitofmeasure ingredientunit;
+
+    @ManyToMany(mappedBy = "ingnames")
+    @JsonIgnore
+    private Set<Drinkrecipe> ingnames = new HashSet<>();
 
     public Long getId() {
         return id;
@@ -57,28 +58,28 @@ public class Ingredients implements Serializable {
         this.ingredientname = ingredientname;
     }
 
-    public Double getIngredientprice() {
-        return ingredientprice;
+    public Double getIngredientcost() {
+        return ingredientcost;
     }
 
-    public void setIngredientprice(Double ingredientprice) {
-        this.ingredientprice = ingredientprice;
+    public void setIngredientcost(Double ingredientcost) {
+        this.ingredientcost = ingredientcost;
     }
 
-    public String getIngredientunit() {
+    public Unitofmeasure getIngredientunit() {
         return ingredientunit;
     }
 
-    public void setIngredientunit(String ingredientunit) {
-        this.ingredientunit = ingredientunit;
+    public void setIngredientunit(Unitofmeasure unitofmeasure) {
+        this.ingredientunit = unitofmeasure;
     }
 
-    public DrinkRecipe getIngredients() {
-        return ingredients;
+    public Set<Drinkrecipe> getIngnames() {
+        return ingnames;
     }
 
-    public void setIngredients(DrinkRecipe drinkRecipe) {
-        this.ingredients = drinkRecipe;
+    public void setIngnames(Set<Drinkrecipe> drinkrecipes) {
+        this.ingnames = drinkrecipes;
     }
 
     @Override
@@ -106,9 +107,7 @@ public class Ingredients implements Serializable {
         return "Ingredients{" +
                 "id=" + id +
                 ", ingredientname='" + ingredientname + "'" +
-                ", ingredientprice='" + ingredientprice + "'" +
-                ", ingredientunit='" + ingredientunit + "'" +
+                ", ingredientcost='" + ingredientcost + "'" +
                 '}';
     }
-
 }

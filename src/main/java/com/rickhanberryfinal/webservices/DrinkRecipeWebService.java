@@ -1,7 +1,7 @@
 package com.rickhanberryfinal.webservices;
 
-import com.rickhanberryfinal.entities.DrinkRecipe;
-import com.rickhanberryfinal.repository.DrinkRecipeRepository;
+import com.rickhanberryfinal.entities.Drinkrecipe;
+import com.rickhanberryfinal.services.DrinkrecipeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -22,51 +22,61 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api")
-public class DrinkRecipeWebService {
+public class DrinkrecipeWebService {
+
 
     @Autowired
-    private DrinkRecipeRepository drinkRecipeRepository;
+    private DrinkrecipeService drinkrecipeService;
 
     /**
-     * POST  /drinkRecipes -> Create a new drinkRecipe.
+     * POST  /drinkrecipes -> Create a new drinkrecipe.
      */
-    @RequestMapping(value = "/drinkRecipes", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<DrinkRecipe> createDrinkRecipe(@Valid @RequestBody DrinkRecipe drinkRecipe) throws URISyntaxException {
-        if (drinkRecipe.getId() != null) {
+    @RequestMapping(value = "/drinkrecipes",
+            method = RequestMethod.POST,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Drinkrecipe> createDrinkrecipe(@Valid @RequestBody Drinkrecipe drinkrecipe) throws URISyntaxException {
+        if (drinkrecipe.getId() != null) {
             return ResponseEntity.badRequest().body(null);
         }
-        DrinkRecipe result = drinkRecipeRepository.save(drinkRecipe);
-        return ResponseEntity.created(new URI("/api/drinkRecipes/" + result.getId()))
+        Drinkrecipe result = drinkrecipeService.save(drinkrecipe);
+        return ResponseEntity.created(new URI("/api/drinkrecipes/" + result.getId()))
                 .body(result);
     }
 
     /**
-     * PUT  /drinkRecipes -> Updates an existing drinkRecipe.
+     * PUT  /drinkrecipes -> Updates an existing drinkrecipe.
      */
-    @RequestMapping(value = "/drinkRecipes", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<DrinkRecipe> updateDrinkRecipe(@Valid @RequestBody DrinkRecipe drinkRecipe) throws URISyntaxException {
-        if (drinkRecipe.getId() == null) {
-            return createDrinkRecipe(drinkRecipe);
+    @RequestMapping(value = "/drinkrecipes",
+            method = RequestMethod.PUT,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Drinkrecipe> updateDrinkrecipe(@Valid @RequestBody Drinkrecipe drinkrecipe) throws URISyntaxException {
+        if (drinkrecipe.getId() == null) {
+            return createDrinkrecipe(drinkrecipe);
         }
-        DrinkRecipe result = drinkRecipeRepository.save(drinkRecipe);
-        return ResponseEntity.ok().body(result);
+        Drinkrecipe result = drinkrecipeService.save(drinkrecipe);
+        return ResponseEntity.ok()
+                .body(result);
     }
 
     /**
-     * GET  /drinkRecipes -> get list of  drinkRecipes.
+     * GET  /drinkrecipes -> get all the drinkrecipes.
      */
-    @RequestMapping(value = "/drinkRecipes", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<DrinkRecipe> getAllDrinkRecipes() {
-        return drinkRecipeRepository.findAll();
+    @RequestMapping(value = "/drinkrecipes",
+            method = RequestMethod.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<Drinkrecipe> getAllDrinkrecipes() {
+        return drinkrecipeService.findAll();
     }
 
     /**
-     * GET  /drinkRecipes/:id -> get drink recipe by its id.
+     * GET  /drinkrecipes/:id -> get the "id" drinkrecipe.
      */
-    @RequestMapping(value = "/drinkRecipes/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<DrinkRecipe> getDrinkRecipe(@PathVariable Long id) {
-        DrinkRecipe drinkRecipe = drinkRecipeRepository.findOne(id);
-        return Optional.ofNullable(drinkRecipe)
+    @RequestMapping(value = "/drinkrecipes/{id}",
+            method = RequestMethod.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Drinkrecipe> getDrinkrecipe(@PathVariable Long id) {
+        Drinkrecipe drinkrecipe = drinkrecipeService.findOne(id);
+        return Optional.ofNullable(drinkrecipe)
                 .map(result -> new ResponseEntity<>(
                         result,
                         HttpStatus.OK))
@@ -74,12 +84,13 @@ public class DrinkRecipeWebService {
     }
 
     /**
-     * DELETE  /drinkRecipes/:id -> delete the drinkRecipe by its id.
+     * DELETE  /drinkrecipes/:id -> delete the "id" drinkrecipe.
      */
-    @RequestMapping(value = "/drinkRecipes/{id}", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Void> deleteDrinkRecipe(@PathVariable Long id) {
-        drinkRecipeRepository.delete(id);
-        return ResponseEntity.ok().build();
+    @RequestMapping(value = "/drinkrecipes/{id}",
+            method = RequestMethod.DELETE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Void> deleteDrinkrecipe(@PathVariable Long id) {
+        drinkrecipeService.delete(id);
+        return ResponseEntity.ok().headers(HeaderUtil.createEntityDeletionAlert("drinkrecipe", id.toString())).build();
     }
-
 }

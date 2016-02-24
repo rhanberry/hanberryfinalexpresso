@@ -1,7 +1,7 @@
 package com.rickhanberryfinal.webservices;
 
 import com.rickhanberryfinal.entities.Vendor;
-import com.rickhanberryfinal.repository.VendorRepository;
+import com.rickhanberryfinal.services.VendorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -14,6 +14,7 @@ import java.net.URISyntaxException;
 import java.util.List;
 import java.util.Optional;
 
+
 /**
  * Created by rhanberry on 2/23/2016.
  *
@@ -25,51 +26,56 @@ import java.util.Optional;
 public class VendorWebService {
 
     @Autowired
-    private VendorRepository vendorRepository;
+    private VendorService vendorService;
 
     /**
      * POST  /vendors -> Create a new vendor.
      */
-    @RequestMapping(value = "/vendors", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/vendors",
+            method = RequestMethod.POST,
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Vendor> createVendor(@Valid @RequestBody Vendor vendor) throws URISyntaxException {
-
-        //checks for valid vendor id, returns bad request if invalid. This prevents injection of non id type field
-        if (vendor.getId() != null){
+        if (vendor.getId() != null) {
             return ResponseEntity.badRequest().body(null);
         }
-        Vendor result = vendorRepository.save(vendor);
-        return ResponseEntity.created(new URI("/api/vendors/" + result.getId())).body(result);
+        Vendor result = vendorService.save(vendor);
+        return ResponseEntity.created(new URI("/api/vendors/" + result.getId()))
+                .body(result);
     }
 
     /**
-     * PUT  /vendors -> Updates vendor.
+     * PUT  /vendors -> Updates an existing vendor.
      */
-    @RequestMapping(value = "/vendors", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/vendors",
+            method = RequestMethod.PUT,
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Vendor> updateVendor(@Valid @RequestBody Vendor vendor) throws URISyntaxException {
-
-        //checks for valid vendor id, returns bad request if invalid. This prevents injection of non id type field
-        if (vendor.getId() != null){
-            return ResponseEntity.badRequest().body(null);
+        if (vendor.getId() == null) {
+            return createVendor(vendor);
         }
-
-        Vendor result = vendorRepository.save(vendor);
-        return ResponseEntity.created(new URI("/api/vendors/" + result.getId())).body(result);
+        Vendor result = vendorService.save(vendor);
+        return ResponseEntity.ok()
+                .body(result);
     }
 
     /**
-     * GET  /vendors -> get all the vendors. Should be self explanatory.
+     * GET  /vendors -> get all the vendors.
      */
-    @RequestMapping(value = "/vendors", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/vendors",
+            method = RequestMethod.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Vendor> getAllVendors() {
-        return vendorRepository.findAll();
+        return vendorService.findAll();
     }
 
     /**
-     * GET  /vendors/:id -> get a specific vendor by its ID.
+     * GET  /vendors/:id -> get the "id" vendor.
      */
-    @RequestMapping(value = "/vendors/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/vendors/{id}",
+            method = RequestMethod.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Vendor> getVendor(@PathVariable Long id) {
-        Vendor vendor = vendorRepository.findOne(id);
+        Vendor vendor = vendorService.findOne(id);
         return Optional.ofNullable(vendor)
                 .map(result -> new ResponseEntity<>(
                         result,
@@ -78,11 +84,13 @@ public class VendorWebService {
     }
 
     /**
-     * DELETE  /vendors/:id -> delete vendor by its specific id.
+     * DELETE  /vendors/:id -> delete the "id" vendor.
      */
-    @RequestMapping(value = "/vendors/{id}", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/vendors/{id}",
+            method = RequestMethod.DELETE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> deleteVendor(@PathVariable Long id) {
-        vendorRepository.delete(id);
+        vendorService.delete(id);
         return ResponseEntity.ok().build();
     }
 }

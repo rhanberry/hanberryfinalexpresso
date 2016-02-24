@@ -27,10 +27,10 @@ public class Vendor implements Serializable {
     @Size(max = 255)
     @Column(name = "vendorname", length = 255, nullable = false)
     private String vendorname;
-    
-    @OneToMany(mappedBy = "vendor")
+
+    @OneToMany(mappedBy = "bakvendor")
     @JsonIgnore
-    private Set<Bakedgood> vendors = new HashSet<>();
+    private Set<Bakedgood> bakvendors = new HashSet<>();
 
     public Long getId() {
         return id;
@@ -43,17 +43,17 @@ public class Vendor implements Serializable {
     public String getVendorname() {
         return vendorname;
     }
-    
+
     public void setVendorname(String vendorname) {
         this.vendorname = vendorname;
     }
 
-    public Set<Bakedgood> getVendors() {
-        return vendors;
+    public Set<Bakedgood> getBakvendors() {
+        return bakvendors;
     }
 
-    public void setVendors(Set<Bakedgood> bakedgoods) {
-        this.vendors = bakedgoods;
+    public void setBakvendors(Set<Bakedgood> bakedgoods) {
+        this.bakvendors = bakedgoods;
     }
 
     @Override
@@ -79,8 +79,8 @@ public class Vendor implements Serializable {
     @Override
     public String toString() {
         return "Vendor{" +
-            "id=" + id +
-            ", vendorname='" + vendorname + "'" +
-            '}';
+                "id=" + id +
+                ", vendorname='" + vendorname + "'" +
+                '}';
     }
 }

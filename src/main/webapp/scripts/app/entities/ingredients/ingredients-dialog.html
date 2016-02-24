@@ -68,7 +68,7 @@
 
         <div class="form-group">
             <label for="field_ingredients">ingredients</label>
-            <select class="form-control" id="field_ingredients" name="ingredients" ng-model="ingredients.ingredients" ng-options="drinkRecipe as drinkRecipe.drinkname for drinkRecipe in drinkrecipes track by drinkRecipe.id">
+            <select class="form-control" id="field_ingredients" name="ingredients" ng-model="ingredients.ingredients" ng-options="drinkrecipe as drinkrecipe.drinkname for drinkrecipe in drinkrecipes track by drinkrecipe.id">
                 <option value=""></option>
             </select>
         </div>

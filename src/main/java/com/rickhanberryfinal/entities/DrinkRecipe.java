@@ -8,7 +8,6 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
-
 /**
  * Created by rhanberry on 2/22/2016.
  *@author rhanberry
@@ -17,8 +16,8 @@ import java.util.Set;
  *
  */
 @Entity
-@Table(name = "drink_recipe")
-public class DrinkRecipe implements Serializable {
+@Table(name = "drinkrecipe")
+public class Drinkrecipe implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -29,8 +28,11 @@ public class DrinkRecipe implements Serializable {
     @Column(name = "drinkname", length = 255, nullable = false)
     private String drinkname;
 
-    @OneToMany(mappedBy = "ingredients")
-    private Set<Ingredients> ingredientss = new HashSet<>();
+    @ManyToMany
+    @JoinTable(name = "drinkrecipe_ingname",
+            joinColumns = @JoinColumn(name="drinkrecipes_id", referencedColumnName="ID"),
+            inverseJoinColumns = @JoinColumn(name="ingnames_id", referencedColumnName="ID"))
+    private Set<Ingredients> ingnames = new HashSet<>();
 
     public Long getId() {
         return id;
@@ -48,12 +50,12 @@ public class DrinkRecipe implements Serializable {
         this.drinkname = drinkname;
     }
 
-    public Set<Ingredients> getIngredientss() {
-        return ingredientss;
+    public Set<Ingredients> getIngnames() {
+        return ingnames;
     }
 
-    public void setIngredientss(Set<Ingredients> ingredientss) {
-        this.ingredientss = ingredientss;
+    public void setIngnames(Set<Ingredients> ingredientss) {
+        this.ingnames = ingredientss;
     }
 
     @Override
@@ -64,11 +66,11 @@ public class DrinkRecipe implements Serializable {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        DrinkRecipe drinkRecipe = (DrinkRecipe) o;
-        if(drinkRecipe.id == null || id == null) {
+        Drinkrecipe drinkrecipe = (Drinkrecipe) o;
+        if(drinkrecipe.id == null || id == null) {
             return false;
         }
-        return Objects.equals(id, drinkRecipe.id);
+        return Objects.equals(id, drinkrecipe.id);
     }
 
     @Override
@@ -78,7 +80,7 @@ public class DrinkRecipe implements Serializable {
 
     @Override
     public String toString() {
-        return "DrinkRecipe{" +
+        return "Drinkrecipe{" +
                 "id=" + id +
                 ", drinkname='" + drinkname + "'" +
                 '}';

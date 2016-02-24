@@ -35,7 +35,7 @@ public class Bakedgood implements Serializable {
 
     @ManyToOne
     @JoinColumn(name = "allergen_id")
-    private Allergens allergen;
+    private Allergen allergen;
 
     @ManyToOne
     @JoinColumn(name = "categorys_id")
@@ -73,12 +73,12 @@ public class Bakedgood implements Serializable {
         this.vendor = vendor;
     }
 
-    public Allergens getAllergen() {
+    public Allergen getAllergen() {
         return allergen;
     }
 
-    public void setAllergen(Allergens allergens) {
-        this.allergen = allergens;
+    public void setAllergen(Allergen allergen) {
+        this.allergen = allergen;
     }
 
     public Category getCategorys() {
