@@ -25,9 +25,8 @@ public class Allergens implements Serializable {
     @Size(max = 255)
     @Column(name = "allergens", length = 255, nullable = false)
     private String allergens;
-    
+
     @OneToMany(mappedBy = "allergen")
-    @JsonIgnore
     private Set<Bakedgood> allergens = new HashSet<>();
 
     public Long getId() {
@@ -41,7 +40,7 @@ public class Allergens implements Serializable {
     public String getAllergens() {
         return allergens;
     }
-    
+
     public void setAllergens(String allergens) {
         this.allergens = allergens;
     }
