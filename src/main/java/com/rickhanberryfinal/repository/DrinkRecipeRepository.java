@@ -4,6 +4,7 @@ import com.rickhanberryfinal.entities.Drinkrecipe;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -11,6 +12,7 @@ import java.util.List;
  * Created by rhanberry on 2/23/2016.
  * Jpa Repository for Category Entity
  */
+@Repository
 public interface DrinkrecipeRepository extends JpaRepository<Drinkrecipe,Long> {
 
     @Query("select distinct drinkrecipe from Drinkrecipe drinkrecipe left join fetch drinkrecipe.ingnames")

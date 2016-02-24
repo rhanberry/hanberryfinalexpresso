@@ -91,6 +91,6 @@ public class DrinkrecipeWebService {
             produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> deleteDrinkrecipe(@PathVariable Long id) {
         drinkrecipeService.delete(id);
-        return ResponseEntity.ok().headers(HeaderUtil.createEntityDeletionAlert("drinkrecipe", id.toString())).build();
+        return ResponseEntity.ok().build();
     }
 }

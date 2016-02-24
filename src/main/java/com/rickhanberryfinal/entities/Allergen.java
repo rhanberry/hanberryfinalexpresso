@@ -1,7 +1,5 @@
 package com.rickhanberryfinal.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -30,7 +28,6 @@ public class Allergen implements Serializable {
     private String allergenname;
 
     @ManyToMany(mappedBy = "bakallergens")
-    @JsonIgnore
     private Set<Bakedgood> bakallergens = new HashSet<>();
 
     public Long getId() {

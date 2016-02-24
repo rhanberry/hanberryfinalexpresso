@@ -1,7 +1,7 @@
 package com.rickhanberryfinal.webservices;
 
 import com.rickhanberryfinal.entities.Category;
-import com.rickhanberryfinal.repository.CategoryRepository;
+import com.rickhanberryfinal.services.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -24,47 +24,58 @@ import java.util.Optional;
 @RequestMapping("/api")
 public class CategoryWebService {
 
+
     @Autowired
-    private CategoryRepository categoryRepository;
+    private CategoryService categoryService;
 
     /**
      * POST  /categorys -> Create a new category.
      */
-    @RequestMapping(value = "/categorys", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/categorys",
+            method = RequestMethod.POST,
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Category> createCategory(@Valid @RequestBody Category category) throws URISyntaxException {
         if (category.getId() != null) {
             return ResponseEntity.badRequest().body(null);
         }
-        Category result = categoryRepository.save(category);
-        return ResponseEntity.created(new URI("/api/categorys/" + result.getId())).body(result);
+        Category result = categoryService.save(category);
+        return ResponseEntity.created(new URI("/api/categorys/" + result.getId()))
+                .body(result);
     }
 
     /**
      * PUT  /categorys -> Updates an existing category.
      */
-    @RequestMapping(value = "/categorys", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/categorys",
+            method = RequestMethod.PUT,
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Category> updateCategory(@Valid @RequestBody Category category) throws URISyntaxException {
         if (category.getId() == null) {
             return createCategory(category);
         }
-        Category result = categoryRepository.save(category);
-        return ResponseEntity.ok().body(result);
+        Category result = categoryService.save(category);
+        return ResponseEntity.ok()
+                .body(result);
     }
 
     /**
      * GET  /categorys -> get all the categorys.
      */
-    @RequestMapping(value = "/categorys", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/categorys",
+            method = RequestMethod.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Category> getAllCategorys() {
-        return categoryRepository.findAll();
+        return categoryService.findAll();
     }
 
     /**
      * GET  /categorys/:id -> get the "id" category.
      */
-    @RequestMapping(value = "/categorys/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/categorys/{id}",
+            method = RequestMethod.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Category> getCategory(@PathVariable Long id) {
-        Category category = categoryRepository.findOne(id);
+        Category category = categoryService.findOne(id);
         return Optional.ofNullable(category)
                 .map(result -> new ResponseEntity<>(
                         result,
@@ -75,9 +86,11 @@ public class CategoryWebService {
     /**
      * DELETE  /categorys/:id -> delete the "id" category.
      */
-    @RequestMapping(value = "/categorys/{id}", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/categorys/{id}",
+            method = RequestMethod.DELETE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> deleteCategory(@PathVariable Long id) {
-        categoryRepository.delete(id);
+        categoryService.delete(id);
         return ResponseEntity.ok().build();
     }
 }
