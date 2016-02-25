@@ -2,125 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e48673bd-b6f2-46f0-9c2b-ab67d3b329b5" name="Default" comment="Fixed Resource mapping issue">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/javascripts/bootstrap-sprockets.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/javascripts/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/_bootstrap-compass.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/_bootstrap-mincer.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/_bootstrap-sprockets.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_alerts.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_badges.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_breadcrumbs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_button-groups.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_close.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_code.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_component-animations.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_dropdowns.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_glyphicons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_input-groups.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_jumbotron.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_labels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_list-group.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_media.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_modals.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_normalize.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_pager.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_pagination.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_panels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_popovers.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_print.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_progress-bars.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_responsive-embed.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_responsive-utilities.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_scaffolding.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_tables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_theme.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_thumbnails.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_tooltip.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_utilities.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_wells.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_alerts.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_background-variant.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_border-radius.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_center-block.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_forms.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_gradients.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_hide-text.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_image.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_labels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_list-group.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_nav-divider.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_nav-vertical-align.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_opacity.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_pagination.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_panels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_progress-bar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_reset-filter.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_reset-text.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_resize.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_size.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_tab-focus.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_table-row.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_text-overflow.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_vendor-prefixes.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/bootstrap-sass/sache.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergens-delete-dialog.controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergens-delete-dialog.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergens-detail.controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergens-detail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergens-dialog.controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergens-dialog.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergens.controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergens.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergenss.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/app.js" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergen/allergen.js" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergen/allergen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakedgood/bakedgood.js" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakedgood/bakedgood.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/category/category.js" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/category/category.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipe.js" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipe.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/config/ResourceConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/config/ResourceConfig.java" />
     </list>
     <ignored path="hanberryfinal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -144,6 +26,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ResourceConfig.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/config/ResourceConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.28720626">
+              <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -154,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="404.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="404.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/404.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-9.807693">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -224,7 +116,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/HanberryFinalProjectApplication.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/components/navbar/navbar.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/config/ResourceConfig.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/error/accessdenied.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/error/error.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/vendor/vendor.js" />
@@ -236,6 +127,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergen/allergen.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/app.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/config/ResourceConfig.java" />
       </list>
     </option>
   </component>
@@ -271,8 +163,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="234" />
-    <option name="y" value="441" />
+    <option name="x" value="180" />
+    <option name="y" value="98" />
     <option name="width" value="1596" />
     <option name="height" value="818" />
   </component>
@@ -516,6 +408,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rickhanberryfinal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hanberryfinal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hanberryfinalexpresso" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rickhanberryfinal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1013,7 +939,7 @@
       <workItem from="1456434568762" duration="2109000" />
       <workItem from="1456436937606" duration="273000" />
       <workItem from="1456437792029" duration="2465000" />
-      <workItem from="1456440955523" duration="2874000" />
+      <workItem from="1456440955523" duration="3156000" />
     </task>
     <task id="LOCAL-00001" summary="Added layers and amended certain things.  Relations are not functioning as desired, will update on arrival at home">
       <created>1456273148714</created>
@@ -1031,10 +957,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57003000" />
+    <option name="totallyTimeSpent" value="57285000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="234" y="441" width="1596" height="818" extended-state="0" />
+    <frame x="180" y="98" width="1596" height="818" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1266,16 +1192,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/config/ResourceConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64030135">
-          <caret line="20" column="60" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/error/accessdenied.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.05379747">
@@ -1496,8 +1412,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/config/ResourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28720626">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
           <folding />
         </state>
       </provider>
