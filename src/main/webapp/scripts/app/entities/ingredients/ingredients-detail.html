@@ -20,26 +20,18 @@
             </tr>
             <tr>
                 <td>
-                    <span>Ingredientprice</span>
+                    <span>Ingredientcost</span>
                 </td>
                 <td>
-                    <span class="form-control-static">{{ingredients.ingredientprice}}</span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <span>Ingredientunit</span>
-                </td>
-                <td>
-                    <span class="form-control-static">{{ingredients.ingredientunit}}</span>
+                    <span class="form-control-static">{{ingredients.ingredientcost}}</span>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <span>ingredients</span>
+                    <span>ingredientunit</span>
                 </td>
                 <td>
-                    <a class="form-control-static" ui-sref="drinkrecipe.detail({id:ingredients.ingredients.id})">{{ingredients.ingredients.drinkname}}</a>
+                    <a class="form-control-static" ui-sref="unitofmeasure.detail({id:ingredients.ingredientunit.id})">{{ingredients.ingredientunit.unit}}</a>
                 </td>
             </tr>
             </tbody>

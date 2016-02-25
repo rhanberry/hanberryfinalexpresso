@@ -19,14 +19,14 @@
             <thead>
                 <tr>
                     <th><span>ID</span></th>
-                    <th><span>Category</span></th>
+                    <th><span>Bakerycategory</span></th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
                 <tr ng-repeat="category in categorys track by category.id">
                     <td><a ui-sref="category.detail({id:category.id})">{{category.id}}</a></td>
-                    <td>{{category.category}}</td>
+                    <td>{{category.bakerycategory}}</td>
                     <td class="text-right">
                         <div class="btn-group flex-btn-group-container">
                             <button type="submit"

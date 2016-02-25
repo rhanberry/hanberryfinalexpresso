@@ -1,31 +1,47 @@
 'use strict';
 
 angular.module('finaltestApp', ['LocalStorageModule', 
-    'ngResource', 'ui.bootstrap', 'ui.router',  'infinite-scroll'])
+    'ngResource', 'ui.bootstrap', 'ui.router',  'infinite-scroll', 'angular-loading-bar'])
 
     .run(function ($rootScope, $location, $window, $http, $state) {
         
 
+
         $rootScope.$on('$stateChangeStart', function (event, toState, toStateParams) {
             $rootScope.toState = toState;
-            $rootScope.toStateParams = toStateParams;
+            $rootScope.toStateParams = toStateParams;   
         });
 
+        $rootScope.$on('$stateChangeSuccess',  function(event, toState, toParams, fromState, fromParams) {
+            var titleKey = 'finaltestApp' ;
 
+            // Remember previous state 
+            if ($rootScope.previousStateName) {
+              $rootScope.previousStateName = fromState.name;
+              $rootScope.previousStateParams = fromParams;
+            }
+
+            // Set the page title key to the one configured in state or use default one
+            if (toState.data.pageTitle) {
+                titleKey = toState.data.pageTitle;
+            }
+            $window.document.title = titleKey;
+        });
         
         $rootScope.back = function() {
-            // If previous state is 'activate' or do not exist go to 'home'
-
+            // If previous state does'nt exist go to 'home'
+            if ($state.get($rootScope.previousStateName) === null) {
+                $state.go('home');
+            } else {
                 $state.go($rootScope.previousStateName, $rootScope.previousStateParams);
-
+            }
         };
     })
     .config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider, AlertServiceProvider) {
-
+        // uncomment below to make alerts look like toast
         AlertServiceProvider.showAsToast(true);
 
-
-
+        
 
         $urlRouterProvider.otherwise('/');
         $stateProvider.state('site', {
@@ -37,13 +53,15 @@ angular.module('finaltestApp', ['LocalStorageModule',
                 }
             },
             resolve: {
-
+                
+                    }
+                ]
             }
         });
 
         $httpProvider.interceptors.push('errorHandlerInterceptor');
         $httpProvider.interceptors.push('notificationInterceptor');
-
+        
     })
     .config(['$urlMatcherFactoryProvider', function($urlMatcherFactory) {
         $urlMatcherFactory.type('boolean', {

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('finaltestApp')
-    .controller('IngredientsDetailController', function ($scope, $rootScope, $stateParams, entity, Ingredients, DrinkRecipe) {
+    .controller('IngredientsDetailController', function ($scope, $rootScope, $stateParams, entity, Ingredients, Unitofmeasure, Drinkrecipe) {
         $scope.ingredients = entity;
         $scope.load = function (id) {
             Ingredients.get({id: id}, function(result) {

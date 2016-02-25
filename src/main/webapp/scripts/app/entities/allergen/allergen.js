@@ -3,109 +3,108 @@
 angular.module('finaltestApp')
     .config(function ($stateProvider) {
         $stateProvider
-            .state('bakedgood', {
+            .state('allergen', {
                 parent: 'entity',
-                url: '/bakedgoods',
+                url: '/allergens',
                 data: {
                     authorities: ['ROLE_USER'],
-                    pageTitle: 'Bakedgoods'
+                    pageTitle: 'Allergens'
                 },
                 views: {
                     'content@': {
-                        templateUrl: 'scripts/app/entities/bakedgood/bakedgoods.html',
-                        controller: 'BakedgoodController'
+                        templateUrl: 'scripts/app/entities/allergen/allergens.html',
+                        controller: 'AllergenController'
                     }
                 },
                 resolve: {
                 }
             })
-            .state('bakedgood.detail', {
+            .state('allergen.detail', {
                 parent: 'entity',
-                url: '/bakedgood/{id}',
+                url: '/allergen/{id}',
                 data: {
                     authorities: ['ROLE_USER'],
-                    pageTitle: 'Bakedgood'
+                    pageTitle: 'Allergen'
                 },
                 views: {
                     'content@': {
-                        templateUrl: 'scripts/app/entities/bakedgood/bakedgood-detail.html',
-                        controller: 'BakedgoodDetailController'
+                        templateUrl: 'scripts/app/entities/allergen/allergen-detail.html',
+                        controller: 'AllergenDetailController'
                     }
                 },
                 resolve: {
-                    entity: ['$stateParams', 'Bakedgood', function($stateParams, Bakedgood) {
-                        return Bakedgood.get({id : $stateParams.id});
+                    entity: ['$stateParams', 'Allergen', function($stateParams, Allergen) {
+                        return Allergen.get({id : $stateParams.id});
                     }]
                 }
             })
-            .state('bakedgood.new', {
-                parent: 'bakedgood',
+            .state('allergen.new', {
+                parent: 'allergen',
                 url: '/new',
                 data: {
                     authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
-                        templateUrl: 'scripts/app/entities/bakedgood/bakedgood-dialog.html',
-                        controller: 'BakedgoodDialogController',
+                        templateUrl: 'scripts/app/entities/allergen/allergen-dialog.html',
+                        controller: 'AllergenDialogController',
                         size: 'lg',
                         resolve: {
                             entity: function () {
                                 return {
-                                    bakedgoodname: null,
-                                    bakedgoodcost: null,
+                                    allergenname: null,
                                     id: null
                                 };
                             }
                         }
                     }).result.then(function(result) {
-                        $state.go('bakedgood', null, { reload: true });
+                        $state.go('allergen', null, { reload: true });
                     }, function() {
-                        $state.go('bakedgood');
+                        $state.go('allergen');
                     })
                 }]
             })
-            .state('bakedgood.edit', {
-                parent: 'bakedgood',
+            .state('allergen.edit', {
+                parent: 'allergen',
                 url: '/{id}/edit',
                 data: {
                     authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
-                        templateUrl: 'scripts/app/entities/bakedgood/bakedgood-dialog.html',
-                        controller: 'BakedgoodDialogController',
+                        templateUrl: 'scripts/app/entities/allergen/allergen-dialog.html',
+                        controller: 'AllergenDialogController',
                         size: 'lg',
                         resolve: {
-                            entity: ['Bakedgood', function(Bakedgood) {
-                                return Bakedgood.get({id : $stateParams.id});
+                            entity: ['Allergen', function(Allergen) {
+                                return Allergen.get({id : $stateParams.id});
                             }]
                         }
                     }).result.then(function(result) {
-                        $state.go('bakedgood', null, { reload: true });
+                        $state.go('allergen', null, { reload: true });
                     }, function() {
                         $state.go('^');
                     })
                 }]
             })
-            .state('bakedgood.delete', {
-                parent: 'bakedgood',
+            .state('allergen.delete', {
+                parent: 'allergen',
                 url: '/{id}/delete',
                 data: {
                     authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
-                        templateUrl: 'scripts/app/entities/bakedgood/bakedgood-delete-dialog.html',
-                        controller: 'BakedgoodDeleteController',
+                        templateUrl: 'scripts/app/entities/allergen/allergen-delete-dialog.html',
+                        controller: 'AllergenDeleteController',
                         size: 'md',
                         resolve: {
-                            entity: ['Bakedgood', function(Bakedgood) {
-                                return Bakedgood.get({id : $stateParams.id});
+                            entity: ['Allergen', function(Allergen) {
+                                return Allergen.get({id : $stateParams.id});
                             }]
                         }
                     }).result.then(function(result) {
-                        $state.go('bakedgood', null, { reload: true });
+                        $state.go('allergen', null, { reload: true });
                     }, function() {
                         $state.go('^');
                     })

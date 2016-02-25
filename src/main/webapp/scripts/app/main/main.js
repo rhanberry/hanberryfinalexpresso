@@ -7,7 +7,6 @@ angular.module('finaltestApp')
                 parent: 'site',
                 url: '/',
                 data: {
-
                 },
                 views: {
                     'content@': {

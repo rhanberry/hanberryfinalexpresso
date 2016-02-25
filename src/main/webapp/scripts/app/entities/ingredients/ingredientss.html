@@ -20,9 +20,8 @@
                 <tr>
                     <th><span>ID</span></th>
                     <th><span>Ingredientname</span></th>
-                    <th><span>Ingredientprice</span></th>
-                    <th><span>Ingredientunit</span></th>
-                    <th><span>ingredients</span></th>
+                    <th><span>Ingredientcost</span></th>
+                    <th><span>ingredientunit</span></th>
                     <th></th>
                 </tr>
             </thead>
@@ -30,10 +29,9 @@
                 <tr ng-repeat="ingredients in ingredientss track by ingredients.id">
                     <td><a ui-sref="ingredients.detail({id:ingredients.id})">{{ingredients.id}}</a></td>
                     <td>{{ingredients.ingredientname}}</td>
-                    <td>{{ingredients.ingredientprice}}</td>
-                    <td>{{ingredients.ingredientunit}}</td>
+                    <td>{{ingredients.ingredientcost}}</td>
                     <td>
-                        <a ui-sref="drinkrecipe.detail({id:ingredients.ingredients.id})">{{ingredients.ingredients.drinkname}}</a>
+                        <a ui-sref="unitofmeasure.detail({id:ingredients.ingredientunit.id})">{{ingredients.ingredientunit.unit}}</a>
                     </td>
                     <td class="text-right">
                         <div class="btn-group flex-btn-group-container">

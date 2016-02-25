@@ -1,12 +1,12 @@
 'use strict';
 
 angular.module('finaltestApp')
-    .controller('DrinkRecipeController', function ($scope, $state, DrinkRecipe) {
+    .controller('DrinkrecipeController', function ($scope, $state, Drinkrecipe) {
 
-        $scope.drinkRecipes = [];
+        $scope.drinkrecipes = [];
         $scope.loadAll = function() {
-            DrinkRecipe.query(function(result) {
-               $scope.drinkRecipes = result;
+            Drinkrecipe.query(function(result) {
+               $scope.drinkrecipes = result;
             });
         };
         $scope.loadAll();
@@ -18,7 +18,7 @@ angular.module('finaltestApp')
         };
 
         $scope.clear = function () {
-            $scope.drinkRecipe = {
+            $scope.drinkrecipe = {
                 drinkname: null,
                 id: null
             };

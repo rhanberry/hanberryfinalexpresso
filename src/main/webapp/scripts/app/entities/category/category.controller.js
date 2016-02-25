@@ -19,7 +19,7 @@ angular.module('finaltestApp')
 
         $scope.clear = function () {
             $scope.category = {
-                category: null,
+                bakerycategory: null,
                 id: null
             };
         };

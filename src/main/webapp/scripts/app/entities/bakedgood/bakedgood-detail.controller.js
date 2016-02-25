@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('finaltestApp')
-    .controller('BakedgoodDetailController', function ($scope, $rootScope, $stateParams, entity, Bakedgood, Vendor, Allergens, Category) {
+    .controller('BakedgoodDetailController', function ($scope, $rootScope, $stateParams, entity, Bakedgood, Category, Vendor, Allergen) {
         $scope.bakedgood = entity;
         $scope.load = function (id) {
             Bakedgood.get({id: id}, function(result) {

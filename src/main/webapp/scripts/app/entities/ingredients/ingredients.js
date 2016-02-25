@@ -50,8 +50,7 @@ angular.module('finaltestApp')
                             entity: function () {
                                 return {
                                     ingredientname: null,
-                                    ingredientprice: null,
-                                    ingredientunit: null,
+                                    ingredientcost: null,
                                     id: null
                                 };
                             }

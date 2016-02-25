@@ -30,45 +30,25 @@
             </div>
         </div>
         <div class="form-group">
-            <label class="control-label" for="field_ingredientprice">Ingredientprice</label>
-            <input type="number" class="form-control" name="ingredientprice" id="field_ingredientprice"
-                    ng-model="ingredients.ingredientprice"
-                    required min="0" />
-            <div ng-show="editForm.ingredientprice.$invalid">
+            <label class="control-label" for="field_ingredientcost">Ingredientcost</label>
+            <input type="number" class="form-control" name="ingredientcost" id="field_ingredientcost"
+                    ng-model="ingredients.ingredientcost"
+                    required />
+            <div ng-show="editForm.ingredientcost.$invalid">
                 <p class="help-block"
-                    ng-show="editForm.ingredientprice.$error.required">
+                    ng-show="editForm.ingredientcost.$error.required">
                     This field is required.
                 </p>
                 <p class="help-block"
-                    ng-show="editForm.ingredientprice.$error.min" translate-value-min="0">
-                    This field should be more than 0.
-                </p>
-                <p class="help-block"
-                    ng-show="editForm.ingredientprice.$error.number">
+                    ng-show="editForm.ingredientcost.$error.number">
                     This field should be a number.
-                </p>
-            </div>
-        </div>
-        <div class="form-group">
-            <label class="control-label" for="field_ingredientunit">Ingredientunit</label>
-            <input type="text" class="form-control" name="ingredientunit" id="field_ingredientunit"
-                    ng-model="ingredients.ingredientunit"
-                    required ng-maxlength="255" />
-            <div ng-show="editForm.ingredientunit.$invalid">
-                <p class="help-block"
-                    ng-show="editForm.ingredientunit.$error.required">
-                    This field is required.
-                </p>
-                <p class="help-block"
-                    ng-show="editForm.ingredientunit.$error.maxlength" translate-value-max="255">
-                    This field cannot be longer than 255 characters.
                 </p>
             </div>
         </div>
 
         <div class="form-group">
-            <label for="field_ingredients">ingredients</label>
-            <select class="form-control" id="field_ingredients" name="ingredients" ng-model="ingredients.ingredients" ng-options="drinkrecipe as drinkrecipe.drinkname for drinkrecipe in drinkrecipes track by drinkrecipe.id">
+            <label for="field_ingredientunit">ingredientunit</label>
+            <select class="form-control" id="field_ingredientunit" name="ingredientunit" ng-model="ingredients.ingredientunit" ng-options="unitofmeasure as unitofmeasure.unit for unitofmeasure in unitofmeasures track by unitofmeasure.id">
                 <option value=""></option>
             </select>
         </div>

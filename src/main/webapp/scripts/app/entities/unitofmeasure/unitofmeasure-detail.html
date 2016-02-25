@@ -1,6 +1,6 @@
 
 <div>
-    <h2><span>Drinkrecipe</span> {{drinkrecipe.id}}</h2>
+    <h2><span>Unitofmeasure</span> {{unitofmeasure.id}}</h2>
     <div class="table-responsive">
         <table class="table table-striped">
             <thead>
@@ -12,20 +12,10 @@
             <tbody>
             <tr>
                 <td>
-                    <span>Drinkname</span>
+                    <span>Unit</span>
                 </td>
                 <td>
-                    <span class="form-control-static">{{drinkrecipe.drinkname}}</span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <span>ingname</span>
-                </td>
-                <td>
-                    <span ng-repeat="ingname in drinkrecipe.ingnames">
-                        <a class="form-control-static" ui-sref="ingredients.detail({id: {{ingname.id}}})">{{ingname.ingredientname}}</a>{{$last ? '' : ', '}}
-                    </span>
+                    <span class="form-control-static">{{unitofmeasure.unit}}</span>
                 </td>
             </tr>
             </tbody>

@@ -1,13 +1,13 @@
 <div>
-    <h2>Drinkrecipes</h2>
+    <h2>Unitofmeasures</h2>
     <jh-alert></jh-alert>
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-4 no-padding-left">
-                <button class="btn btn-primary" ui-sref="drinkrecipe.new" >
+                <button class="btn btn-primary" ui-sref="unitofmeasure.new" >
                     <span class="glyphicon glyphicon-plus"></span>
                     <span 
-                       >Create new Drinkrecipe
+                       >Create new Unitofmeasure
                     </span>
                 </button>
             </div>
@@ -19,36 +19,30 @@
             <thead>
                 <tr>
                     <th><span>ID</span></th>
-                    <th><span>Drinkname</span></th>
-                    <th><span>ingname</span></th>
+                    <th><span>Unit</span></th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="drinkrecipe in drinkrecipes track by drinkrecipe.id">
-                    <td><a ui-sref="drinkrecipe.detail({id:drinkrecipe.id})">{{drinkrecipe.id}}</a></td>
-                    <td>{{drinkrecipe.drinkname}}</td>
-                    <td>
-                        <span ng-repeat="ingname in drinkrecipe.ingnames">
-                            <a class="form-control-static" ui-sref="ingredients.detail({id: {{ingname.id}}})">{{ingname.ingredientname}}</a>{{$last ? '' : ', '}}
-                        <span>
-                    </td>
+                <tr ng-repeat="unitofmeasure in unitofmeasures track by unitofmeasure.id">
+                    <td><a ui-sref="unitofmeasure.detail({id:unitofmeasure.id})">{{unitofmeasure.id}}</a></td>
+                    <td>{{unitofmeasure.unit}}</td>
                     <td class="text-right">
                         <div class="btn-group flex-btn-group-container">
                             <button type="submit"
-                                    ui-sref="drinkrecipe.detail({id:drinkrecipe.id})"
+                                    ui-sref="unitofmeasure.detail({id:unitofmeasure.id})"
                                     class="btn btn-info btn-sm"> 
                                 <span class="glyphicon glyphicon-eye-open"></span>
                                 <span class="hidden-xs hidden-sm"></span>
                             </button>
                             <button type="submit"
-                                    ui-sref="drinkrecipe.edit({id:drinkrecipe.id})"
+                                    ui-sref="unitofmeasure.edit({id:unitofmeasure.id})"
                                     class="btn btn-primary btn-sm">
                                 <span class="glyphicon glyphicon-pencil"></span>
                                 <span class="hidden-xs hidden-sm"></span>
                             </button>
                             <button type="submit"
-                                    ui-sref="drinkrecipe.delete({id:drinkrecipe.id})"
+                                    ui-sref="unitofmeasure.delete({id:unitofmeasure.id})"
                                     class="btn btn-danger btn-sm">                                    
                                 <span class="glyphicon glyphicon-remove-circle"></span>
                                 <span class="hidden-xs hidden-sm"></span>

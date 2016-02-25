@@ -1,14 +1,14 @@
 'use strict';
 
 angular.module('finaltestApp')
-	.controller('DrinkrecipeDeleteController', function($scope, $uibModalInstance, entity, Drinkrecipe) {
+	.controller('AllergenDeleteController', function($scope, $uibModalInstance, entity, Allergen) {
 
-        $scope.drinkrecipe = entity;
+        $scope.allergen = entity;
         $scope.clear = function() {
             $uibModalInstance.dismiss('cancel');
         };
         $scope.confirmDelete = function (id) {
-            Drinkrecipe.delete({id: id},
+            Allergen.delete({id: id},
                 function () {
                     $uibModalInstance.close(true);
                 });

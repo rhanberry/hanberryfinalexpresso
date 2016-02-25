@@ -20,7 +20,7 @@ angular.module('finaltestApp')
         $scope.clear = function () {
             $scope.bakedgood = {
                 bakedgoodname: null,
-                bakeryprice: null,
+                bakedgoodcost: null,
                 id: null
             };
         };

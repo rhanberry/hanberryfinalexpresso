@@ -20,10 +20,10 @@
                 <tr>
                     <th><span>ID</span></th>
                     <th><span>Bakedgoodname</span></th>
-                    <th><span>Bakeryprice</span></th>
-                    <th><span>vendor</span></th>
-                    <th><span>allergen</span></th>
-                    <th><span>categorys</span></th>
+                    <th><span>Bakedgoodcost</span></th>
+                    <th><span>bakcat</span></th>
+                    <th><span>bakvendor</span></th>
+                    <th><span>bakallergen</span></th>
                     <th></th>
                 </tr>
             </thead>
@@ -31,15 +31,17 @@
                 <tr ng-repeat="bakedgood in bakedgoods track by bakedgood.id">
                     <td><a ui-sref="bakedgood.detail({id:bakedgood.id})">{{bakedgood.id}}</a></td>
                     <td>{{bakedgood.bakedgoodname}}</td>
-                    <td>{{bakedgood.bakeryprice}}</td>
+                    <td>{{bakedgood.bakedgoodcost}}</td>
                     <td>
-                        <a ui-sref="vendor.detail({id:bakedgood.vendor.id})">{{bakedgood.vendor.vendorname}}</a>
+                        <a ui-sref="category.detail({id:bakedgood.bakcat.id})">{{bakedgood.bakcat.bakerycategory}}</a>
                     </td>
                     <td>
-                        <a ui-sref="allergen.detail({id:bakedgood.allergen.id})">{{bakedgood.allergen.allergen}}</a>
+                        <a ui-sref="vendor.detail({id:bakedgood.bakvendor.id})">{{bakedgood.bakvendor.vendorname}}</a>
                     </td>
                     <td>
-                        <a ui-sref="category.detail({id:bakedgood.categorys.id})">{{bakedgood.categorys.category}}</a>
+                        <span ng-repeat="bakallergen in bakedgood.bakallergens">
+                            <a class="form-control-static" ui-sref="allergen.detail({id: {{bakallergen.id}}})">{{bakallergen.allergenname}}</a>{{$last ? '' : ', '}}
+                        <span>
                     </td>
                     <td class="text-right">
                         <div class="btn-group flex-btn-group-container">

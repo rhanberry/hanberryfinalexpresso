@@ -1,19 +1,19 @@
 'use strict';
 
-angular.module('finaltestApp').controller('DrinkRecipeDialogController',
-    ['$scope', '$stateParams', '$uibModalInstance', 'entity', 'DrinkRecipe', 'Ingredients',
-        function($scope, $stateParams, $uibModalInstance, entity, DrinkRecipe, Ingredients) {
+angular.module('finaltestApp').controller('DrinkrecipeDialogController',
+    ['$scope', '$stateParams', '$uibModalInstance', 'entity', 'Drinkrecipe', 'Ingredients',
+        function($scope, $stateParams, $uibModalInstance, entity, Drinkrecipe, Ingredients) {
 
-        $scope.drinkRecipe = entity;
+        $scope.drinkrecipe = entity;
         $scope.ingredientss = Ingredients.query();
         $scope.load = function(id) {
-            DrinkRecipe.get({id : id}, function(result) {
-                $scope.drinkRecipe = result;
+            Drinkrecipe.get({id : id}, function(result) {
+                $scope.drinkrecipe = result;
             });
         };
 
         var onSaveSuccess = function (result) {
-            $scope.$emit('finaltestApp:drinkRecipeUpdate', result);
+            $scope.$emit('finaltestApp:drinkrecipeUpdate', result);
             $uibModalInstance.close(result);
             $scope.isSaving = false;
         };
@@ -24,10 +24,10 @@ angular.module('finaltestApp').controller('DrinkRecipeDialogController',
 
         $scope.save = function () {
             $scope.isSaving = true;
-            if ($scope.drinkRecipe.id != null) {
-                DrinkRecipe.update($scope.drinkRecipe, onSaveSuccess, onSaveError);
+            if ($scope.drinkrecipe.id != null) {
+                Drinkrecipe.update($scope.drinkrecipe, onSaveSuccess, onSaveError);
             } else {
-                DrinkRecipe.save($scope.drinkRecipe, onSaveSuccess, onSaveError);
+                Drinkrecipe.save($scope.drinkrecipe, onSaveSuccess, onSaveError);
             }
         };
 

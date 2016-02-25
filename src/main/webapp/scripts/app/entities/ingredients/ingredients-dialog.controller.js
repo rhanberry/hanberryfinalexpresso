@@ -1,11 +1,12 @@
 'use strict';
 
 angular.module('finaltestApp').controller('IngredientsDialogController',
-    ['$scope', '$stateParams', '$uibModalInstance', 'entity', 'Ingredients', 'DrinkRecipe',
-        function($scope, $stateParams, $uibModalInstance, entity, Ingredients, DrinkRecipe) {
+    ['$scope', '$stateParams', '$uibModalInstance', 'entity', 'Ingredients', 'Unitofmeasure', 'Drinkrecipe',
+        function($scope, $stateParams, $uibModalInstance, entity, Ingredients, Unitofmeasure, Drinkrecipe) {
 
         $scope.ingredients = entity;
-        $scope.drinkrecipes = DrinkRecipe.query();
+        $scope.unitofmeasures = Unitofmeasure.query();
+        $scope.drinkrecipes = Drinkrecipe.query();
         $scope.load = function(id) {
             Ingredients.get({id : id}, function(result) {
                 $scope.ingredients = result;

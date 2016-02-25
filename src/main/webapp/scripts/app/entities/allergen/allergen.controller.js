@@ -1,12 +1,12 @@
 'use strict';
 
 angular.module('finaltestApp')
-    .controller('IngredientsController', function ($scope, $state, Ingredients) {
+    .controller('AllergenController', function ($scope, $state, Allergen) {
 
-        $scope.ingredientss = [];
+        $scope.allergens = [];
         $scope.loadAll = function() {
-            Ingredients.query(function(result) {
-               $scope.ingredientss = result;
+            Allergen.query(function(result) {
+               $scope.allergens = result;
             });
         };
         $scope.loadAll();
@@ -18,9 +18,8 @@ angular.module('finaltestApp')
         };
 
         $scope.clear = function () {
-            $scope.ingredients = {
-                ingredientname: null,
-                ingredientcost: null,
+            $scope.allergen = {
+                allergenname: null,
                 id: null
             };
         };

@@ -18,5 +18,18 @@ angular.module('finaltestApp')
                     
                 }
             })
-
+            .state('accessdenied', {
+                parent: 'site',
+                url: '/accessdenied',
+                data: {
+                },
+                views: {
+                    'content@': {
+                        templateUrl: 'scripts/app/error/accessdenied.html'
+                    }
+                },
+                resolve: {
+                    
+                }
+            });
     });

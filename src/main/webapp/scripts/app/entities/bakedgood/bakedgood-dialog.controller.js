@@ -1,13 +1,13 @@
 'use strict';
 
 angular.module('finaltestApp').controller('BakedgoodDialogController',
-    ['$scope', '$stateParams', '$uibModalInstance', 'entity', 'Bakedgood', 'Vendor', 'Allergens', 'Category',
-        function($scope, $stateParams, $uibModalInstance, entity, Bakedgood, Vendor, Allergens, Category) {
+    ['$scope', '$stateParams', '$uibModalInstance', 'entity', 'Bakedgood', 'Category', 'Vendor', 'Allergen',
+        function($scope, $stateParams, $uibModalInstance, entity, Bakedgood, Category, Vendor, Allergen) {
 
         $scope.bakedgood = entity;
-        $scope.vendors = Vendor.query();
-        $scope.allergenss = Allergens.query();
         $scope.categorys = Category.query();
+        $scope.vendors = Vendor.query();
+        $scope.allergens = Allergen.query();
         $scope.load = function(id) {
             Bakedgood.get({id : id}, function(result) {
                 $scope.bakedgood = result;

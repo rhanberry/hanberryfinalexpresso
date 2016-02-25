@@ -1,12 +1,12 @@
 'use strict';
 
 angular.module('finaltestApp')
-    .controller('IngredientsController', function ($scope, $state, Ingredients) {
+    .controller('UnitofmeasureController', function ($scope, $state, Unitofmeasure) {
 
-        $scope.ingredientss = [];
+        $scope.unitofmeasures = [];
         $scope.loadAll = function() {
-            Ingredients.query(function(result) {
-               $scope.ingredientss = result;
+            Unitofmeasure.query(function(result) {
+               $scope.unitofmeasures = result;
             });
         };
         $scope.loadAll();
@@ -18,9 +18,8 @@ angular.module('finaltestApp')
         };
 
         $scope.clear = function () {
-            $scope.ingredients = {
-                ingredientname: null,
-                ingredientcost: null,
+            $scope.unitofmeasure = {
+                unit: null,
                 id: null
             };
         };

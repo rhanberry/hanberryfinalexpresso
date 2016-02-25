@@ -3,48 +3,51 @@
 angular.module('finaltestApp')
     .config(function ($stateProvider) {
         $stateProvider
-            .state('drinkRecipe', {
+            .state('drinkrecipe', {
                 parent: 'entity',
-                url: '/drinkRecipes',
+                url: '/drinkrecipes',
                 data: {
-                    pageTitle: 'DrinkRecipes'
+                    authorities: ['ROLE_USER'],
+                    pageTitle: 'Drinkrecipes'
                 },
                 views: {
                     'content@': {
-                        templateUrl: 'scripts/app/entities/drinkRecipe/drinkRecipes.html',
-                        controller: 'DrinkRecipeController'
+                        templateUrl: 'scripts/app/entities/drinkrecipe/drinkrecipes.html',
+                        controller: 'DrinkrecipeController'
                     }
                 },
                 resolve: {
                 }
             })
-            .state('drinkRecipe.detail', {
+            .state('drinkrecipe.detail', {
                 parent: 'entity',
-                url: '/drinkRecipe/{id}',
+                url: '/drinkrecipe/{id}',
                 data: {
-                    pageTitle: 'DrinkRecipe'
+                    authorities: ['ROLE_USER'],
+                    pageTitle: 'Drinkrecipe'
                 },
                 views: {
                     'content@': {
-                        templateUrl: 'scripts/app/entities/drinkRecipe/drinkRecipe-detail.html',
-                        controller: 'DrinkRecipeDetailController'
+                        templateUrl: 'scripts/app/entities/drinkrecipe/drinkrecipe-detail.html',
+                        controller: 'DrinkrecipeDetailController'
                     }
                 },
                 resolve: {
-                    entity: ['$stateParams', 'DrinkRecipe', function($stateParams, DrinkRecipe) {
-                        return DrinkRecipe.get({id : $stateParams.id});
+                    entity: ['$stateParams', 'Drinkrecipe', function($stateParams, Drinkrecipe) {
+                        return Drinkrecipe.get({id : $stateParams.id});
                     }]
                 }
             })
-            .state('drinkRecipe.new', {
-                parent: 'drinkRecipe',
+            .state('drinkrecipe.new', {
+                parent: 'drinkrecipe',
                 url: '/new',
                 data: {
+                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
-                        templateUrl: 'scripts/app/entities/drinkRecipe/drinkRecipe-dialog.html',
-                        controller: 'DrinkRecipeDialogController',
+                        templateUrl: 'scripts/app/entities/drinkrecipe/drinkrecipe-dialog.html',
+                        controller: 'DrinkrecipeDialogController',
                         size: 'lg',
                         resolve: {
                             entity: function () {
@@ -55,51 +58,53 @@ angular.module('finaltestApp')
                             }
                         }
                     }).result.then(function(result) {
-                        $state.go('drinkRecipe', null, { reload: true });
+                        $state.go('drinkrecipe', null, { reload: true });
                     }, function() {
-                        $state.go('drinkRecipe');
+                        $state.go('drinkrecipe');
                     })
                 }]
             })
-            .state('drinkRecipe.edit', {
-                parent: 'drinkRecipe',
+            .state('drinkrecipe.edit', {
+                parent: 'drinkrecipe',
                 url: '/{id}/edit',
                 data: {
+                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
-                        templateUrl: 'scripts/app/entities/drinkRecipe/drinkRecipe-dialog.html',
-                        controller: 'DrinkRecipeDialogController',
+                        templateUrl: 'scripts/app/entities/drinkrecipe/drinkrecipe-dialog.html',
+                        controller: 'DrinkrecipeDialogController',
                         size: 'lg',
                         resolve: {
-                            entity: ['DrinkRecipe', function(DrinkRecipe) {
-                                return DrinkRecipe.get({id : $stateParams.id});
+                            entity: ['Drinkrecipe', function(Drinkrecipe) {
+                                return Drinkrecipe.get({id : $stateParams.id});
                             }]
                         }
                     }).result.then(function(result) {
-                        $state.go('drinkRecipe', null, { reload: true });
+                        $state.go('drinkrecipe', null, { reload: true });
                     }, function() {
                         $state.go('^');
                     })
                 }]
             })
-            .state('drinkRecipe.delete', {
-                parent: 'drinkRecipe',
+            .state('drinkrecipe.delete', {
+                parent: 'drinkrecipe',
                 url: '/{id}/delete',
                 data: {
+                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
-                        templateUrl: 'scripts/app/entities/drinkRecipe/drinkRecipe-delete-dialog.html',
-                        controller: 'DrinkRecipeDeleteController',
+                        templateUrl: 'scripts/app/entities/drinkrecipe/drinkrecipe-delete-dialog.html',
+                        controller: 'DrinkrecipeDeleteController',
                         size: 'md',
                         resolve: {
-                            entity: ['DrinkRecipe', function(DrinkRecipe) {
-                                return DrinkRecipe.get({id : $stateParams.id});
+                            entity: ['Drinkrecipe', function(Drinkrecipe) {
+                                return Drinkrecipe.get({id : $stateParams.id});
                             }]
                         }
                     }).result.then(function(result) {
-                        $state.go('drinkRecipe', null, { reload: true });
+                        $state.go('drinkrecipe', null, { reload: true });
                     }, function() {
                         $state.go('^');
                     })

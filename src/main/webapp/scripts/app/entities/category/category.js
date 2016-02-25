@@ -7,6 +7,7 @@ angular.module('finaltestApp')
                 parent: 'entity',
                 url: '/categorys',
                 data: {
+                    authorities: ['ROLE_USER'],
                     pageTitle: 'Categorys'
                 },
                 views: {
@@ -22,6 +23,7 @@ angular.module('finaltestApp')
                 parent: 'entity',
                 url: '/category/{id}',
                 data: {
+                    authorities: ['ROLE_USER'],
                     pageTitle: 'Category'
                 },
                 views: {
@@ -40,6 +42,7 @@ angular.module('finaltestApp')
                 parent: 'category',
                 url: '/new',
                 data: {
+                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
@@ -49,7 +52,7 @@ angular.module('finaltestApp')
                         resolve: {
                             entity: function () {
                                 return {
-                                    category: null,
+                                    bakerycategory: null,
                                     id: null
                                 };
                             }
@@ -65,6 +68,7 @@ angular.module('finaltestApp')
                 parent: 'category',
                 url: '/{id}/edit',
                 data: {
+                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
@@ -87,6 +91,7 @@ angular.module('finaltestApp')
                 parent: 'category',
                 url: '/{id}/delete',
                 data: {
+                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
