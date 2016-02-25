@@ -2,7 +2,7 @@
 
 angular.module('finaltestApp')
     .factory('Ingredients', function ($resource, DateUtils) {
-        return $resource('api/ingredientss/:id', {}, {
+        return $resource('api/ingredients/:id', {}, {
             'query': { method: 'GET', isArray: true},
             'get': {
                 method: 'GET',
