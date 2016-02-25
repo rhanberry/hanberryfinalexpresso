@@ -7,7 +7,6 @@ angular.module('finaltestApp')
                 parent: 'entity',
                 url: '/bakedgoods',
                 data: {
-                    authorities: ['ROLE_USER'],
                     pageTitle: 'Bakedgoods'
                 },
                 views: {
@@ -23,7 +22,6 @@ angular.module('finaltestApp')
                 parent: 'entity',
                 url: '/bakedgood/{id}',
                 data: {
-                    authorities: ['ROLE_USER'],
                     pageTitle: 'Bakedgood'
                 },
                 views: {
@@ -42,7 +40,6 @@ angular.module('finaltestApp')
                 parent: 'bakedgood',
                 url: '/new',
                 data: {
-                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
@@ -69,7 +66,6 @@ angular.module('finaltestApp')
                 parent: 'bakedgood',
                 url: '/{id}/edit',
                 data: {
-                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
@@ -92,7 +88,6 @@ angular.module('finaltestApp')
                 parent: 'bakedgood',
                 url: '/{id}/delete',
                 data: {
-                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({

@@ -7,7 +7,6 @@ angular.module('finaltestApp')
                 parent: 'entity',
                 url: '/allergens',
                 data: {
-                    authorities: ['ROLE_USER'],
                     pageTitle: 'Allergens'
                 },
                 views: {
@@ -23,7 +22,6 @@ angular.module('finaltestApp')
                 parent: 'entity',
                 url: '/allergen/{id}',
                 data: {
-                    authorities: ['ROLE_USER'],
                     pageTitle: 'Allergen'
                 },
                 views: {
@@ -42,7 +40,6 @@ angular.module('finaltestApp')
                 parent: 'allergen',
                 url: '/new',
                 data: {
-                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
@@ -68,7 +65,6 @@ angular.module('finaltestApp')
                 parent: 'allergen',
                 url: '/{id}/edit',
                 data: {
-                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
@@ -91,7 +87,6 @@ angular.module('finaltestApp')
                 parent: 'allergen',
                 url: '/{id}/delete',
                 data: {
-                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({

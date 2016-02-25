@@ -1,11 +1,10 @@
 'use strict';
 
-angular.module('finaltestApp', ['LocalStorageModule', 
-    'ngResource', 'ui.bootstrap', 'ui.router',  'infinite-scroll', 'angular-loading-bar'])
+angular.module('finaltestApp', ['LocalStorageModule',
+    'ngResource', 'ui.bootstrap', 'ui.router', 'infinite-scroll'])
 
     .run(function ($rootScope, $location, $window, $http, $state) {
         
-
 
         $rootScope.$on('$stateChangeStart', function (event, toState, toStateParams) {
             $rootScope.toState = toState;
@@ -29,7 +28,7 @@ angular.module('finaltestApp', ['LocalStorageModule',
         });
         
         $rootScope.back = function() {
-            // If previous state does'nt exist go to 'home'
+            // If previous state doesn't exist go to 'home'
             if ($state.get($rootScope.previousStateName) === null) {
                 $state.go('home');
             } else {
@@ -40,6 +39,7 @@ angular.module('finaltestApp', ['LocalStorageModule',
     .config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider, AlertServiceProvider) {
         // uncomment below to make alerts look like toast
         AlertServiceProvider.showAsToast(true);
+
 
         
 
@@ -54,9 +54,7 @@ angular.module('finaltestApp', ['LocalStorageModule',
             },
             resolve: {
                 
-                    }
-                ]
-            }
+               }
         });
 
         $httpProvider.interceptors.push('errorHandlerInterceptor');
