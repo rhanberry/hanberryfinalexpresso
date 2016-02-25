@@ -28,8 +28,8 @@ public class Category implements Serializable {
     @Column(name = "bakerycategory", length = 255, nullable = false)
     private String bakerycategory;
 
-    @OneToMany(mappedBy = "bakcat")
-    private Set<Bakedgood> bakcats = new HashSet<>();
+    @OneToMany(mappedBy = "categorys")
+    private Set<Bakedgood> categorys = new HashSet<>();
 
     public Long getId() {
         return id;
@@ -47,12 +47,12 @@ public class Category implements Serializable {
         this.bakerycategory = bakerycategory;
     }
 
-    public Set<Bakedgood> getBakcats() {
-        return bakcats;
+    public Set<Bakedgood> getCategorys() {
+        return categorys;
     }
 
-    public void setBakcats(Set<Bakedgood> bakedgoods) {
-        this.bakcats = bakedgoods;
+    public void setCategorys(Set<Bakedgood> bakedgoods) {
+        this.categorys = bakedgoods;
     }
 
     @Override

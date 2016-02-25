@@ -27,8 +27,8 @@ public class Allergen implements Serializable {
     @Column(name = "allergenname", length = 255, nullable = false)
     private String allergenname;
 
-    @ManyToMany(mappedBy = "bakallergens")
-    private Set<Bakedgood> bakallergens = new HashSet<>();
+    @ManyToMany(mappedBy = "allergen")
+    private Set<Bakedgood> allergen = new HashSet<>();
 
     public Long getId() {
         return id;
@@ -46,12 +46,12 @@ public class Allergen implements Serializable {
         this.allergenname = allergenname;
     }
 
-    public Set<Bakedgood> getBakallergens() {
-        return bakallergens;
+    public Set<Bakedgood> getAllergen() {
+        return allergen;
     }
 
-    public void setBakallergens(Set<Bakedgood> bakedgoods) {
-        this.bakallergens = bakedgoods;
+    public void setAllergen(Set<Bakedgood> bakedgoods) {
+        this.allergen = bakedgoods;
     }
 
     @Override

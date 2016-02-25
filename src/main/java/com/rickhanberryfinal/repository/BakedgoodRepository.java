@@ -15,10 +15,10 @@ import java.util.List;
 @Repository
 public interface BakedgoodRepository extends JpaRepository<Bakedgood,Long> {
 
-    @Query("select distinct bakedgood from Bakedgood bakedgood left join fetch bakedgood.bakallergens")
+    @Query("select distinct bakedgood from Bakedgood bakedgood left join fetch bakedgood.allergen")
     List<Bakedgood> findAllWithEagerRelationships();
 
-    @Query("select bakedgood from Bakedgood bakedgood left join fetch bakedgood.bakallergens where bakedgood.id =:id")
+    @Query("select bakedgood from Bakedgood bakedgood left join fetch bakedgood.allergen where bakedgood.id =:id")
     Bakedgood findOneWithEagerRelationships(@Param("id") Long id);
 
 }

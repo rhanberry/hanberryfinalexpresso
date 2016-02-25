@@ -28,9 +28,9 @@ public class Vendor implements Serializable {
     @Column(name = "vendorname", length = 255, nullable = false)
     private String vendorname;
 
-    @OneToMany(mappedBy = "bakvendor")
+    @OneToMany(mappedBy = "vendor")
     @JsonIgnore
-    private Set<Bakedgood> bakvendors = new HashSet<>();
+    private Set<Bakedgood> vendor = new HashSet<>();
 
     public Long getId() {
         return id;
@@ -48,12 +48,12 @@ public class Vendor implements Serializable {
         this.vendorname = vendorname;
     }
 
-    public Set<Bakedgood> getBakvendors() {
-        return bakvendors;
+    public Set<Bakedgood> Vendor() {
+        return vendor;
     }
 
-    public void setBakvendors(Set<Bakedgood> bakedgoods) {
-        this.bakvendors = bakedgoods;
+    public void setVendor(Set<Bakedgood> bakedgoods) {
+        this.vendor = bakedgoods;
     }
 
     @Override
