@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('finaltestApp', ['LocalStorageModule', 
-    'ngResource', 'ngCookies', 'ui.bootstrap', 'ui.router',  'infinite-scroll'])
+    'ngResource', 'ui.bootstrap', 'ui.router',  'infinite-scroll'])
 
     .run(function ($rootScope, $location, $window, $http, $state) {
         
