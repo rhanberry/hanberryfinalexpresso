@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('finaltestApp')
-    .factory('Bakedgood', function ($resource, DateUtils) {
+    .factory('Bakedgood', function ($resource) {
         return $resource('api/bakedgoods/:id', {}, {
             'query': { method: 'GET', isArray: true},
             'get': {

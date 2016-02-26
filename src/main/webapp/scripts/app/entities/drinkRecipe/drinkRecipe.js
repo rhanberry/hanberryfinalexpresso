@@ -11,7 +11,7 @@ angular.module('finaltestApp')
                 },
                 views: {
                     'content@': {
-                        templateUrl: 'scripts/app/entities/drinkrecipe/drinkRecipes.html',
+                        templateUrl: 'scripts/app/entities/drinkrecipe/drinkRecipe.html',
                         controller: 'DrinkrecipeController'
                     }
                 },

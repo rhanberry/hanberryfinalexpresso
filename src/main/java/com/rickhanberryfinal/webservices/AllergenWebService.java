@@ -24,7 +24,7 @@ import java.util.Optional;
 @RequestMapping("/api")
 public class AllergenWebService {
 
-//autowires service layer.  Before I had it autowire the repository interface, which worked OK, lets see if this works
+//autowires service layer.
     @Autowired
     private AllergenService allergenService;
 
@@ -69,7 +69,7 @@ public class AllergenWebService {
     }
 
     /**
-     * GET  /allergens/:id -> get the "id" allergen.
+     * GET  /allergens/:id -> get allergen by its id.
      */
     @RequestMapping(value = "/allergens/{id}",
             method = RequestMethod.GET,
@@ -84,7 +84,7 @@ public class AllergenWebService {
     }
 
     /**
-     * DELETE  /allergens/:id -> delete the "id" allergen.
+     * DELETE  /allergens/:id -> delete allergen by its id.
      */
     @RequestMapping(value = "/allergens/{id}",
             method = RequestMethod.DELETE,
