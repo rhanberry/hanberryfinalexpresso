@@ -20,7 +20,7 @@ angular.module('finaltestApp')
             })
             .state('ingredients.detail', {
                 parent: 'entity',
-                url: '/ingredients/{id}',
+                url: '/ingredientss/{id}',
                 data: {
                     pageTitle: 'Ingredients'
                 },

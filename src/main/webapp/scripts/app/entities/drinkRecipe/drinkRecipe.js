@@ -11,7 +11,7 @@ angular.module('finaltestApp')
                 },
                 views: {
                     'content@': {
-                        templateUrl: 'scripts/app/entities/drinkrecipe/drinkrecipes.html',
+                        templateUrl: 'scripts/app/entities/drinkrecipe/drinkRecipes.html',
                         controller: 'DrinkrecipeController'
                     }
                 },
@@ -26,7 +26,7 @@ angular.module('finaltestApp')
                 },
                 views: {
                     'content@': {
-                        templateUrl: 'scripts/app/entities/drinkrecipe/drinkrecipe-detail.html',
+                        templateUrl: 'scripts/app/entities/drinkrecipe/drinkRecipe-detail.html',
                         controller: 'DrinkrecipeDetailController'
                     }
                 },
@@ -43,7 +43,7 @@ angular.module('finaltestApp')
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
-                        templateUrl: 'scripts/app/entities/drinkrecipe/drinkrecipe-dialog.html',
+                        templateUrl: 'scripts/app/entities/drinkrecipe/drinkRecipe-dialog.html',
                         controller: 'DrinkrecipeDialogController',
                         size: 'lg',
                         resolve: {
@@ -68,7 +68,7 @@ angular.module('finaltestApp')
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
-                        templateUrl: 'scripts/app/entities/drinkrecipe/drinkrecipe-dialog.html',
+                        templateUrl: 'scripts/app/entities/drinkrecipe/drinkRecipe-dialog.html',
                         controller: 'DrinkrecipeDialogController',
                         size: 'lg',
                         resolve: {
@@ -90,7 +90,7 @@ angular.module('finaltestApp')
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
-                        templateUrl: 'scripts/app/entities/drinkrecipe/drinkrecipe-delete-dialog.html',
+                        templateUrl: 'scripts/app/entities/drinkrecipe/drinkRecipe-delete-dialog.html',
                         controller: 'DrinkrecipeDeleteController',
                         size: 'md',
                         resolve: {

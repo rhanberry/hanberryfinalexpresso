@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('finaltestApp')
-    .factory('Ingredients', function ($resource, DateUtils) {
-        return $resource('api/ingredientss/:id', {}, {
+    .factory('Unitofmeasure', function ($resource, DateUtils) {
+        return $resource('api/unitofmeasures/:id', {}, {
             'query': { method: 'GET', isArray: true},
             'get': {
                 method: 'GET',
