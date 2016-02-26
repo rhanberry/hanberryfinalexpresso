@@ -21,7 +21,10 @@ public class ResourceConfig extends WebMvcAutoConfiguration.WebMvcAutoConfigurat
         registry.addResourceHandler("/scripts/**/*").addResourceLocations("/scripts/");
         registry.addResourceHandler("/app/**/*").addResourceLocations("/app/");
         registry.addResourceHandler("/components/**/*").addResourceLocations("/components/");
-        registry.addResourceHandler("/bower_components/**").addResourceLocations("/bower_components/");
+        registry.addResourceHandler("/entities/**/*").addResourceLocations("/entities/");
+        registry.addResourceHandler("/error/*").addResourceLocations("/error/");
+        registry.addResourceHandler("/main/*").addResourceLocations("/main/");
+        registry.addResourceHandler("/bower_components/**/*").addResourceLocations("/bower_components/");
     }
 
 
