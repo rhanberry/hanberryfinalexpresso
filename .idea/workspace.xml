@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e48673bd-b6f2-46f0-9c2b-ab67d3b329b5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/config/ResourceConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/config/ResourceConfig.java" />
     </list>
     <ignored path="hanberryfinal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -842,7 +841,7 @@
       <workItem from="1456436937606" duration="273000" />
       <workItem from="1456437792029" duration="2465000" />
       <workItem from="1456440955523" duration="3156000" />
-      <workItem from="1456464068476" duration="1002000" />
+      <workItem from="1456464068476" duration="1051000" />
     </task>
     <task id="LOCAL-00001" summary="Added layers and amended certain things.  Relations are not functioning as desired, will update on arrival at home">
       <created>1456273148714</created>
@@ -856,14 +855,20 @@
       <option name="project" value="LOCAL" />
       <updated>1456431998729</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="REST endpoints work perfectly, tracking down frontend bugs">
+      <created>1456465112080</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1456465112080</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58292000" />
+    <option name="totallyTimeSpent" value="58341000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="977" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="977" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -935,7 +940,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Added layers and amended certain things.  Relations are not functioning as desired, will update on arrival at home" />
     <MESSAGE value="Backend works except for resource mapping, test files not added yet but ~30% complete.  Front end mostly complete." />
-    <option name="LAST_COMMIT_MESSAGE" value="Backend works except for resource mapping, test files not added yet but ~30% complete.  Front end mostly complete." />
+    <MESSAGE value="REST endpoints work perfectly, tracking down frontend bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="REST endpoints work perfectly, tracking down frontend bugs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
