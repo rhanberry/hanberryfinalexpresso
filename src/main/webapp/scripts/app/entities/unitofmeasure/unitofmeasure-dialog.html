@@ -4,7 +4,7 @@
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
                 ng-click="clear()">&times;</button>
-        <h4 class="modal-title" id="myUnitofmeasureLabel">Create or edit a Unitofmeasure</h4>
+        <h4 class="modal-title" id="myUnitOfMeasureLabel">Create or edit a UnitOfMeasure</h4>
     </div>
     <div class="modal-body">
         <jh-alert-error></jh-alert-error>
@@ -14,18 +14,18 @@
                     ng-model="unitOfMeasure.id" readonly />
         </div>
         <div class="form-group">
-            <label class="control-label" for="field_unit">Unit</label>
-            <input type="text" class="form-control" name="unit" id="field_unit"
-                    ng-model="unitOfMeasure.unit"
-                    required ng-maxlength="255" />
-            <div ng-show="editForm.unit.$invalid">
+            <label class="control-label" for="field_unitOfMeasure">UnitOfMeasure</label>
+            <input type="text" class="form-control" name="unitOfMeasure" id="field_unitOfMeasure"
+                    ng-model="unitOfMeasure.unitOfMeasure"
+                    required ng-maxlength="50" />
+            <div ng-show="editForm.unitOfMeasure.$invalid">
                 <p class="help-block"
-                    ng-show="editForm.unit.$error.required">
+                    ng-show="editForm.unitOfMeasure.$error.required">
                     This field is required.
                 </p>
                 <p class="help-block"
-                    ng-show="editForm.unit.$error.maxlength" translate-value-max="255">
-                    This field cannot be longer than 255 characters.
+                    ng-show="editForm.unitOfMeasure.$error.maxlength" translate-value-max="50">
+                    This field cannot be longer than 50 characters.
                 </p>
             </div>
         </div>

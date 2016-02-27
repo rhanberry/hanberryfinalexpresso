@@ -1,8 +1,8 @@
 'use strict';
 
-angular.module('finaltestApp')
-    .factory('Unitofmeasure', function ($resource) {
-        return $resource('api/unitofmeasures/:id', {}, {
+angular.module('expressoApp')
+    .factory('UnitOfMeasure', function ($resource, DateUtils) {
+        return $resource('api/unitOfMeasures/:id', {}, {
             'query': { method: 'GET', isArray: true},
             'get': {
                 method: 'GET',

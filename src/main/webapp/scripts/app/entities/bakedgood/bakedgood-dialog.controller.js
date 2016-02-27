@@ -1,21 +1,21 @@
 'use strict';
 
-angular.module('finaltestApp').controller('BakedgoodDialogController',
-    ['$scope', '$stateParams', '$uibModalInstance', 'entity', 'Bakedgood', 'Category', 'Vendor', 'Allergen',
-        function($scope, $stateParams, $uibModalInstance, entity, Bakedgood, Category, Vendor, Allergen) {
+angular.module('expressoApp').controller('BakedGoodDialogController',
+    ['$scope', '$stateParams', '$uibModalInstance', 'entity', 'BakedGood', 'BakeryCategory', 'Vendor', 'Allergens',
+        function($scope, $stateParams, $uibModalInstance, entity, BakedGood, BakeryCategory, Vendor, Allergens) {
 
-        $scope.bakedgood = entity;
-        $scope.categorys = Category.query();
+        $scope.bakedGood = entity;
+        $scope.bakerycategorys = BakeryCategory.query();
         $scope.vendors = Vendor.query();
-        $scope.allergens = Allergen.query();
+        $scope.allergenss = Allergens.query();
         $scope.load = function(id) {
-            Bakedgood.get({id : id}, function(result) {
-                $scope.bakedgood = result;
+            BakedGood.get({id : id}, function(result) {
+                $scope.bakedGood = result;
             });
         };
 
         var onSaveSuccess = function (result) {
-            $scope.$emit('finaltestApp:bakedgoodUpdate', result);
+            $scope.$emit('expressoApp:bakedGoodUpdate', result);
             $uibModalInstance.close(result);
             $scope.isSaving = false;
         };
@@ -26,10 +26,10 @@ angular.module('finaltestApp').controller('BakedgoodDialogController',
 
         $scope.save = function () {
             $scope.isSaving = true;
-            if ($scope.bakedgood.id != null) {
-                Bakedgood.update($scope.bakedgood, onSaveSuccess, onSaveError);
+            if ($scope.bakedGood.id != null) {
+                BakedGood.update($scope.bakedGood, onSaveSuccess, onSaveError);
             } else {
-                Bakedgood.save($scope.bakedgood, onSaveSuccess, onSaveError);
+                BakedGood.save($scope.bakedGood, onSaveSuccess, onSaveError);
             }
         };
 

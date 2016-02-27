@@ -1,12 +1,12 @@
 'use strict';
 
-angular.module('finaltestApp').controller('IngredientsDialogController',
-    ['$scope', '$stateParams', '$uibModalInstance', 'entity', 'Ingredients', 'Unitofmeasure', 'Drinkrecipe',
-        function($scope, $stateParams, $uibModalInstance, entity, Ingredients, Unitofmeasure, Drinkrecipe) {
+angular.module('expressoApp').controller('IngredientsDialogController',
+    ['$scope', '$stateParams', '$uibModalInstance', 'entity', 'Ingredients', 'UnitOfMeasure', 'DrinkRecipe',
+        function($scope, $stateParams, $uibModalInstance, entity, Ingredients, UnitOfMeasure, DrinkRecipe) {
 
         $scope.ingredients = entity;
-        $scope.unitofmeasures = Unitofmeasure.query();
-        $scope.drinkrecipes = Drinkrecipe.query();
+        $scope.unitofmeasures = UnitOfMeasure.query();
+        $scope.drinkrecipes = DrinkRecipe.query();
         $scope.load = function(id) {
             Ingredients.get({id : id}, function(result) {
                 $scope.ingredients = result;
@@ -14,7 +14,7 @@ angular.module('finaltestApp').controller('IngredientsDialogController',
         };
 
         var onSaveSuccess = function (result) {
-            $scope.$emit('finaltestApp:ingredientsUpdate', result);
+            $scope.$emit('expressoApp:ingredientsUpdate', result);
             $uibModalInstance.close(result);
             $scope.isSaving = false;
         };

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('finaltestApp')
+angular.module('expressoApp')
     .config(function (uibPaginationConfig) {
         uibPaginationConfig.itemsPerPage = 20;
         uibPaginationConfig.maxSize = 5;

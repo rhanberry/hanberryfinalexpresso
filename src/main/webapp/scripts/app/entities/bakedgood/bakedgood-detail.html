@@ -1,6 +1,6 @@
 
 <div>
-    <h2><span>Bakedgood</span> {{bakedGood.id}}</h2>
+    <h2><span>BakedGood</span> {{bakedGood.id}}</h2>
     <div class="table-responsive">
         <table class="table table-striped">
             <thead>
@@ -12,43 +12,43 @@
             <tbody>
             <tr>
                 <td>
-                    <span>Bakedgoodname</span>
+                    <span>BakedGood</span>
                 </td>
                 <td>
-                    <span class="form-control-static">{{bakedGood.bakedgoodname}}</span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <span>Bakedgoodcost</span>
-                </td>
-                <td>
-                    <span class="form-control-static">{{bakedGood.bakedgoodcost}}</span>
+                    <span class="form-control-static">{{bakedGood.bakedGood}}</span>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <span>bakcat</span>
+                    <span>BakedGoodCost</span>
                 </td>
                 <td>
-                    <a class="form-control-static" ui-sref="bakeryCategory.detail({id:bakedGood.bakcat.id})">{{bakedGood.bakcat.bakerycategory}}</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <span>bakvendor</span>
-                </td>
-                <td>
-                    <a class="form-control-static" ui-sref="vendor.detail({id:bakedGood.bakvendor.id})">{{bakedGood.bakvendor.vendorname}}</a>
+                    <span class="form-control-static">{{bakedGood.bakedGoodCost}}</span>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <span>bakallergen</span>
+                    <span>bakeryCategory</span>
                 </td>
                 <td>
-                    <span ng-repeat="bakallergen in bakedGood.bakallergens">
-                        <a class="form-control-static" ui-sref="allergens.detail({id: {{bakallergen.id}}})">{{bakallergen.allergenname}}</a>{{$last ? '' : ', '}}
+                    <a class="form-control-static" ui-sref="bakeryCategory.detail({id:bakedGood.bakeryCategory.id})">{{bakedGood.bakeryCategory.bakeryCategory}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>vendor</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="vendor.detail({id:bakedGood.vendor.id})">{{bakedGood.vendor.vendor}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>allergens</span>
+                </td>
+                <td>
+                    <span ng-repeat="allergens in bakedGood.allergenss">
+                        <a class="form-control-static" ui-sref="allergens.detail({id: {{allergens.id}}})">{{allergens.allergen}}</a>{{$last ? '' : ', '}}
                     </span>
                 </td>
             </tr>

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('finaltestApp')
+angular.module('expressoApp')
     .filter('capitalize', function () {
         return function (input, scope) {
             if (input != null)

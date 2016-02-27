@@ -1,15 +1,15 @@
 'use strict';
 
-angular.module('finaltestApp')
-    .controller('BakedgoodDetailController', function ($scope, $rootScope, $stateParams, entity, Bakedgood, Category, Vendor, Allergen) {
-        $scope.bakedgood = entity;
+angular.module('expressoApp')
+    .controller('BakedGoodDetailController', function ($scope, $rootScope, $stateParams, entity, BakedGood, BakeryCategory, Vendor, Allergens) {
+        $scope.bakedGood = entity;
         $scope.load = function (id) {
-            Bakedgood.get({id: id}, function(result) {
-                $scope.bakedgood = result;
+            BakedGood.get({id: id}, function(result) {
+                $scope.bakedGood = result;
             });
         };
-        var unsubscribe = $rootScope.$on('finaltestApp:bakedgoodUpdate', function(event, result) {
-            $scope.bakedgood = result;
+        var unsubscribe = $rootScope.$on('expressoApp:bakedGoodUpdate', function(event, result) {
+            $scope.bakedGood = result;
         });
         $scope.$on('$destroy', unsubscribe);
 

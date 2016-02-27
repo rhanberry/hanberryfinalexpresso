@@ -1,12 +1,13 @@
 'use strict';
 
-angular.module('finaltestApp')
+angular.module('expressoApp')
     .config(function ($stateProvider) {
         $stateProvider
             .state('vendor', {
                 parent: 'entity',
                 url: '/vendors',
                 data: {
+                    authorities: ['ROLE_USER'],
                     pageTitle: 'Vendors'
                 },
                 views: {
@@ -22,6 +23,7 @@ angular.module('finaltestApp')
                 parent: 'entity',
                 url: '/vendor/{id}',
                 data: {
+                    authorities: ['ROLE_USER'],
                     pageTitle: 'Vendor'
                 },
                 views: {
@@ -40,6 +42,7 @@ angular.module('finaltestApp')
                 parent: 'vendor',
                 url: '/new',
                 data: {
+                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
@@ -49,7 +52,7 @@ angular.module('finaltestApp')
                         resolve: {
                             entity: function () {
                                 return {
-                                    vendorname: null,
+                                    vendor: null,
                                     id: null
                                 };
                             }
@@ -65,6 +68,7 @@ angular.module('finaltestApp')
                 parent: 'vendor',
                 url: '/{id}/edit',
                 data: {
+                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
@@ -87,6 +91,7 @@ angular.module('finaltestApp')
                 parent: 'vendor',
                 url: '/{id}/delete',
                 data: {
+                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({

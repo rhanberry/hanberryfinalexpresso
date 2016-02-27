@@ -4,7 +4,7 @@
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
                 ng-click="clear()">&times;</button>
-        <h4 class="modal-title" id="myBakedgoodLabel">Create or edit a Bakedgood</h4>
+        <h4 class="modal-title" id="myBakedGoodLabel">Create or edit a BakedGood</h4>
     </div>
     <div class="modal-body">
         <jh-alert-error></jh-alert-error>
@@ -14,53 +14,53 @@
                     ng-model="bakedGood.id" readonly />
         </div>
         <div class="form-group">
-            <label class="control-label" for="field_bakedgoodname">Bakedgoodname</label>
-            <input type="text" class="form-control" name="bakedgoodname" id="field_bakedgoodname"
-                    ng-model="bakedGood.bakedgoodname"
-                    required ng-maxlength="255" />
-            <div ng-show="editForm.bakedgoodname.$invalid">
+            <label class="control-label" for="field_bakedGood">BakedGood</label>
+            <input type="text" class="form-control" name="bakedGood" id="field_bakedGood"
+                    ng-model="bakedGood.bakedGood"
+                    required ng-maxlength="50" />
+            <div ng-show="editForm.bakedGood.$invalid">
                 <p class="help-block"
-                    ng-show="editForm.bakedgoodname.$error.required">
+                    ng-show="editForm.bakedGood.$error.required">
                     This field is required.
                 </p>
                 <p class="help-block"
-                    ng-show="editForm.bakedgoodname.$error.maxlength" translate-value-max="255">
-                    This field cannot be longer than 255 characters.
+                    ng-show="editForm.bakedGood.$error.maxlength" translate-value-max="50">
+                    This field cannot be longer than 50 characters.
                 </p>
             </div>
         </div>
         <div class="form-group">
-            <label class="control-label" for="field_bakedgoodcost">Bakedgoodcost</label>
-            <input type="number" class="form-control" name="bakedgoodcost" id="field_bakedgoodcost"
-                    ng-model="bakedGood.bakedgoodcost"
+            <label class="control-label" for="field_bakedGoodCost">BakedGoodCost</label>
+            <input type="number" class="form-control" name="bakedGoodCost" id="field_bakedGoodCost"
+                    ng-model="bakedGood.bakedGoodCost"
                     required />
-            <div ng-show="editForm.bakedgoodcost.$invalid">
+            <div ng-show="editForm.bakedGoodCost.$invalid">
                 <p class="help-block"
-                    ng-show="editForm.bakedgoodcost.$error.required">
+                    ng-show="editForm.bakedGoodCost.$error.required">
                     This field is required.
                 </p>
                 <p class="help-block"
-                    ng-show="editForm.bakedgoodcost.$error.number">
+                    ng-show="editForm.bakedGoodCost.$error.number">
                     This field should be a number.
                 </p>
             </div>
         </div>
 
         <div class="form-group">
-            <label for="field_bakcat">bakcat</label>
-            <select class="form-control" id="field_bakcat" name="bakcat" ng-model="bakedGood.bakcat" ng-options="bakeryCategory as bakeryCategory.bakerycategory for bakeryCategory in categorys track by bakeryCategory.id">
+            <label for="field_bakeryCategory">bakeryCategory</label>
+            <select class="form-control" id="field_bakeryCategory" name="bakeryCategory" ng-model="bakedGood.bakeryCategory" ng-options="bakeryCategory as bakeryCategory.bakeryCategory for bakeryCategory in bakerycategorys track by bakeryCategory.id">
                 <option value=""></option>
             </select>
         </div>
         <div class="form-group">
-            <label for="field_bakvendor">bakvendor</label>
-            <select class="form-control" id="field_bakvendor" name="bakvendor" ng-model="bakedGood.bakvendor" ng-options="vendor as vendor.vendorname for vendor in vendors track by vendor.id">
+            <label for="field_vendor">vendor</label>
+            <select class="form-control" id="field_vendor" name="vendor" ng-model="bakedGood.vendor" ng-options="vendor as vendor.vendor for vendor in vendors track by vendor.id">
                 <option value=""></option>
             </select>
         </div>
         <div class="form-group">
-            <label for="field_bakallergen">bakallergen</label>
-            <select class="form-control" id="field_bakallergen" multiple name="bakallergen" ng-model="bakedGood.bakallergens" ng-options="allergens as allergens.allergenname for allergens in allergens track by allergens.id"></select>
+            <label for="field_allergens">allergens</label>
+            <select class="form-control" id="field_allergens" multiple name="allergens" ng-model="bakedGood.allergenss" ng-options="allergens as allergens.allergen for allergens in allergenss track by allergens.id"></select>
         </div>
     </div>
     <div class="modal-footer">

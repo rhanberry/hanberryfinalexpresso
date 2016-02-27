@@ -1,5 +1,5 @@
 <div>
-    <h2>Unitofmeasures</h2>
+    <h2>UnitOfMeasures</h2>
     <jh-alert></jh-alert>
     <div class="container-fluid">
         <div class="row">
@@ -7,7 +7,7 @@
                 <button class="btn btn-primary" ui-sref="unitOfMeasure.new" >
                     <span class="glyphicon glyphicon-plus"></span>
                     <span 
-                       >Create new Unitofmeasure
+                       >Create new UnitOfMeasure
                     </span>
                 </button>
             </div>
@@ -19,14 +19,14 @@
             <thead>
                 <tr>
                     <th><span>ID</span></th>
-                    <th><span>Unit</span></th>
+                    <th><span>UnitOfMeasure</span></th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="unitOfMeasure in unitofmeasures track by unitOfMeasure.id">
+                <tr ng-repeat="unitOfMeasure in unitOfMeasures track by unitOfMeasure.id">
                     <td><a ui-sref="unitOfMeasure.detail({id:unitOfMeasure.id})">{{unitOfMeasure.id}}</a></td>
-                    <td>{{unitOfMeasure.unit}}</td>
+                    <td>{{unitOfMeasure.unitOfMeasure}}</td>
                     <td class="text-right">
                         <div class="btn-group flex-btn-group-container">
                             <button type="submit"

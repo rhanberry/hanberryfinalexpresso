@@ -19,19 +19,19 @@
             <thead>
                 <tr>
                     <th><span>ID</span></th>
-                    <th><span>Ingredientname</span></th>
-                    <th><span>Ingredientcost</span></th>
-                    <th><span>ingredientunit</span></th>
+                    <th><span>Ingredient</span></th>
+                    <th><span>IngredientCost</span></th>
+                    <th><span>unitOfMeasure</span></th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
                 <tr ng-repeat="ingredients in ingredientss track by ingredients.id">
                     <td><a ui-sref="ingredients.detail({id:ingredients.id})">{{ingredients.id}}</a></td>
-                    <td>{{ingredients.ingredientname}}</td>
-                    <td>{{ingredients.ingredientcost}}</td>
+                    <td>{{ingredients.ingredient}}</td>
+                    <td>{{ingredients.ingredientCost}}</td>
                     <td>
-                        <a ui-sref="unitOfMeasure.detail({id:ingredients.ingredientunit.id})">{{ingredients.ingredientunit.unit}}</a>
+                        <a ui-sref="unitOfMeasure.detail({id:ingredients.unitOfMeasure.id})">{{ingredients.unitOfMeasure.unitOfMeasure}}</a>
                     </td>
                     <td class="text-right">
                         <div class="btn-group flex-btn-group-container">

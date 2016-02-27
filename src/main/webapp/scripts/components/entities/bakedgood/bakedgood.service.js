@@ -1,8 +1,8 @@
 'use strict';
 
-angular.module('finaltestApp')
-    .factory('Bakedgood', function ($resource) {
-        return $resource('api/bakedgoods/:id', {}, {
+angular.module('expressoApp')
+    .factory('BakedGood', function ($resource, DateUtils) {
+        return $resource('api/bakedGoods/:id', {}, {
             'query': { method: 'GET', isArray: true},
             'get': {
                 method: 'GET',

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('finaltestApp')
+angular.module('expressoApp')
     .filter('characters', function () {
         return function (input, chars, breakOnWord) {
             if (isNaN(chars)) {

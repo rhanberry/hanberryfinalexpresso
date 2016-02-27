@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('finaltestApp')
+angular.module('expressoApp')
     .controller('IngredientsController', function ($scope, $state, Ingredients) {
 
         $scope.ingredientss = [];
@@ -19,8 +19,8 @@ angular.module('finaltestApp')
 
         $scope.clear = function () {
             $scope.ingredients = {
-                ingredientname: null,
-                ingredientcost: null,
+                ingredient: null,
+                ingredientCost: null,
                 id: null
             };
         };

@@ -1,19 +1,19 @@
 'use strict';
 
-angular.module('finaltestApp').controller('UnitofmeasureDialogController',
-    ['$scope', '$stateParams', '$uibModalInstance', 'entity', 'Unitofmeasure', 'Ingredients',
-        function($scope, $stateParams, $uibModalInstance, entity, Unitofmeasure, Ingredients) {
+angular.module('expressoApp').controller('UnitOfMeasureDialogController',
+    ['$scope', '$stateParams', '$uibModalInstance', 'entity', 'UnitOfMeasure', 'Ingredients',
+        function($scope, $stateParams, $uibModalInstance, entity, UnitOfMeasure, Ingredients) {
 
-        $scope.unitofmeasure = entity;
+        $scope.unitOfMeasure = entity;
         $scope.ingredientss = Ingredients.query();
         $scope.load = function(id) {
-            Unitofmeasure.get({id : id}, function(result) {
-                $scope.unitofmeasure = result;
+            UnitOfMeasure.get({id : id}, function(result) {
+                $scope.unitOfMeasure = result;
             });
         };
 
         var onSaveSuccess = function (result) {
-            $scope.$emit('finaltestApp:unitofmeasureUpdate', result);
+            $scope.$emit('expressoApp:unitOfMeasureUpdate', result);
             $uibModalInstance.close(result);
             $scope.isSaving = false;
         };
@@ -24,10 +24,10 @@ angular.module('finaltestApp').controller('UnitofmeasureDialogController',
 
         $scope.save = function () {
             $scope.isSaving = true;
-            if ($scope.unitofmeasure.id != null) {
-                Unitofmeasure.update($scope.unitofmeasure, onSaveSuccess, onSaveError);
+            if ($scope.unitOfMeasure.id != null) {
+                UnitOfMeasure.update($scope.unitOfMeasure, onSaveSuccess, onSaveError);
             } else {
-                Unitofmeasure.save($scope.unitofmeasure, onSaveSuccess, onSaveError);
+                UnitOfMeasure.save($scope.unitOfMeasure, onSaveSuccess, onSaveError);
             }
         };
 

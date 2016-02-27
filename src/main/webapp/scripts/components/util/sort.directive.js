@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('finaltestApp')
+angular.module('expressoApp')
     .directive('jhSort', function () {
         return {
             restrict: 'A',

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('finaltestApp')
+angular.module('expressoApp')
     .service('DateUtils', function ($filter) {
 
     this.convertLocaleDateToServer = function(date) {

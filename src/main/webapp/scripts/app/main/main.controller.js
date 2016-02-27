@@ -1,5 +1,9 @@
 'use strict';
 
-angular.module('finaltestApp')
-    .controller('MainController', function () {
+angular.module('expressoApp')
+    .controller('MainController', function ($scope, Principal) {
+        Principal.identity().then(function(account) {
+            $scope.account = account;
+            $scope.isAuthenticated = Principal.isAuthenticated;
+        });
     });

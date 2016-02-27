@@ -1,12 +1,13 @@
 'use strict';
 
-angular.module('finaltestApp')
+angular.module('expressoApp')
     .config(function ($stateProvider) {
         $stateProvider
             .state('home', {
                 parent: 'site',
                 url: '/',
                 data: {
+                    authorities: []
                 },
                 views: {
                     'content@': {

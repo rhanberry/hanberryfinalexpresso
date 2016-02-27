@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('finaltestApp')
+angular.module('expressoApp')
     .directive('activeLink', function(location) {
         return {
             restrict: 'A',

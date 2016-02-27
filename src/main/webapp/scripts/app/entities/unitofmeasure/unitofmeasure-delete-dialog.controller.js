@@ -1,14 +1,14 @@
 'use strict';
 
-angular.module('finaltestApp')
-	.controller('UnitofmeasureDeleteController', function($scope, $uibModalInstance, entity, Unitofmeasure) {
+angular.module('expressoApp')
+	.controller('UnitOfMeasureDeleteController', function($scope, $uibModalInstance, entity, UnitOfMeasure) {
 
-        $scope.unitofmeasure = entity;
+        $scope.unitOfMeasure = entity;
         $scope.clear = function() {
             $uibModalInstance.dismiss('cancel');
         };
         $scope.confirmDelete = function (id) {
-            Unitofmeasure.delete({id: id},
+            UnitOfMeasure.delete({id: id},
                 function () {
                     $uibModalInstance.close(true);
                 });

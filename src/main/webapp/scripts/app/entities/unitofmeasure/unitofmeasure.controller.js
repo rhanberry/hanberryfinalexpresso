@@ -1,12 +1,12 @@
 'use strict';
 
-angular.module('finaltestApp')
-    .controller('UnitofmeasureController', function ($scope, $state, Unitofmeasure) {
+angular.module('expressoApp')
+    .controller('UnitOfMeasureController', function ($scope, $state, UnitOfMeasure) {
 
-        $scope.unitofmeasures = [];
+        $scope.unitOfMeasures = [];
         $scope.loadAll = function() {
-            Unitofmeasure.query(function(result) {
-               $scope.unitofmeasures = result;
+            UnitOfMeasure.query(function(result) {
+               $scope.unitOfMeasures = result;
             });
         };
         $scope.loadAll();
@@ -18,8 +18,8 @@ angular.module('finaltestApp')
         };
 
         $scope.clear = function () {
-            $scope.unitofmeasure = {
-                unit: null,
+            $scope.unitOfMeasure = {
+                unitOfMeasure: null,
                 id: null
             };
         };

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('finaltestApp')
+angular.module('expressoApp')
 	.controller('IngredientsDeleteController', function($scope, $uibModalInstance, entity, Ingredients) {
 
         $scope.ingredients = entity;

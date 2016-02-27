@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('finaltestApp')
+angular.module('expressoApp')
     .service('DataUtils', function ($filter) {
     this.byteSize = function (base64String) {
         if (!angular.isString(base64String)) {

@@ -1,12 +1,12 @@
 'use strict';
 
-angular.module('finaltestApp')
-    .controller('BakedgoodController', function ($scope, $state, Bakedgood) {
+angular.module('expressoApp')
+    .controller('BakedGoodController', function ($scope, $state, BakedGood) {
 
-        $scope.bakedgoods = [];
+        $scope.bakedGoods = [];
         $scope.loadAll = function() {
-            Bakedgood.query(function(result) {
-               $scope.bakedgoods = result;
+            BakedGood.query(function(result) {
+               $scope.bakedGoods = result;
             });
         };
         $scope.loadAll();
@@ -18,9 +18,9 @@ angular.module('finaltestApp')
         };
 
         $scope.clear = function () {
-            $scope.bakedgood = {
-                bakedgoodname: null,
-                bakedgoodcost: null,
+            $scope.bakedGood = {
+                bakedGood: null,
+                bakedGoodCost: null,
                 id: null
             };
         };

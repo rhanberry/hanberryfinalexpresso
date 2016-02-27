@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('finaltestApp')
+angular.module('expressoApp')
     .service('ParseLinks', function () {
         this.parse = function (header) {
             if (header.length == 0) {

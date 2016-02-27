@@ -12,26 +12,26 @@
             <tbody>
             <tr>
                 <td>
-                    <span>Ingredientname</span>
+                    <span>Ingredient</span>
                 </td>
                 <td>
-                    <span class="form-control-static">{{ingredients.ingredientname}}</span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <span>Ingredientcost</span>
-                </td>
-                <td>
-                    <span class="form-control-static">{{ingredients.ingredientcost}}</span>
+                    <span class="form-control-static">{{ingredients.ingredient}}</span>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <span>ingredientunit</span>
+                    <span>IngredientCost</span>
                 </td>
                 <td>
-                    <a class="form-control-static" ui-sref="unitOfMeasure.detail({id:ingredients.ingredientunit.id})">{{ingredients.ingredientunit.unit}}</a>
+                    <span class="form-control-static">{{ingredients.ingredientCost}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>unitOfMeasure</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="unitOfMeasure.detail({id:ingredients.unitOfMeasure.id})">{{ingredients.unitOfMeasure.unitOfMeasure}}</a>
                 </td>
             </tr>
             </tbody>

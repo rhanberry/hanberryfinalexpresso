@@ -1,11 +1,11 @@
 'use strict';
 
-angular.module('finaltestApp').controller('VendorDialogController',
-    ['$scope', '$stateParams', '$uibModalInstance', 'entity', 'Vendor', 'Bakedgood',
-        function($scope, $stateParams, $uibModalInstance, entity, Vendor, Bakedgood) {
+angular.module('expressoApp').controller('VendorDialogController',
+    ['$scope', '$stateParams', '$uibModalInstance', 'entity', 'Vendor', 'BakedGood',
+        function($scope, $stateParams, $uibModalInstance, entity, Vendor, BakedGood) {
 
         $scope.vendor = entity;
-        $scope.bakedgoods = Bakedgood.query();
+        $scope.bakedgoods = BakedGood.query();
         $scope.load = function(id) {
             Vendor.get({id : id}, function(result) {
                 $scope.vendor = result;
@@ -13,7 +13,7 @@ angular.module('finaltestApp').controller('VendorDialogController',
         };
 
         var onSaveSuccess = function (result) {
-            $scope.$emit('finaltestApp:vendorUpdate', result);
+            $scope.$emit('expressoApp:vendorUpdate', result);
             $uibModalInstance.close(result);
             $scope.isSaving = false;
         };

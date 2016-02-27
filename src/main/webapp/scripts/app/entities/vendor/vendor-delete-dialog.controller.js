@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('finaltestApp')
+angular.module('expressoApp')
 	.controller('VendorDeleteController', function($scope, $uibModalInstance, entity, Vendor) {
 
         $scope.vendor = entity;

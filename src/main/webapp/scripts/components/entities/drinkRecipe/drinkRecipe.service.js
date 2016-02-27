@@ -1,8 +1,8 @@
 'use strict';
 
-angular.module('finaltestApp')
-    .factory('Drinkrecipe', function ($resource) {
-        return $resource('api/drinkrecipes/:id', {}, {
+angular.module('expressoApp')
+    .factory('DrinkRecipe', function ($resource, DateUtils) {
+        return $resource('api/drinkRecipes/:id', {}, {
             'query': { method: 'GET', isArray: true},
             'get': {
                 method: 'GET',

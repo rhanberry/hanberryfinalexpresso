@@ -1,106 +1,111 @@
 'use strict';
 
-angular.module('finaltestApp')
+angular.module('expressoApp')
     .config(function ($stateProvider) {
         $stateProvider
-            .state('bakedgood', {
+            .state('bakedGood', {
                 parent: 'entity',
-                url: '/bakedgoods',
+                url: '/bakedGoods',
                 data: {
-                    pageTitle: 'Bakedgoods'
+                    authorities: ['ROLE_USER'],
+                    pageTitle: 'BakedGoods'
                 },
                 views: {
                     'content@': {
-                        templateUrl: 'scripts/app/entities/bakedgood/bakedgoods.html',
-                        controller: 'BakedgoodController'
+                        templateUrl: 'scripts/app/entities/bakedGood/bakedGoods.html',
+                        controller: 'BakedGoodController'
                     }
                 },
                 resolve: {
                 }
             })
-            .state('bakedgood.detail', {
+            .state('bakedGood.detail', {
                 parent: 'entity',
-                url: '/bakedgood/{id}',
+                url: '/bakedGood/{id}',
                 data: {
-                    pageTitle: 'Bakedgood'
+                    authorities: ['ROLE_USER'],
+                    pageTitle: 'BakedGood'
                 },
                 views: {
                     'content@': {
-                        templateUrl: 'scripts/app/entities/bakedgood/bakedgood-detail.html',
-                        controller: 'BakedgoodDetailController'
+                        templateUrl: 'scripts/app/entities/bakedGood/bakedGood-detail.html',
+                        controller: 'BakedGoodDetailController'
                     }
                 },
                 resolve: {
-                    entity: ['$stateParams', 'Bakedgood', function($stateParams, Bakedgood) {
-                        return Bakedgood.get({id : $stateParams.id});
+                    entity: ['$stateParams', 'BakedGood', function($stateParams, BakedGood) {
+                        return BakedGood.get({id : $stateParams.id});
                     }]
                 }
             })
-            .state('bakedgood.new', {
-                parent: 'bakedgood',
+            .state('bakedGood.new', {
+                parent: 'bakedGood',
                 url: '/new',
                 data: {
+                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
-                        templateUrl: 'scripts/app/entities/bakedgood/bakedgood-dialog.html',
-                        controller: 'BakedgoodDialogController',
+                        templateUrl: 'scripts/app/entities/bakedGood/bakedGood-dialog.html',
+                        controller: 'BakedGoodDialogController',
                         size: 'lg',
                         resolve: {
                             entity: function () {
                                 return {
-                                    bakedgoodname: null,
-                                    bakedgoodcost: null,
+                                    bakedGood: null,
+                                    bakedGoodCost: null,
                                     id: null
                                 };
                             }
                         }
                     }).result.then(function(result) {
-                        $state.go('bakedgood', null, { reload: true });
+                        $state.go('bakedGood', null, { reload: true });
                     }, function() {
-                        $state.go('bakedgood');
+                        $state.go('bakedGood');
                     })
                 }]
             })
-            .state('bakedgood.edit', {
-                parent: 'bakedgood',
+            .state('bakedGood.edit', {
+                parent: 'bakedGood',
                 url: '/{id}/edit',
                 data: {
+                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
-                        templateUrl: 'scripts/app/entities/bakedgood/bakedgood-dialog.html',
-                        controller: 'BakedgoodDialogController',
+                        templateUrl: 'scripts/app/entities/bakedGood/bakedGood-dialog.html',
+                        controller: 'BakedGoodDialogController',
                         size: 'lg',
                         resolve: {
-                            entity: ['Bakedgood', function(Bakedgood) {
-                                return Bakedgood.get({id : $stateParams.id});
+                            entity: ['BakedGood', function(BakedGood) {
+                                return BakedGood.get({id : $stateParams.id});
                             }]
                         }
                     }).result.then(function(result) {
-                        $state.go('bakedgood', null, { reload: true });
+                        $state.go('bakedGood', null, { reload: true });
                     }, function() {
                         $state.go('^');
                     })
                 }]
             })
-            .state('bakedgood.delete', {
-                parent: 'bakedgood',
+            .state('bakedGood.delete', {
+                parent: 'bakedGood',
                 url: '/{id}/delete',
                 data: {
+                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
-                        templateUrl: 'scripts/app/entities/bakedgood/bakedgood-delete-dialog.html',
-                        controller: 'BakedgoodDeleteController',
+                        templateUrl: 'scripts/app/entities/bakedGood/bakedGood-delete-dialog.html',
+                        controller: 'BakedGoodDeleteController',
                         size: 'md',
                         resolve: {
-                            entity: ['Bakedgood', function(Bakedgood) {
-                                return Bakedgood.get({id : $stateParams.id});
+                            entity: ['BakedGood', function(BakedGood) {
+                                return BakedGood.get({id : $stateParams.id});
                             }]
                         }
                     }).result.then(function(result) {
-                        $state.go('bakedgood', null, { reload: true });
+                        $state.go('bakedGood', null, { reload: true });
                     }, function() {
                         $state.go('^');
                     })

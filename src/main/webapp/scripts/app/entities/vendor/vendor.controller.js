@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('finaltestApp')
+angular.module('expressoApp')
     .controller('VendorController', function ($scope, $state, Vendor) {
 
         $scope.vendors = [];
@@ -19,7 +19,7 @@ angular.module('finaltestApp')
 
         $scope.clear = function () {
             $scope.vendor = {
-                vendorname: null,
+                vendor: null,
                 id: null
             };
         };

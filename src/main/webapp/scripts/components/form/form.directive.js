@@ -1,7 +1,7 @@
 /* globals $ */
 'use strict';
 
-angular.module('finaltestApp')
+angular.module('expressoApp')
     .directive('showValidation', function() {
         return {
             restrict: 'A',

@@ -1,12 +1,13 @@
 'use strict';
 
-angular.module('finaltestApp')
+angular.module('expressoApp')
     .config(function ($stateProvider) {
         $stateProvider
             .state('ingredients', {
                 parent: 'entity',
                 url: '/ingredientss',
                 data: {
+                    authorities: ['ROLE_USER'],
                     pageTitle: 'Ingredientss'
                 },
                 views: {
@@ -20,8 +21,9 @@ angular.module('finaltestApp')
             })
             .state('ingredients.detail', {
                 parent: 'entity',
-                url: '/ingredientss/{id}',
+                url: '/ingredients/{id}',
                 data: {
+                    authorities: ['ROLE_USER'],
                     pageTitle: 'Ingredients'
                 },
                 views: {
@@ -40,6 +42,7 @@ angular.module('finaltestApp')
                 parent: 'ingredients',
                 url: '/new',
                 data: {
+                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
@@ -49,8 +52,8 @@ angular.module('finaltestApp')
                         resolve: {
                             entity: function () {
                                 return {
-                                    ingredientname: null,
-                                    ingredientcost: null,
+                                    ingredient: null,
+                                    ingredientCost: null,
                                     id: null
                                 };
                             }
@@ -66,6 +69,7 @@ angular.module('finaltestApp')
                 parent: 'ingredients',
                 url: '/{id}/edit',
                 data: {
+                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
@@ -88,6 +92,7 @@ angular.module('finaltestApp')
                 parent: 'ingredients',
                 url: '/{id}/delete',
                 data: {
+                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({

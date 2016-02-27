@@ -1,15 +1,15 @@
 'use strict';
 
-angular.module('finaltestApp')
-    .controller('UnitofmeasureDetailController', function ($scope, $rootScope, $stateParams, entity, Unitofmeasure, Ingredients) {
-        $scope.unitofmeasure = entity;
+angular.module('expressoApp')
+    .controller('UnitOfMeasureDetailController', function ($scope, $rootScope, $stateParams, entity, UnitOfMeasure, Ingredients) {
+        $scope.unitOfMeasure = entity;
         $scope.load = function (id) {
-            Unitofmeasure.get({id: id}, function(result) {
-                $scope.unitofmeasure = result;
+            UnitOfMeasure.get({id: id}, function(result) {
+                $scope.unitOfMeasure = result;
             });
         };
-        var unsubscribe = $rootScope.$on('finaltestApp:unitofmeasureUpdate', function(event, result) {
-            $scope.unitofmeasure = result;
+        var unsubscribe = $rootScope.$on('expressoApp:unitOfMeasureUpdate', function(event, result) {
+            $scope.unitOfMeasure = result;
         });
         $scope.$on('$destroy', unsubscribe);
 

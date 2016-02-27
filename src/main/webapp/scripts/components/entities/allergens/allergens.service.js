@@ -1,8 +1,8 @@
 'use strict';
 
-angular.module('finaltestApp')
-    .factory('Allergen', function ($resource) {
-        return $resource('api/allergens/:id', {}, {
+angular.module('expressoApp')
+    .factory('Allergens', function ($resource, DateUtils) {
+        return $resource('api/allergenss/:id', {}, {
             'query': { method: 'GET', isArray: true},
             'get': {
                 method: 'GET',

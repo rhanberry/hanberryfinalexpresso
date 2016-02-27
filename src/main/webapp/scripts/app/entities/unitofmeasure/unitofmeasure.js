@@ -1,105 +1,110 @@
 'use strict';
 
-angular.module('finaltestApp')
+angular.module('expressoApp')
     .config(function ($stateProvider) {
         $stateProvider
-            .state('unitofmeasure', {
+            .state('unitOfMeasure', {
                 parent: 'entity',
-                url: '/unitofmeasures',
+                url: '/unitOfMeasures',
                 data: {
-                    pageTitle: 'Unitofmeasures'
+                    authorities: ['ROLE_USER'],
+                    pageTitle: 'UnitOfMeasures'
                 },
                 views: {
                     'content@': {
-                        templateUrl: 'scripts/app/entities/unitofmeasure/unitofmeasures.html',
-                        controller: 'UnitofmeasureController'
+                        templateUrl: 'scripts/app/entities/unitOfMeasure/unitOfMeasures.html',
+                        controller: 'UnitOfMeasureController'
                     }
                 },
                 resolve: {
                 }
             })
-            .state('unitofmeasure.detail', {
+            .state('unitOfMeasure.detail', {
                 parent: 'entity',
-                url: '/unitofmeasure/{id}',
+                url: '/unitOfMeasure/{id}',
                 data: {
-                    pageTitle: 'Unitofmeasure'
+                    authorities: ['ROLE_USER'],
+                    pageTitle: 'UnitOfMeasure'
                 },
                 views: {
                     'content@': {
-                        templateUrl: 'scripts/app/entities/unitofmeasure/unitofmeasure-detail.html',
-                        controller: 'UnitofmeasureDetailController'
+                        templateUrl: 'scripts/app/entities/unitOfMeasure/unitOfMeasure-detail.html',
+                        controller: 'UnitOfMeasureDetailController'
                     }
                 },
                 resolve: {
-                    entity: ['$stateParams', 'Unitofmeasure', function($stateParams, Unitofmeasure) {
-                        return Unitofmeasure.get({id : $stateParams.id});
+                    entity: ['$stateParams', 'UnitOfMeasure', function($stateParams, UnitOfMeasure) {
+                        return UnitOfMeasure.get({id : $stateParams.id});
                     }]
                 }
             })
-            .state('unitofmeasure.new', {
-                parent: 'unitofmeasure',
+            .state('unitOfMeasure.new', {
+                parent: 'unitOfMeasure',
                 url: '/new',
                 data: {
+                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
-                        templateUrl: 'scripts/app/entities/unitofmeasure/unitofmeasure-dialog.html',
-                        controller: 'UnitofmeasureDialogController',
+                        templateUrl: 'scripts/app/entities/unitOfMeasure/unitOfMeasure-dialog.html',
+                        controller: 'UnitOfMeasureDialogController',
                         size: 'lg',
                         resolve: {
                             entity: function () {
                                 return {
-                                    unit: null,
+                                    unitOfMeasure: null,
                                     id: null
                                 };
                             }
                         }
                     }).result.then(function(result) {
-                        $state.go('unitofmeasure', null, { reload: true });
+                        $state.go('unitOfMeasure', null, { reload: true });
                     }, function() {
-                        $state.go('unitofmeasure');
+                        $state.go('unitOfMeasure');
                     })
                 }]
             })
-            .state('unitofmeasure.edit', {
-                parent: 'unitofmeasure',
+            .state('unitOfMeasure.edit', {
+                parent: 'unitOfMeasure',
                 url: '/{id}/edit',
                 data: {
+                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
-                        templateUrl: 'scripts/app/entities/unitofmeasure/unitofmeasure-dialog.html',
-                        controller: 'UnitofmeasureDialogController',
+                        templateUrl: 'scripts/app/entities/unitOfMeasure/unitOfMeasure-dialog.html',
+                        controller: 'UnitOfMeasureDialogController',
                         size: 'lg',
                         resolve: {
-                            entity: ['Unitofmeasure', function(Unitofmeasure) {
-                                return Unitofmeasure.get({id : $stateParams.id});
+                            entity: ['UnitOfMeasure', function(UnitOfMeasure) {
+                                return UnitOfMeasure.get({id : $stateParams.id});
                             }]
                         }
                     }).result.then(function(result) {
-                        $state.go('unitofmeasure', null, { reload: true });
+                        $state.go('unitOfMeasure', null, { reload: true });
                     }, function() {
                         $state.go('^');
                     })
                 }]
             })
-            .state('unitofmeasure.delete', {
-                parent: 'unitofmeasure',
+            .state('unitOfMeasure.delete', {
+                parent: 'unitOfMeasure',
                 url: '/{id}/delete',
                 data: {
+                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
-                        templateUrl: 'scripts/app/entities/unitofmeasure/unitofmeasure-delete-dialog.html',
-                        controller: 'UnitofmeasureDeleteController',
+                        templateUrl: 'scripts/app/entities/unitOfMeasure/unitOfMeasure-delete-dialog.html',
+                        controller: 'UnitOfMeasureDeleteController',
                         size: 'md',
                         resolve: {
-                            entity: ['Unitofmeasure', function(Unitofmeasure) {
-                                return Unitofmeasure.get({id : $stateParams.id});
+                            entity: ['UnitOfMeasure', function(UnitOfMeasure) {
+                                return UnitOfMeasure.get({id : $stateParams.id});
                             }]
                         }
                     }).result.then(function(result) {
-                        $state.go('unitofmeasure', null, { reload: true });
+                        $state.go('unitOfMeasure', null, { reload: true });
                     }, function() {
                         $state.go('^');
                     })

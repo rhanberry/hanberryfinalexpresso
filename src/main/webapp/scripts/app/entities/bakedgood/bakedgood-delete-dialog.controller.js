@@ -1,14 +1,14 @@
 'use strict';
 
-angular.module('finaltestApp')
-	.controller('BakedgoodDeleteController', function($scope, $uibModalInstance, entity, Bakedgood) {
+angular.module('expressoApp')
+	.controller('BakedGoodDeleteController', function($scope, $uibModalInstance, entity, BakedGood) {
 
-        $scope.bakedgood = entity;
+        $scope.bakedGood = entity;
         $scope.clear = function() {
             $uibModalInstance.dismiss('cancel');
         };
         $scope.confirmDelete = function (id) {
-            Bakedgood.delete({id: id},
+            BakedGood.delete({id: id},
                 function () {
                     $uibModalInstance.close(true);
                 });

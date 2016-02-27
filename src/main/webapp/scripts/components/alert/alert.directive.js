@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('finaltestApp')
+angular.module('expressoApp')
     .directive('jhAlert', function(AlertService) {
         return {
             restrict: 'E',
@@ -32,7 +32,7 @@ angular.module('finaltestApp')
 
                     $scope.alerts = [];
 
-                    var cleanHttpErrorListener = $rootScope.$on('finaltestApp.httpError', function (event, httpResponse) {
+                    var cleanHttpErrorListener = $rootScope.$on('expressoApp.httpError', function (event, httpResponse) {
                         var i;
                         event.stopPropagation();
                         switch (httpResponse.status) {
@@ -42,8 +42,8 @@ angular.module('finaltestApp')
                                 break;
 
                             case 400:
-                                var errorHeader = httpResponse.headers('X-finaltestApp-error');
-                                var entityKey = httpResponse.headers('X-finaltestApp-params');
+                                var errorHeader = httpResponse.headers('X-expressoApp-error');
+                                var entityKey = httpResponse.headers('X-expressoApp-params');
                                 if (errorHeader) {
                                     var entityName = entityKey;
                                     addErrorAlert(errorHeader, errorHeader, {entityName: entityName});
