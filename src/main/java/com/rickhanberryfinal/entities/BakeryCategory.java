@@ -1,5 +1,7 @@
 package com.rickhanberryfinal.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -29,6 +31,7 @@ public class BakeryCategory implements Serializable {
     private String bakeryCategory;
 
     @OneToMany(mappedBy = "bakeryCategory")
+    @JsonIgnore
     private Set<BakedGood> bakedGoods = new HashSet<>();
 
     public Long getId() {
