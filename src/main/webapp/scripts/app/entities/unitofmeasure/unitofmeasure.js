@@ -7,7 +7,6 @@ angular.module('expressoApp')
                 parent: 'entity',
                 url: '/unitOfMeasures',
                 data: {
-                    authorities: ['ROLE_USER'],
                     pageTitle: 'UnitOfMeasures'
                 },
                 views: {
@@ -23,7 +22,6 @@ angular.module('expressoApp')
                 parent: 'entity',
                 url: '/unitOfMeasure/{id}',
                 data: {
-                    authorities: ['ROLE_USER'],
                     pageTitle: 'UnitOfMeasure'
                 },
                 views: {
@@ -42,7 +40,6 @@ angular.module('expressoApp')
                 parent: 'unitOfMeasure',
                 url: '/new',
                 data: {
-                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
@@ -68,7 +65,6 @@ angular.module('expressoApp')
                 parent: 'unitOfMeasure',
                 url: '/{id}/edit',
                 data: {
-                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
@@ -91,7 +87,6 @@ angular.module('expressoApp')
                 parent: 'unitOfMeasure',
                 url: '/{id}/delete',
                 data: {
-                    authorities: ['ROLE_USER'],
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({

@@ -3,103 +3,103 @@
 angular.module('expressoApp')
     .config(function ($stateProvider) {
         $stateProvider
-            .state('vendor', {
+            .state('bakeryCategory', {
                 parent: 'entity',
-                url: '/vendors',
+                url: '/bakeryCategorys',
                 data: {
-                    pageTitle: 'Vendors'
+                    pageTitle: 'BakeryCategorys'
                 },
                 views: {
                     'content@': {
-                        templateUrl: 'scripts/app/entities/vendor/vendors.html',
-                        controller: 'VendorController'
+                        templateUrl: 'scripts/app/entities/bakeryCategory/bakeryCategorys.html',
+                        controller: 'BakeryCategoryController'
                     }
                 },
                 resolve: {
                 }
             })
-            .state('vendor.detail', {
+            .state('bakeryCategory.detail', {
                 parent: 'entity',
-                url: '/vendor/{id}',
+                url: '/bakeryCategory/{id}',
                 data: {
-                    pageTitle: 'Vendor'
+                    pageTitle: 'BakeryCategory'
                 },
                 views: {
                     'content@': {
-                        templateUrl: 'scripts/app/entities/vendor/vendor-detail.html',
-                        controller: 'VendorDetailController'
+                        templateUrl: 'scripts/app/entities/bakeryCategory/bakeryCategory-detail.html',
+                        controller: 'BakeryCategoryDetailController'
                     }
                 },
                 resolve: {
-                    entity: ['$stateParams', 'Vendor', function($stateParams, Vendor) {
-                        return Vendor.get({id : $stateParams.id});
+                    entity: ['$stateParams', 'BakeryCategory', function($stateParams, BakeryCategory) {
+                        return BakeryCategory.get({id : $stateParams.id});
                     }]
                 }
             })
-            .state('vendor.new', {
-                parent: 'vendor',
+            .state('bakeryCategory.new', {
+                parent: 'bakeryCategory',
                 url: '/new',
                 data: {
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
-                        templateUrl: 'scripts/app/entities/vendor/vendor-dialog.html',
-                        controller: 'VendorDialogController',
+                        templateUrl: 'scripts/app/entities/bakeryCategory/bakeryCategory-dialog.html',
+                        controller: 'BakeryCategoryDialogController',
                         size: 'lg',
                         resolve: {
                             entity: function () {
                                 return {
-                                    vendor: null,
+                                    bakeryCategory: null,
                                     id: null
                                 };
                             }
                         }
                     }).result.then(function(result) {
-                        $state.go('vendor', null, { reload: true });
+                        $state.go('bakeryCategory', null, { reload: true });
                     }, function() {
-                        $state.go('vendor');
+                        $state.go('bakeryCategory');
                     })
                 }]
             })
-            .state('vendor.edit', {
-                parent: 'vendor',
+            .state('bakeryCategory.edit', {
+                parent: 'bakeryCategory',
                 url: '/{id}/edit',
                 data: {
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
-                        templateUrl: 'scripts/app/entities/vendor/vendor-dialog.html',
-                        controller: 'VendorDialogController',
+                        templateUrl: 'scripts/app/entities/bakeryCategory/bakeryCategory-dialog.html',
+                        controller: 'BakeryCategoryDialogController',
                         size: 'lg',
                         resolve: {
-                            entity: ['Vendor', function(Vendor) {
-                                return Vendor.get({id : $stateParams.id});
+                            entity: ['BakeryCategory', function(BakeryCategory) {
+                                return BakeryCategory.get({id : $stateParams.id});
                             }]
                         }
                     }).result.then(function(result) {
-                        $state.go('vendor', null, { reload: true });
+                        $state.go('bakeryCategory', null, { reload: true });
                     }, function() {
                         $state.go('^');
                     })
                 }]
             })
-            .state('vendor.delete', {
-                parent: 'vendor',
+            .state('bakeryCategory.delete', {
+                parent: 'bakeryCategory',
                 url: '/{id}/delete',
                 data: {
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
-                        templateUrl: 'scripts/app/entities/vendor/vendor-delete-dialog.html',
-                        controller: 'VendorDeleteController',
+                        templateUrl: 'scripts/app/entities/bakeryCategory/bakeryCategory-delete-dialog.html',
+                        controller: 'BakeryCategoryDeleteController',
                         size: 'md',
                         resolve: {
-                            entity: ['Vendor', function(Vendor) {
-                                return Vendor.get({id : $stateParams.id});
+                            entity: ['BakeryCategory', function(BakeryCategory) {
+                                return BakeryCategory.get({id : $stateParams.id});
                             }]
                         }
                     }).result.then(function(result) {
-                        $state.go('vendor', null, { reload: true });
+                        $state.go('bakeryCategory', null, { reload: true });
                     }, function() {
                         $state.go('^');
                     })

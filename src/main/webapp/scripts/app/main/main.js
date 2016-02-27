@@ -7,7 +7,6 @@ angular.module('expressoApp')
                 parent: 'site',
                 url: '/',
                 data: {
-                    authorities: []
                 },
                 views: {
                     'content@': {

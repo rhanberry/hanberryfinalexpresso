@@ -3,103 +3,103 @@
 angular.module('expressoApp')
     .config(function ($stateProvider) {
         $stateProvider
-            .state('vendor', {
+            .state('allergens', {
                 parent: 'entity',
-                url: '/vendors',
+                url: '/allergenss',
                 data: {
-                    pageTitle: 'Vendors'
+                    pageTitle: 'Allergenss'
                 },
                 views: {
                     'content@': {
-                        templateUrl: 'scripts/app/entities/vendor/vendors.html',
-                        controller: 'VendorController'
+                        templateUrl: 'scripts/app/entities/allergens/allergenss.html',
+                        controller: 'AllergensController'
                     }
                 },
                 resolve: {
                 }
             })
-            .state('vendor.detail', {
+            .state('allergens.detail', {
                 parent: 'entity',
-                url: '/vendor/{id}',
+                url: '/allergens/{id}',
                 data: {
-                    pageTitle: 'Vendor'
+                    pageTitle: 'Allergens'
                 },
                 views: {
                     'content@': {
-                        templateUrl: 'scripts/app/entities/vendor/vendor-detail.html',
-                        controller: 'VendorDetailController'
+                        templateUrl: 'scripts/app/entities/allergens/allergens-detail.html',
+                        controller: 'AllergensDetailController'
                     }
                 },
                 resolve: {
-                    entity: ['$stateParams', 'Vendor', function($stateParams, Vendor) {
-                        return Vendor.get({id : $stateParams.id});
+                    entity: ['$stateParams', 'Allergens', function($stateParams, Allergens) {
+                        return Allergens.get({id : $stateParams.id});
                     }]
                 }
             })
-            .state('vendor.new', {
-                parent: 'vendor',
+            .state('allergens.new', {
+                parent: 'allergens',
                 url: '/new',
                 data: {
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
-                        templateUrl: 'scripts/app/entities/vendor/vendor-dialog.html',
-                        controller: 'VendorDialogController',
+                        templateUrl: 'scripts/app/entities/allergens/allergens-dialog.html',
+                        controller: 'AllergensDialogController',
                         size: 'lg',
                         resolve: {
                             entity: function () {
                                 return {
-                                    vendor: null,
+                                    allergen: null,
                                     id: null
                                 };
                             }
                         }
                     }).result.then(function(result) {
-                        $state.go('vendor', null, { reload: true });
+                        $state.go('allergens', null, { reload: true });
                     }, function() {
-                        $state.go('vendor');
+                        $state.go('allergens');
                     })
                 }]
             })
-            .state('vendor.edit', {
-                parent: 'vendor',
+            .state('allergens.edit', {
+                parent: 'allergens',
                 url: '/{id}/edit',
                 data: {
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
-                        templateUrl: 'scripts/app/entities/vendor/vendor-dialog.html',
-                        controller: 'VendorDialogController',
+                        templateUrl: 'scripts/app/entities/allergens/allergens-dialog.html',
+                        controller: 'AllergensDialogController',
                         size: 'lg',
                         resolve: {
-                            entity: ['Vendor', function(Vendor) {
-                                return Vendor.get({id : $stateParams.id});
+                            entity: ['Allergens', function(Allergens) {
+                                return Allergens.get({id : $stateParams.id});
                             }]
                         }
                     }).result.then(function(result) {
-                        $state.go('vendor', null, { reload: true });
+                        $state.go('allergens', null, { reload: true });
                     }, function() {
                         $state.go('^');
                     })
                 }]
             })
-            .state('vendor.delete', {
-                parent: 'vendor',
+            .state('allergens.delete', {
+                parent: 'allergens',
                 url: '/{id}/delete',
                 data: {
                 },
                 onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
-                        templateUrl: 'scripts/app/entities/vendor/vendor-delete-dialog.html',
-                        controller: 'VendorDeleteController',
+                        templateUrl: 'scripts/app/entities/allergens/allergens-delete-dialog.html',
+                        controller: 'AllergensDeleteController',
                         size: 'md',
                         resolve: {
-                            entity: ['Vendor', function(Vendor) {
-                                return Vendor.get({id : $stateParams.id});
+                            entity: ['Allergens', function(Allergens) {
+                                return Allergens.get({id : $stateParams.id});
                             }]
                         }
                     }).result.then(function(result) {
-                        $state.go('vendor', null, { reload: true });
+                        $state.go('allergens', null, { reload: true });
                     }, function() {
                         $state.go('^');
                     })
