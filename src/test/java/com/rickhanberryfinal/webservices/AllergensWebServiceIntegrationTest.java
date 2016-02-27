@@ -1,6 +1,7 @@
 package com.rickhanberryfinal.webservices;
 
 import com.rickhanberryfinal.HanberryFinalProjectApplication;
+import com.rickhanberryfinal.HanberryFinalProjectApplicationTests;
 import com.rickhanberryfinal.entities.Allergens;
 import com.rickhanberryfinal.repository.AllergensRepository;
 import com.rickhanberryfinal.services.AllergensService;

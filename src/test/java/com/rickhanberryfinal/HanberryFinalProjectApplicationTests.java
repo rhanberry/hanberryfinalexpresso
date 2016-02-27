@@ -9,7 +9,6 @@ import org.springframework.test.context.web.WebAppConfiguration;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = HanberryFinalProjectApplication.class)
-@TestPropertySource(locations = test.properties)
 @WebAppConfiguration
 public class HanberryFinalProjectApplicationTests {
 
