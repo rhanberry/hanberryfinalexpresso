@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('expressoApp', ['LocalStorageModule', 
-    'ngResource', 'ngCookies', 'ngFileUpload',
+    'ngResource',
     'ui.bootstrap', 'ui.router',  'infinite-scroll'])
 
     .run(function ($rootScope, $location, $window, $http, $state) {
