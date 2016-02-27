@@ -1,6 +1,6 @@
 package com.rickhanberryfinal.services;
 
-import com.rickhanberryfinal.entities.Drinkrecipe;
+import com.rickhanberryfinal.entities.DrinkRecipe;
 
 import java.util.List;
 
@@ -8,28 +8,28 @@ import java.util.List;
  * Created by rhanberry on 2/23/2016.
  * Service Interface for managing Drinkrecipe.
  */
-public interface DrinkrecipeService {
+public interface DrinkRecipeService {
 
     /**
-     * Save a drinkrecipe.
+     * Save a drinkRecipe.
      * @return the persisted entity
      */
-    public Drinkrecipe save(Drinkrecipe drinkrecipe);
+    public DrinkRecipe save(DrinkRecipe drinkRecipe);
 
     /**
-     *  get all the drinkrecipes.
+     *  get all the drinkRecipes.
      *  @return the list of entities
      */
-    public List<Drinkrecipe> findAll();
+    public List<DrinkRecipe> findAll();
 
     /**
-     *  get the "id" drinkrecipe.
+     *  get the "id" drinkRecipe.
      *  @return the entity
      */
-    public Drinkrecipe findOne(Long id);
+    public DrinkRecipe findOne(Long id);
 
     /**
-     *  delete the "id" drinkrecipe.
+     *  delete the "id" drinkRecipe.
      */
     public void delete(Long id);
 }

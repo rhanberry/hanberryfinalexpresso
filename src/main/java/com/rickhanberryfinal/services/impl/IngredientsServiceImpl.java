@@ -3,13 +3,10 @@ package com.rickhanberryfinal.services.impl;
 import com.rickhanberryfinal.entities.Ingredients;
 import com.rickhanberryfinal.repository.IngredientsRepository;
 import com.rickhanberryfinal.services.IngredientsService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.inject.Inject;
 import java.util.List;
 
 /**

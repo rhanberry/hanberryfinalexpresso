@@ -13,7 +13,7 @@ import java.util.Set;
 /**
  * Created by rhanberry on 2/22/2016.
  * @author rhanberry
- * This entity represents te baked good Vendors.
+ * This entity represents the baked good Vendors.
  */
 @Entity
 @Table(name = "vendor")
