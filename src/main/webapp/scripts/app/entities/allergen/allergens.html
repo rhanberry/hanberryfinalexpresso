@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-4 no-padding-left">
-                <button class="btn btn-primary" ui-sref="allergen.new" >
+                <button class="btn btn-primary" ui-sref="allergens.new" >
                     <span class="glyphicon glyphicon-plus"></span>
                     <span 
                        >Create new Allergen
@@ -24,25 +24,25 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="allergen in allergens track by allergen.id">
-                    <td><a ui-sref="allergen.detail({id:allergen.id})">{{allergen.id}}</a></td>
-                    <td>{{allergen.allergenname}}</td>
+                <tr ng-repeat="allergens in allergens track by allergens.id">
+                    <td><a ui-sref="allergens.detail({id:allergens.id})">{{allergens.id}}</a></td>
+                    <td>{{allergens.allergenname}}</td>
                     <td class="text-right">
                         <div class="btn-group flex-btn-group-container">
                             <button type="submit"
-                                    ui-sref="allergen.detail({id:allergen.id})"
+                                    ui-sref="allergens.detail({id:allergens.id})"
                                     class="btn btn-info btn-sm"> 
                                 <span class="glyphicon glyphicon-eye-open"></span>
                                 <span class="hidden-xs hidden-sm"></span>
                             </button>
                             <button type="submit"
-                                    ui-sref="allergen.edit({id:allergen.id})"
+                                    ui-sref="allergens.edit({id:allergens.id})"
                                     class="btn btn-primary btn-sm">
                                 <span class="glyphicon glyphicon-pencil"></span>
                                 <span class="hidden-xs hidden-sm"></span>
                             </button>
                             <button type="submit"
-                                    ui-sref="allergen.delete({id:allergen.id})"
+                                    ui-sref="allergens.delete({id:allergens.id})"
                                     class="btn btn-danger btn-sm">                                    
                                 <span class="glyphicon glyphicon-remove-circle"></span>
                                 <span class="hidden-xs hidden-sm"></span>

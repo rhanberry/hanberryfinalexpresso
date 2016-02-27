@@ -9,26 +9,27 @@ import java.util.Objects;
 import java.util.Set;
 
 /**
+ *
  * Created by rhanberry on 2/22/2016.
  * @author rhanberry
- * This entity class defines the components and relations of the allergens in baked goods
- *
+ * This entity represents the baked good category.
  */
+
 @Entity
-@Table(name = "allergen")
-public class Allergen implements Serializable {
+@Table(name = "bakery_category")
+public class BakeryCategory implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @NotNull
-    @Size(max = 255)
-    @Column(name = "allergenname", length = 255, nullable = false)
-    private String allergenname;
+    @Size(max = 50)
+    @Column(name = "bakery_category", length = 50, nullable = false)
+    private String bakeryCategory;
 
-    @ManyToMany(mappedBy = "allergen")
-    private Set<Bakedgood> allergen = new HashSet<>();
+    @OneToMany(mappedBy = "bakeryCategory")
+    private Set<BakedGood> bakedGoods = new HashSet<>();
 
     public Long getId() {
         return id;
@@ -38,20 +39,20 @@ public class Allergen implements Serializable {
         this.id = id;
     }
 
-    public String getAllergenname() {
-        return allergenname;
+    public String getBakeryCategory() {
+        return bakeryCategory;
     }
 
-    public void setAllergenname(String allergenname) {
-        this.allergenname = allergenname;
+    public void setBakeryCategory(String bakeryCategory) {
+        this.bakeryCategory = bakeryCategory;
     }
 
-    public Set<Bakedgood> getAllergen() {
-        return allergen;
+    public Set<BakedGood> getBakedGoods() {
+        return bakedGoods;
     }
 
-    public void setAllergen(Set<Bakedgood> bakedgoods) {
-        this.allergen = bakedgoods;
+    public void setBakedGoods(Set<BakedGood> bakedGoods) {
+        this.bakedGoods = bakedGoods;
     }
 
     @Override
@@ -62,11 +63,11 @@ public class Allergen implements Serializable {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        Allergen allergen = (Allergen) o;
-        if(allergen.id == null || id == null) {
+        BakeryCategory bakeryCategory = (BakeryCategory) o;
+        if(bakeryCategory.id == null || id == null) {
             return false;
         }
-        return Objects.equals(id, allergen.id);
+        return Objects.equals(id, bakeryCategory.id);
     }
 
     @Override
@@ -76,9 +77,9 @@ public class Allergen implements Serializable {
 
     @Override
     public String toString() {
-        return "Allergen{" +
+        return "BakeryCategory{" +
                 "id=" + id +
-                ", allergenname='" + allergenname + "'" +
+                ", bakeryCategory='" + bakeryCategory + "'" +
                 '}';
     }
 }

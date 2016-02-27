@@ -18,7 +18,7 @@ import java.util.List;
  */
 @Service
 @Transactional
-public class IngredientsSvcImpl implements IngredientsService {
+public class IngredientsServiceImpl implements IngredientsService{
 
 
     @Autowired
@@ -60,4 +60,5 @@ public class IngredientsSvcImpl implements IngredientsService {
         ingredientsRepository.delete(id);
     }
 }
+
 

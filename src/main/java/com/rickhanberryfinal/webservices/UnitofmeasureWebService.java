@@ -1,7 +1,7 @@
 package com.rickhanberryfinal.webservices;
 
-import com.rickhanberryfinal.entities.Unitofmeasure;
-import com.rickhanberryfinal.services.UnitofmeasureService;
+import com.rickhanberryfinal.entities.UnitOfMeasure;
+import com.rickhanberryfinal.services.UnitOfMeasureService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -17,65 +17,66 @@ import java.util.Optional;
 /**
  * Created by rhanberry on 2/24/2016.
  *
- * REST controller for managing Unitofmeasure.
+ * REST controller for managing UnitOfMeasure.
  */
 
 @RestController
 @RequestMapping("/api")
-public class UnitofmeasureWebService {
+public class UnitOfMeasureWebService {
+
 
     @Autowired
-    private UnitofmeasureService unitofmeasureService;
+    private UnitOfMeasureService unitOfMeasureService;
 
     /**
-     * POST  /unitofmeasures -> Create a new unitofmeasure.
+     * POST  /unitOfMeasures -> Create a new unitOfMeasure.
      */
-    @RequestMapping(value = "/unitofmeasures",
+    @RequestMapping(value = "/unitOfMeasures",
             method = RequestMethod.POST,
             produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Unitofmeasure> createUnitofmeasure(@Valid @RequestBody Unitofmeasure unitofmeasure) throws URISyntaxException {
-        if (unitofmeasure.getId() != null) {
+    public ResponseEntity<UnitOfMeasure> createUnitOfMeasure(@Valid @RequestBody UnitOfMeasure unitOfMeasure) throws URISyntaxException {
+        if (unitOfMeasure.getId() != null) {
             return ResponseEntity.badRequest().body(null);
         }
-        Unitofmeasure result = unitofmeasureService.save(unitofmeasure);
-        return ResponseEntity.created(new URI("/api/unitofmeasures/" + result.getId()))
+        UnitOfMeasure result = unitOfMeasureService.save(unitOfMeasure);
+        return ResponseEntity.created(new URI("/api/unitOfMeasures/" + result.getId()))
                 .body(result);
     }
 
     /**
-     * PUT  /unitofmeasures -> Updates an existing unitofmeasure.
+     * PUT  /unitOfMeasures -> Updates an existing unitOfMeasure.
      */
-    @RequestMapping(value = "/unitofmeasures",
+    @RequestMapping(value = "/unitOfMeasures",
             method = RequestMethod.PUT,
             produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Unitofmeasure> updateUnitofmeasure(@Valid @RequestBody Unitofmeasure unitofmeasure) throws URISyntaxException {
-        if (unitofmeasure.getId() == null) {
-            return createUnitofmeasure(unitofmeasure);
+    public ResponseEntity<UnitOfMeasure> updateUnitOfMeasure(@Valid @RequestBody UnitOfMeasure unitOfMeasure) throws URISyntaxException {
+        if (unitOfMeasure.getId() == null) {
+            return createUnitOfMeasure(unitOfMeasure);
         }
-        Unitofmeasure result = unitofmeasureService.save(unitofmeasure);
+        UnitOfMeasure result = unitOfMeasureService.save(unitOfMeasure);
         return ResponseEntity.ok()
                 .body(result);
     }
 
     /**
-     * GET  /unitofmeasures -> get all the unitofmeasures.
+     * GET  /unitOfMeasures -> get all the unitOfMeasures.
      */
-    @RequestMapping(value = "/unitofmeasures",
+    @RequestMapping(value = "/unitOfMeasures",
             method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<Unitofmeasure> getAllUnitofmeasures() {
-        return unitofmeasureService.findAll();
+    public List<UnitOfMeasure> getAllUnitOfMeasures() {
+        return unitOfMeasureService.findAll();
     }
 
     /**
-     * GET  /unitofmeasures/:id -> get the "id" unitofmeasure.
+     * GET  /unitOfMeasures/:id -> get the "id" unitOfMeasure.
      */
-    @RequestMapping(value = "/unitofmeasures/{id}",
+    @RequestMapping(value = "/unitOfMeasures/{id}",
             method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Unitofmeasure> getUnitofmeasure(@PathVariable Long id) {
-        Unitofmeasure unitofmeasure = unitofmeasureService.findOne(id);
-        return Optional.ofNullable(unitofmeasure)
+    public ResponseEntity<UnitOfMeasure> getUnitOfMeasure(@PathVariable Long id) {
+        UnitOfMeasure unitOfMeasure = unitOfMeasureService.findOne(id);
+        return Optional.ofNullable(unitOfMeasure)
                 .map(result -> new ResponseEntity<>(
                         result,
                         HttpStatus.OK))
@@ -83,14 +84,13 @@ public class UnitofmeasureWebService {
     }
 
     /**
-     * DELETE  /unitofmeasures/:id -> delete the "id" unitofmeasure.
+     * DELETE  /unitOfMeasures/:id -> delete the "id" unitOfMeasure.
      */
-    @RequestMapping(value = "/unitofmeasures/{id}",
+    @RequestMapping(value = "/unitOfMeasures/{id}",
             method = RequestMethod.DELETE,
             produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Void> deleteUnitofmeasure(@PathVariable Long id) {
-        unitofmeasureService.delete(id);
+    public ResponseEntity<Void> deleteUnitOfMeasure(@PathVariable Long id) {
+        unitOfMeasureService.delete(id);
         return ResponseEntity.ok().build();
     }
-
 }

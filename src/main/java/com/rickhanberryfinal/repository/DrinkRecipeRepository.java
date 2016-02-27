@@ -1,5 +1,6 @@
 package com.rickhanberryfinal.repository;
 
+import com.rickhanberryfinal.entities.DrinkRecipe;
 import com.rickhanberryfinal.entities.Drinkrecipe;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -10,15 +11,16 @@ import java.util.List;
 
 /**
  * Created by rhanberry on 2/23/2016.
- * Jpa Repository for Category Entity
+ * Jpa Repository for BakeryCategory Entity
  */
 @Repository
-public interface DrinkrecipeRepository extends JpaRepository<Drinkrecipe,Long> {
+public interface DrinkRecipeRepository extends JpaRepository<DrinkRecipe,Long> {
 
-    @Query("select distinct drinkrecipe from Drinkrecipe drinkrecipe left join fetch drinkrecipe.ingnames")
-    List<Drinkrecipe> findAllWithEagerRelationships();
+    @Query("select distinct drinkRecipe from DrinkRecipe drinkRecipe left join fetch drinkRecipe.ingredientss")
+    List<DrinkRecipe> findAllWithEagerRelationships();
 
-    @Query("select drinkrecipe from Drinkrecipe drinkrecipe left join fetch drinkrecipe.ingnames where drinkrecipe.id =:id")
-    Drinkrecipe findOneWithEagerRelationships(@Param("id") Long id);
+    @Query("select drinkRecipe from DrinkRecipe drinkRecipe left join fetch drinkRecipe.ingredientss where drinkRecipe.id =:id")
+    DrinkRecipe findOneWithEagerRelationships(@Param("id") Long id);
 
 }
+

@@ -1,7 +1,8 @@
 package com.rickhanberryfinal.webservices;
 
-import com.rickhanberryfinal.entities.Bakedgood;
-import com.rickhanberryfinal.services.BakedgoodService;
+import com.rickhanberryfinal.entities.BakedGood;
+import com.rickhanberryfinal.services.BakedGoodService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -22,61 +23,61 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api")
-public class BakedgoodWebService {
+public class BakedGoodWebService {
 
 
-    @Inject
-    private BakedgoodService bakedgoodService;
+    @Autowired
+    private BakedGoodService bakedGoodService;
 
     /**
-     * POST  /bakedgoods -> Create a new bakedgood.
+     * POST  /bakedGoods -> Create a new bakedGood.
      */
-    @RequestMapping(value = "/bakedgoods",
+    @RequestMapping(value = "/bakedGoods",
             method = RequestMethod.POST,
             produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Bakedgood> createBakedgood(@Valid @RequestBody Bakedgood bakedgood) throws URISyntaxException {
-        if (bakedgood.getId() != null) {
+    public ResponseEntity<BakedGood> createBakedGood(@Valid @RequestBody BakedGood bakedGood) throws URISyntaxException {
+        if (bakedGood.getId() != null) {
             return ResponseEntity.badRequest().body(null);
         }
-        Bakedgood result = bakedgoodService.save(bakedgood);
-        return ResponseEntity.created(new URI("/api/bakedgoods/" + result.getId()))
+        BakedGood result = bakedGoodService.save(bakedGood);
+        return ResponseEntity.created(new URI("/api/bakedGoods/" + result.getId()))
                 .body(result);
     }
 
     /**
-     * PUT  /bakedgoods -> Updates an existing bakedgood.
+     * PUT  /bakedGoods -> Updates an existing bakedGood.
      */
-    @RequestMapping(value = "/bakedgoods",
+    @RequestMapping(value = "/bakedGoods",
             method = RequestMethod.PUT,
             produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Bakedgood> updateBakedgood(@Valid @RequestBody Bakedgood bakedgood) throws URISyntaxException {
-        if (bakedgood.getId() == null) {
-            return createBakedgood(bakedgood);
+    public ResponseEntity<BakedGood> updateBakedGood(@Valid @RequestBody BakedGood bakedGood) throws URISyntaxException {
+        if (bakedGood.getId() == null) {
+            return createBakedGood(bakedGood);
         }
-        Bakedgood result = bakedgoodService.save(bakedgood);
+        BakedGood result = bakedGoodService.save(bakedGood);
         return ResponseEntity.ok()
                 .body(result);
     }
 
     /**
-     * GET  /bakedgoods -> get all the bakedgoods.
+     * GET  /bakedGoods -> get all the bakedGoods.
      */
-    @RequestMapping(value = "/bakedgoods",
+    @RequestMapping(value = "/bakedGoods",
             method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<Bakedgood> getAllBakedgoods() {
-        return bakedgoodService.findAll();
+    public List<BakedGood> getAllBakedGoods() {
+        return bakedGoodService.findAll();
     }
 
     /**
-     * GET  /bakedgoods/:id -> get the "id" bakedgood.
+     * GET  /bakedGoods/:id -> get the "id" bakedGood.
      */
-    @RequestMapping(value = "/bakedgoods/{id}",
+    @RequestMapping(value = "/bakedGoods/{id}",
             method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Bakedgood> getBakedgood(@PathVariable Long id) {
-        Bakedgood bakedgood = bakedgoodService.findOne(id);
-        return Optional.ofNullable(bakedgood)
+    public ResponseEntity<BakedGood> getBakedGood(@PathVariable Long id) {
+        BakedGood bakedGood = bakedGoodService.findOne(id);
+        return Optional.ofNullable(bakedGood)
                 .map(result -> new ResponseEntity<>(
                         result,
                         HttpStatus.OK))
@@ -84,13 +85,14 @@ public class BakedgoodWebService {
     }
 
     /**
-     * DELETE  /bakedgoods/:id -> delete the "id" bakedgood.
+     * DELETE  /bakedGoods/:id -> delete the "id" bakedGood.
      */
-    @RequestMapping(value = "/bakedgoods/{id}",
+    @RequestMapping(value = "/bakedGoods/{id}",
             method = RequestMethod.DELETE,
             produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Void> deleteBakedgood(@PathVariable Long id) {
-        bakedgoodService.delete(id);
+    public ResponseEntity<Void> deleteBakedGood(@PathVariable Long id) {
+        bakedGoodService.delete(id);
         return ResponseEntity.ok().build();
     }
 }
+

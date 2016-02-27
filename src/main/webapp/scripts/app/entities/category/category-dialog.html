@@ -11,12 +11,12 @@
         <div class="form-group">
             <label for="id">ID</label>
             <input type="text" class="form-control" id="id" name="id"
-                    ng-model="category.id" readonly />
+                    ng-model="bakeryCategory.id" readonly />
         </div>
         <div class="form-group">
             <label class="control-label" for="field_bakerycategory">Bakerycategory</label>
             <input type="text" class="form-control" name="bakerycategory" id="field_bakerycategory"
-                    ng-model="category.bakerycategory"
+                    ng-model="bakeryCategory.bakerycategory"
                     required ng-maxlength="255" />
             <div ng-show="editForm.bakerycategory.$invalid">
                 <p class="help-block"

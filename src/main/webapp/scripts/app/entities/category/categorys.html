@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-4 no-padding-left">
-                <button class="btn btn-primary" ui-sref="category.new" >
+                <button class="btn btn-primary" ui-sref="bakeryCategory.new" >
                     <span class="glyphicon glyphicon-plus"></span>
                     <span 
                        >Create new Category
@@ -24,25 +24,25 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="category in categorys track by category.id">
-                    <td><a ui-sref="category.detail({id:category.id})">{{category.id}}</a></td>
-                    <td>{{category.bakerycategory}}</td>
+                <tr ng-repeat="bakeryCategory in categorys track by bakeryCategory.id">
+                    <td><a ui-sref="bakeryCategory.detail({id:bakeryCategory.id})">{{bakeryCategory.id}}</a></td>
+                    <td>{{bakeryCategory.bakerycategory}}</td>
                     <td class="text-right">
                         <div class="btn-group flex-btn-group-container">
                             <button type="submit"
-                                    ui-sref="category.detail({id:category.id})"
+                                    ui-sref="bakeryCategory.detail({id:bakeryCategory.id})"
                                     class="btn btn-info btn-sm"> 
                                 <span class="glyphicon glyphicon-eye-open"></span>
                                 <span class="hidden-xs hidden-sm"></span>
                             </button>
                             <button type="submit"
-                                    ui-sref="category.edit({id:category.id})"
+                                    ui-sref="bakeryCategory.edit({id:bakeryCategory.id})"
                                     class="btn btn-primary btn-sm">
                                 <span class="glyphicon glyphicon-pencil"></span>
                                 <span class="hidden-xs hidden-sm"></span>
                             </button>
                             <button type="submit"
-                                    ui-sref="category.delete({id:category.id})"
+                                    ui-sref="bakeryCategory.delete({id:bakeryCategory.id})"
                                     class="btn btn-danger btn-sm">                                    
                                 <span class="glyphicon glyphicon-remove-circle"></span>
                                 <span class="hidden-xs hidden-sm"></span>

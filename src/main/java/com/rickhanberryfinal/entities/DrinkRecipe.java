@@ -16,23 +16,23 @@ import java.util.Set;
  *
  */
 @Entity
-@Table(name = "drinkrecipe")
-public class Drinkrecipe implements Serializable {
+@Table(name = "drink_recipe")
+public class DrinkRecipe implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @NotNull
-    @Size(max = 255)
-    @Column(name = "drinkname", length = 255, nullable = false)
-    private String drinkname;
+    @Size(max = 50)
+    @Column(name = "drink_recipe", length = 50, nullable = false)
+    private String drinkRecipe;
 
     @ManyToMany
-    @JoinTable(name = "drinkrecipe_ingname",
-            joinColumns = @JoinColumn(name="drinkrecipes_id", referencedColumnName="ID"),
-            inverseJoinColumns = @JoinColumn(name="ingnames_id", referencedColumnName="ID"))
-    private Set<Ingredients> ingnames = new HashSet<>();
+    @JoinTable(name = "drink_recipe_ingredients",
+            joinColumns = @JoinColumn(name="drink_recipes_id", referencedColumnName="ID"),
+            inverseJoinColumns = @JoinColumn(name="ingredientss_id", referencedColumnName="ID"))
+    private Set<Ingredients> ingredientss = new HashSet<>();
 
     public Long getId() {
         return id;
@@ -42,20 +42,20 @@ public class Drinkrecipe implements Serializable {
         this.id = id;
     }
 
-    public String getDrinkname() {
-        return drinkname;
+    public String getDrinkRecipe() {
+        return drinkRecipe;
     }
 
-    public void setDrinkname(String drinkname) {
-        this.drinkname = drinkname;
+    public void setDrinkRecipe(String drinkRecipe) {
+        this.drinkRecipe = drinkRecipe;
     }
 
-    public Set<Ingredients> getIngnames() {
-        return ingnames;
+    public Set<Ingredients> getIngredientss() {
+        return ingredientss;
     }
 
-    public void setIngnames(Set<Ingredients> ingredientss) {
-        this.ingnames = ingredientss;
+    public void setIngredientss(Set<Ingredients> ingredientss) {
+        this.ingredientss = ingredientss;
     }
 
     @Override
@@ -66,11 +66,11 @@ public class Drinkrecipe implements Serializable {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        Drinkrecipe drinkrecipe = (Drinkrecipe) o;
-        if(drinkrecipe.id == null || id == null) {
+        DrinkRecipe drinkRecipe = (DrinkRecipe) o;
+        if(drinkRecipe.id == null || id == null) {
             return false;
         }
-        return Objects.equals(id, drinkrecipe.id);
+        return Objects.equals(id, drinkRecipe.id);
     }
 
     @Override
@@ -80,9 +80,9 @@ public class Drinkrecipe implements Serializable {
 
     @Override
     public String toString() {
-        return "Drinkrecipe{" +
+        return "DrinkRecipe{" +
                 "id=" + id +
-                ", drinkname='" + drinkname + "'" +
+                ", drinkRecipe='" + drinkRecipe + "'" +
                 '}';
     }
 }

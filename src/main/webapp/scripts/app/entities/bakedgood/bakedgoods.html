@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-4 no-padding-left">
-                <button class="btn btn-primary" ui-sref="bakedgood.new" >
+                <button class="btn btn-primary" ui-sref="bakedGood.new" >
                     <span class="glyphicon glyphicon-plus"></span>
                     <span 
                        >Create new Bakedgood
@@ -28,37 +28,37 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="bakedgood in bakedgoods track by bakedgood.id">
-                    <td><a ui-sref="bakedgood.detail({id:bakedgood.id})">{{bakedgood.id}}</a></td>
-                    <td>{{bakedgood.bakedgoodname}}</td>
-                    <td>{{bakedgood.bakedgoodcost}}</td>
+                <tr ng-repeat="bakedGood in bakedGoods track by bakedGood.id">
+                    <td><a ui-sref="bakedGood.detail({id:bakedGood.id})">{{bakedGood.id}}</a></td>
+                    <td>{{bakedGood.bakedgoodname}}</td>
+                    <td>{{bakedGood.bakedgoodcost}}</td>
                     <td>
-                        <a ui-sref="category.detail({id:bakedgood.bakcat.id})">{{bakedgood.bakcat.bakerycategory}}</a>
+                        <a ui-sref="bakeryCategory.detail({id:bakedGood.bakcat.id})">{{bakedGood.bakcat.bakerycategory}}</a>
                     </td>
                     <td>
-                        <a ui-sref="vendor.detail({id:bakedgood.bakvendor.id})">{{bakedgood.bakvendor.vendorname}}</a>
+                        <a ui-sref="vendor.detail({id:bakedGood.bakvendor.id})">{{bakedGood.bakvendor.vendorname}}</a>
                     </td>
                     <td>
-                        <span ng-repeat="bakallergen in bakedgood.bakallergens">
-                            <a class="form-control-static" ui-sref="allergen.detail({id: {{bakallergen.id}}})">{{bakallergen.allergenname}}</a>{{$last ? '' : ', '}}
+                        <span ng-repeat="bakallergen in bakedGood.bakallergens">
+                            <a class="form-control-static" ui-sref="allergens.detail({id: {{bakallergen.id}}})">{{bakallergen.allergenname}}</a>{{$last ? '' : ', '}}
                         <span>
                     </td>
                     <td class="text-right">
                         <div class="btn-group flex-btn-group-container">
                             <button type="submit"
-                                    ui-sref="bakedgood.detail({id:bakedgood.id})"
+                                    ui-sref="bakedGood.detail({id:bakedGood.id})"
                                     class="btn btn-info btn-sm"> 
                                 <span class="glyphicon glyphicon-eye-open"></span>
                                 <span class="hidden-xs hidden-sm"></span>
                             </button>
                             <button type="submit"
-                                    ui-sref="bakedgood.edit({id:bakedgood.id})"
+                                    ui-sref="bakedGood.edit({id:bakedGood.id})"
                                     class="btn btn-primary btn-sm">
                                 <span class="glyphicon glyphicon-pencil"></span>
                                 <span class="hidden-xs hidden-sm"></span>
                             </button>
                             <button type="submit"
-                                    ui-sref="bakedgood.delete({id:bakedgood.id})"
+                                    ui-sref="bakedGood.delete({id:bakedGood.id})"
                                     class="btn btn-danger btn-sm">                                    
                                 <span class="glyphicon glyphicon-remove-circle"></span>
                                 <span class="hidden-xs hidden-sm"></span>

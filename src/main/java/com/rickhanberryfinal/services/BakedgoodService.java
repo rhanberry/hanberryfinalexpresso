@@ -1,35 +1,35 @@
 package com.rickhanberryfinal.services;
 
-import com.rickhanberryfinal.entities.Bakedgood;
+import com.rickhanberryfinal.entities.BakedGood;
 
 import java.util.List;
 
 /**
  * Created by rhanberry on 2/23/2016.
- * Service Interface for managing Bakedgood.
+ * Service Interface for managing BakedGood.
  */
-public interface BakedgoodService {
+public interface BakedGoodService {
 
     /**
-     * Save a bakedgood.
+     * Save a bakedGood.
      * @return the persisted entity
      */
-    public Bakedgood save(Bakedgood bakedgood);
+    public BakedGood save(BakedGood bakedGood);
 
     /**
-     *  get all the bakedgoods.
+     *  get all the bakedGoods.
      *  @return the list of entities
      */
-    public List<Bakedgood> findAll();
+    public List<BakedGood> findAll();
 
     /**
-     *  get the "id" bakedgood.
+     *  get the "id" bakedGood.
      *  @return the entity
      */
-    public Bakedgood findOne(Long id);
+    public BakedGood findOne(Long id);
 
     /**
-     *  delete the "id" bakedgood.
+     *  delete the "id" bakedGood.
      */
     public void delete(Long id);
 }

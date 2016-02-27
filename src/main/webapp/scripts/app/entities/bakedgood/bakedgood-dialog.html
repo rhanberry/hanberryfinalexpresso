@@ -11,12 +11,12 @@
         <div class="form-group">
             <label for="id">ID</label>
             <input type="text" class="form-control" id="id" name="id"
-                    ng-model="bakedgood.id" readonly />
+                    ng-model="bakedGood.id" readonly />
         </div>
         <div class="form-group">
             <label class="control-label" for="field_bakedgoodname">Bakedgoodname</label>
             <input type="text" class="form-control" name="bakedgoodname" id="field_bakedgoodname"
-                    ng-model="bakedgood.bakedgoodname"
+                    ng-model="bakedGood.bakedgoodname"
                     required ng-maxlength="255" />
             <div ng-show="editForm.bakedgoodname.$invalid">
                 <p class="help-block"
@@ -32,7 +32,7 @@
         <div class="form-group">
             <label class="control-label" for="field_bakedgoodcost">Bakedgoodcost</label>
             <input type="number" class="form-control" name="bakedgoodcost" id="field_bakedgoodcost"
-                    ng-model="bakedgood.bakedgoodcost"
+                    ng-model="bakedGood.bakedgoodcost"
                     required />
             <div ng-show="editForm.bakedgoodcost.$invalid">
                 <p class="help-block"
@@ -48,19 +48,19 @@
 
         <div class="form-group">
             <label for="field_bakcat">bakcat</label>
-            <select class="form-control" id="field_bakcat" name="bakcat" ng-model="bakedgood.bakcat" ng-options="category as category.bakerycategory for category in categorys track by category.id">
+            <select class="form-control" id="field_bakcat" name="bakcat" ng-model="bakedGood.bakcat" ng-options="bakeryCategory as bakeryCategory.bakerycategory for bakeryCategory in categorys track by bakeryCategory.id">
                 <option value=""></option>
             </select>
         </div>
         <div class="form-group">
             <label for="field_bakvendor">bakvendor</label>
-            <select class="form-control" id="field_bakvendor" name="bakvendor" ng-model="bakedgood.bakvendor" ng-options="vendor as vendor.vendorname for vendor in vendors track by vendor.id">
+            <select class="form-control" id="field_bakvendor" name="bakvendor" ng-model="bakedGood.bakvendor" ng-options="vendor as vendor.vendorname for vendor in vendors track by vendor.id">
                 <option value=""></option>
             </select>
         </div>
         <div class="form-group">
             <label for="field_bakallergen">bakallergen</label>
-            <select class="form-control" id="field_bakallergen" multiple name="bakallergen" ng-model="bakedgood.bakallergens" ng-options="allergen as allergen.allergenname for allergen in allergens track by allergen.id"></select>
+            <select class="form-control" id="field_bakallergen" multiple name="bakallergen" ng-model="bakedGood.bakallergens" ng-options="allergens as allergens.allergenname for allergens in allergens track by allergens.id"></select>
         </div>
     </div>
     <div class="modal-footer">

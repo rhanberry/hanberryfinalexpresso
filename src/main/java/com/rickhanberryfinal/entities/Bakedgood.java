@@ -5,7 +5,9 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 /**
  * Created by rhanberry on 2/22/2016.
@@ -13,33 +15,35 @@ import java.util.Objects;
  * This entity represents the baked good and its relations to its other components.
  */
 @Entity
-@Table(name = "bakedgood")
-public class Bakedgood implements Serializable {
+@Table(name = "baked_good")
+public class BakedGood implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @NotNull
-    @Size(max = 255)
-    @Column(name = "bakedgoodname", length = 255, nullable = false)
-    private String bakedgoodname;
-    
+    @Size(max = 50)
+    @Column(name = "baked_good", length = 50, nullable = false)
+    private String bakedGood;
+
     @NotNull
-    @Column(name = "bakeryprice", nullable = false)
-    private Double bakeryprice;
-    
+    @Column(name = "baked_good_cost", nullable = false)
+    private Double bakedGoodCost;
+
+    @ManyToOne
+    @JoinColumn(name = "bakery_category_id")
+    private BakeryCategory bakeryCategory;
+
     @ManyToOne
     @JoinColumn(name = "vendor_id")
     private Vendor vendor;
 
-    @ManyToOne
-    @JoinColumn(name = "allergen_id")
-    private Allergen allergen;
-
-    @ManyToOne
-    @JoinColumn(name = "categorys_id")
-    private Category categorys;
+    @ManyToMany
+    @JoinTable(name = "baked_good_allergens",
+            joinColumns = @JoinColumn(name="baked_goods_id", referencedColumnName="ID"),
+            inverseJoinColumns = @JoinColumn(name="allergenss_id", referencedColumnName="ID"))
+    private Set<Allergens> allergenss = new HashSet<>();
 
     public Long getId() {
         return id;
@@ -49,20 +53,28 @@ public class Bakedgood implements Serializable {
         this.id = id;
     }
 
-    public String getBakedgoodname() {
-        return bakedgoodname;
-    }
-    
-    public void setBakedgoodname(String bakedgoodname) {
-        this.bakedgoodname = bakedgoodname;
+    public String getBakedGood() {
+        return bakedGood;
     }
 
-    public Double getBakeryprice() {
-        return bakeryprice;
+    public void setBakedGood(String bakedGood) {
+        this.bakedGood = bakedGood;
     }
-    
-    public void setBakeryprice(Double bakeryprice) {
-        this.bakeryprice = bakeryprice;
+
+    public Double getBakedGoodCost() {
+        return bakedGoodCost;
+    }
+
+    public void setBakedGoodCost(Double bakedGoodCost) {
+        this.bakedGoodCost = bakedGoodCost;
+    }
+
+    public BakeryCategory getBakeryCategory() {
+        return bakeryCategory;
+    }
+
+    public void setBakeryCategory(BakeryCategory bakeryCategory) {
+        this.bakeryCategory = bakeryCategory;
     }
 
     public Vendor getVendor() {
@@ -73,20 +85,12 @@ public class Bakedgood implements Serializable {
         this.vendor = vendor;
     }
 
-    public Allergen getAllergen() {
-        return allergen;
+    public Set<Allergens> getAllergenss() {
+        return allergenss;
     }
 
-    public void setAllergen(Allergen allergen) {
-        this.allergen = allergen;
-    }
-
-    public Category getCategorys() {
-        return categorys;
-    }
-
-    public void setCategorys(Category category) {
-        this.categorys = category;
+    public void setAllergenss(Set<Allergens> allergenss) {
+        this.allergenss = allergenss;
     }
 
     @Override
@@ -97,11 +101,11 @@ public class Bakedgood implements Serializable {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        Bakedgood bakedgood = (Bakedgood) o;
-        if(bakedgood.id == null || id == null) {
+        BakedGood bakedGood = (BakedGood) o;
+        if(bakedGood.id == null || id == null) {
             return false;
         }
-        return Objects.equals(id, bakedgood.id);
+        return Objects.equals(id, bakedGood.id);
     }
 
     @Override
@@ -111,10 +115,10 @@ public class Bakedgood implements Serializable {
 
     @Override
     public String toString() {
-        return "Bakedgood{" +
-            "id=" + id +
-            ", bakedgoodname='" + bakedgoodname + "'" +
-            ", bakeryprice='" + bakeryprice + "'" +
-            '}';
+        return "BakedGood{" +
+                "id=" + id +
+                ", bakedGood='" + bakedGood + "'" +
+                ", bakedGoodCost='" + bakedGoodCost + "'" +
+                '}';
     }
 }

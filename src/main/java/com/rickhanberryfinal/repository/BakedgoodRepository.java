@@ -1,6 +1,6 @@
 package com.rickhanberryfinal.repository;
 
-import com.rickhanberryfinal.entities.Bakedgood;
+import com.rickhanberryfinal.entities.BakedGood;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -13,12 +13,12 @@ import java.util.List;
  * JPA Repository for bakedgood entity
  */
 @Repository
-public interface BakedgoodRepository extends JpaRepository<Bakedgood,Long> {
+public interface BakedGoodRepository extends JpaRepository<BakedGood,Long> {
 
-    @Query("select distinct bakedgood from Bakedgood bakedgood left join fetch bakedgood.allergen")
-    List<Bakedgood> findAllWithEagerRelationships();
+    @Query("select distinct bakedGood from BakedGood bakedGood left join fetch bakedGood.allergenss")
+    List<BakedGood> findAllWithEagerRelationships();
 
-    @Query("select bakedgood from Bakedgood bakedgood left join fetch bakedgood.allergen where bakedgood.id =:id")
-    Bakedgood findOneWithEagerRelationships(@Param("id") Long id);
+    @Query("select bakedGood from BakedGood bakedGood left join fetch bakedGood.allergenss where bakedGood.id =:id")
+    BakedGood findOneWithEagerRelationships(@Param("id") Long id);
 
 }

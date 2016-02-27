@@ -15,21 +15,21 @@ import java.util.Set;
  * Entity class for units of coffee ingredients
  */
 @Entity
-@Table(name = "unitofmeasure")
-public class Unitofmeasure implements Serializable {
+@Table(name = "unit_of_measure")
+public class UnitOfMeasure implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @NotNull
-    @Size(max = 255)
-    @Column(name = "unit", length = 255, nullable = false)
-    private String unit;
+    @Size(max = 50)
+    @Column(name = "unit_of_measure", length = 50, nullable = false)
+    private String unitOfMeasure;
 
-    @OneToMany(mappedBy = "ingredientunit")
+    @OneToMany(mappedBy = "unitOfMeasure")
     @JsonIgnore
-    private Set<Ingredients> ingredientunits = new HashSet<>();
+    private Set<Ingredients> ingredientss = new HashSet<>();
 
     public Long getId() {
         return id;
@@ -39,20 +39,20 @@ public class Unitofmeasure implements Serializable {
         this.id = id;
     }
 
-    public String getUnit() {
-        return unit;
+    public String getUnitOfMeasure() {
+        return unitOfMeasure;
     }
 
-    public void setUnit(String unit) {
-        this.unit = unit;
+    public void setUnitOfMeasure(String unitOfMeasure) {
+        this.unitOfMeasure = unitOfMeasure;
     }
 
-    public Set<Ingredients> getIngredientunits() {
-        return ingredientunits;
+    public Set<Ingredients> getIngredientss() {
+        return ingredientss;
     }
 
-    public void setIngredientunits(Set<Ingredients> ingredientss) {
-        this.ingredientunits = ingredientss;
+    public void setIngredientss(Set<Ingredients> ingredientss) {
+        this.ingredientss = ingredientss;
     }
 
     @Override
@@ -63,11 +63,11 @@ public class Unitofmeasure implements Serializable {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        Unitofmeasure unitofmeasure = (Unitofmeasure) o;
-        if(unitofmeasure.id == null || id == null) {
+        UnitOfMeasure unitOfMeasure = (UnitOfMeasure) o;
+        if(unitOfMeasure.id == null || id == null) {
             return false;
         }
-        return Objects.equals(id, unitofmeasure.id);
+        return Objects.equals(id, unitOfMeasure.id);
     }
 
     @Override
@@ -77,9 +77,9 @@ public class Unitofmeasure implements Serializable {
 
     @Override
     public String toString() {
-        return "Unitofmeasure{" +
+        return "UnitOfMeasure{" +
                 "id=" + id +
-                ", unit='" + unit + "'" +
+                ", unitOfMeasure='" + unitOfMeasure + "'" +
                 '}';
     }
 }

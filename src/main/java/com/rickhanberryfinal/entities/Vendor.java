@@ -24,13 +24,13 @@ public class Vendor implements Serializable {
     private Long id;
 
     @NotNull
-    @Size(max = 255)
-    @Column(name = "vendorname", length = 255, nullable = false)
-    private String vendorname;
+    @Size(max = 50)
+    @Column(name = "vendor", length = 50, nullable = false)
+    private String vendor;
 
     @OneToMany(mappedBy = "vendor")
     @JsonIgnore
-    private Set<Bakedgood> vendor = new HashSet<>();
+    private Set<BakedGood> bakedGoods = new HashSet<>();
 
     public Long getId() {
         return id;
@@ -40,20 +40,20 @@ public class Vendor implements Serializable {
         this.id = id;
     }
 
-    public String getVendorname() {
-        return vendorname;
-    }
-
-    public void setVendorname(String vendorname) {
-        this.vendorname = vendorname;
-    }
-
-    public Set<Bakedgood> Vendor() {
+    public String getVendor() {
         return vendor;
     }
 
-    public void setVendor(Set<Bakedgood> bakedgoods) {
-        this.vendor = bakedgoods;
+    public void setVendor(String vendor) {
+        this.vendor = vendor;
+    }
+
+    public Set<BakedGood> getBakedGoods() {
+        return bakedGoods;
+    }
+
+    public void setBakedGoods(Set<BakedGood> bakedGoods) {
+        this.bakedGoods = bakedGoods;
     }
 
     @Override
@@ -80,7 +80,7 @@ public class Vendor implements Serializable {
     public String toString() {
         return "Vendor{" +
                 "id=" + id +
-                ", vendorname='" + vendorname + "'" +
+                ", vendor='" + vendor + "'" +
                 '}';
     }
 }
