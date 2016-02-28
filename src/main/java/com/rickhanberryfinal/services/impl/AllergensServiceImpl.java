@@ -24,7 +24,7 @@ public class AllergensServiceImpl implements AllergensService{
     private AllergensRepository allergensRepository;
 
     /**
-     * Save a allergens.
+     * Save  allergen.
      * @return the persisted entity
      */
     public Allergens save(Allergens allergens) {
@@ -33,7 +33,7 @@ public class AllergensServiceImpl implements AllergensService{
     }
 
     /**
-     *  get all the allergenss.
+     *  get all the allergens.
      *  @return the list of entities
      */
     @Transactional(readOnly = true)
@@ -43,7 +43,7 @@ public class AllergensServiceImpl implements AllergensService{
     }
 
     /**
-     *  get one allergens by id.
+     *  get one allergen by id.
      *  @return the entity
      */
     @Transactional(readOnly = true)
@@ -53,7 +53,7 @@ public class AllergensServiceImpl implements AllergensService{
     }
 
     /**
-     *  delete the  allergens by id.
+     *  delete the allergen by id.
      */
     public void delete(Long id) {
         allergensRepository.delete(id);

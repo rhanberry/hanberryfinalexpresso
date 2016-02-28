@@ -13,25 +13,25 @@ import java.util.List;
 public interface AllergensService {
 
     /**
-     * Save a allergens.
+     * Save allergen.
      * @return the persisted entity
      */
     public Allergens save(Allergens allergens);
 
     /**
-     *  get all the allergenss.
+     *  get all the allergens.
      *  @return the list of entities
      */
     public List<Allergens> findAll();
 
     /**
-     *  get the "id" allergens.
+     *  get allergen by id.
      *  @return the entity
      */
     public Allergens findOne(Long id);
 
     /**
-     *  delete the "id" allergens.
+     *  delete allergen by id.
      */
     public void delete(Long id);
 }
