@@ -29,7 +29,7 @@ public class AllergensWebService {
     private AllergensService allergensService;
 
     /**
-     * POST  /allergenss -> Create a new allergens.
+     * POST  /allergenss -> Create new allergen.
      */
     @RequestMapping(value = "/allergenss",
             method = RequestMethod.POST,
@@ -44,7 +44,7 @@ public class AllergensWebService {
     }
 
     /**
-     * PUT  /allergenss -> Updates an existing allergens.
+     * PUT  /allergenss -> Updates existing allergen.
      */
     @RequestMapping(value = "/allergenss",
             method = RequestMethod.PUT,
@@ -59,7 +59,7 @@ public class AllergensWebService {
     }
 
     /**
-     * GET  /allergenss -> get all the allergenss.
+     * GET  /allergenss -> get all the allergens.
      */
     @RequestMapping(value = "/allergenss",
             method = RequestMethod.GET,
@@ -69,7 +69,7 @@ public class AllergensWebService {
     }
 
     /**
-     * GET  /allergenss/:id -> get the "id" allergens.
+     * GET  /allergenss/:id -> get allergen by id.
      */
     @RequestMapping(value = "/allergenss/{id}",
             method = RequestMethod.GET,
@@ -84,7 +84,7 @@ public class AllergensWebService {
     }
 
     /**
-     * DELETE  /allergenss/:id -> delete the "id" allergens.
+     * DELETE  /allergenss/:id -> delete allergen by id.
      */
     @RequestMapping(value = "/allergenss/{id}",
             method = RequestMethod.DELETE,

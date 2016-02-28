@@ -55,6 +55,11 @@ public class UnitOfMeasure implements Serializable {
         this.ingredientss = ingredientss;
     }
 
+    /**
+     * @param   o   the reference object with which to compare.
+     * @return  {@code true} if this object is the same as the obj
+     * argument; {@code false} otherwise.
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -70,11 +75,19 @@ public class UnitOfMeasure implements Serializable {
         return Objects.equals(id, unitOfMeasure.id);
     }
 
+    /**
+     *
+     * @return a hashcode value for the object
+     */
     @Override
     public int hashCode() {
         return Objects.hashCode(id);
     }
 
+    /**
+     *
+     *@return a string representation of the object
+     */
     @Override
     public String toString() {
         return "UnitOfMeasure{" +
