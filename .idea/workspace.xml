@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e48673bd-b6f2-46f0-9c2b-ab67d3b329b5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipe-detail.controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipe-detail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/ingredients/ingredients-detail.controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/ingredients/ingredients-detail.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipe.js" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipe.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipes.html" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/ingredients/ingredients.js" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/ingredients/ingredients.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/services/impl/AllergensServiceImplTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/services/impl/AllergensServiceImplTest.java" />
     </list>
     <ignored path="hanberryfinal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1474,7 +1464,7 @@
       <workItem from="1456538484695" duration="17941000" />
       <workItem from="1456613129956" duration="1680000" />
       <workItem from="1456617040163" duration="337000" />
-      <workItem from="1456617419886" duration="23282000" />
+      <workItem from="1456617419886" duration="23325000" />
     </task>
     <task id="LOCAL-00001" summary="Added layers and amended certain things.  Relations are not functioning as desired, will update on arrival at home">
       <created>1456273148714</created>
@@ -1560,7 +1550,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456643112857</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="More styling changes, pushing for revert point because main page is giving me fits">
+      <created>1456679734941</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1456679734941</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1596,7 +1592,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106765000" />
+    <option name="totallyTimeSpent" value="106808000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1053" extended-state="0" />
@@ -1690,7 +1686,8 @@
     <MESSAGE value="100% class coverage, integration test 100%, need to write methods for class unit tests, repair frontend, and add coffee styling" />
     <MESSAGE value="Classes still need test methods, Added Karma js testing, tomorrow selenium and ui fixes, then jar and sql script" />
     <MESSAGE value="Beginning to refactor frontend, Improved Ingredients, more tomorrow" />
-    <option name="LAST_COMMIT_MESSAGE" value="Beginning to refactor frontend, Improved Ingredients, more tomorrow" />
+    <MESSAGE value="More styling changes, pushing for revert point because main page is giving me fits" />
+    <option name="LAST_COMMIT_MESSAGE" value="More styling changes, pushing for revert point because main page is giving me fits" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
