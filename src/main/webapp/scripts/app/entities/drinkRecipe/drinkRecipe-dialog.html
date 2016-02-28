@@ -4,17 +4,12 @@
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
                 ng-click="clear()">&times;</button>
-        <h4 class="modal-title" id="myDrinkRecipeLabel">Create or edit a DrinkRecipe</h4>
+        <h4 class="modal-title" id="myDrinkRecipeLabel">Create or Edit a Drink Recipe</h4>
     </div>
     <div class="modal-body">
-        <jh-alert-error></jh-alert-error>
+
         <div class="form-group">
-            <label for="id">ID</label>
-            <input type="text" class="form-control" id="id" name="id"
-                    ng-model="drinkRecipe.id" readonly />
-        </div>
-        <div class="form-group">
-            <label class="control-label" for="field_drinkRecipe">DrinkRecipe</label>
+            <label class="control-label" for="field_drinkRecipe">Drink Recipe Name</label>
             <input type="text" class="form-control" name="drinkRecipe" id="field_drinkRecipe"
                     ng-model="drinkRecipe.drinkRecipe"
                     required ng-maxlength="50" />
@@ -31,7 +26,7 @@
         </div>
 
         <div class="form-group">
-            <label for="field_ingredients">ingredients</label>
+            <label for="field_ingredients">Ingredients</label>
             <select class="form-control" id="field_ingredients" multiple name="ingredients" ng-model="drinkRecipe.ingredientss" ng-options="ingredients as ingredients.ingredient for ingredients in ingredientss track by ingredients.id"></select>
         </div>
     </div>

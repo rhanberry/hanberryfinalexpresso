@@ -4,15 +4,10 @@
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
                 ng-click="clear()">&times;</button>
-        <h4 class="modal-title" id="myIngredientsLabel">Create or edit a Ingredients</h4>
+        <h4 class="modal-title" id="myIngredientsLabel">Create or edit Ingredients</h4>
     </div>
     <div class="modal-body">
         <jh-alert-error></jh-alert-error>
-        <div class="form-group">
-            <label for="id">ID</label>
-            <input type="text" class="form-control" id="id" name="id"
-                    ng-model="ingredients.id" readonly />
-        </div>
         <div class="form-group">
             <label class="control-label" for="field_ingredient">Ingredient</label>
             <input type="text" class="form-control" name="ingredient" id="field_ingredient"
@@ -30,7 +25,7 @@
             </div>
         </div>
         <div class="form-group">
-            <label class="control-label" for="field_ingredientCost">IngredientCost</label>
+            <label class="control-label" for="field_ingredientCost">Ingredient Cost</label>
             <input type="number" class="form-control" name="ingredientCost" id="field_ingredientCost"
                     ng-model="ingredients.ingredientCost"
                     required />
@@ -47,7 +42,7 @@
         </div>
 
         <div class="form-group">
-            <label for="field_unitOfMeasure">unitOfMeasure</label>
+            <label for="field_unitOfMeasure">Unit Of Measure</label>
             <select class="form-control" id="field_unitOfMeasure" name="unitOfMeasure" ng-model="ingredients.unitOfMeasure" ng-options="unitOfMeasure as unitOfMeasure.unitOfMeasure for unitOfMeasure in unitofmeasures track by unitOfMeasure.id">
                 <option value=""></option>
             </select>

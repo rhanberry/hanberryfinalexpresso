@@ -18,20 +18,6 @@ angular.module('expressoApp')
                 resolve: {
                     
                 }
-            })
-            .state('accessdenied', {
-                parent: 'site',
-                url: '/accessdenied',
-                data: {
-                    authorities: []
-                },
-                views: {
-                    'content@': {
-                        templateUrl: 'scripts/app/error/accessdenied.html'
-                    }
-                },
-                resolve: {
-                    
-                }
             });
+
     });

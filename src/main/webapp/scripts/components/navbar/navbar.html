@@ -1,12 +1,14 @@
 <nav class="navbar navbar-default" role="navigation">
     <div class="container">
 
-        <div class="collapse navbar-collapse" id="navbar-collapse">
+        <div >
             <ul class="nav navbar-nav navbar-left">
                 <li ui-sref-active="active">
-                    <a ui-sref="home" data-toggle="collapse" data-target=".navbar-collapse.in">
+                    <a ui-sref="home">
                         <span class="glyphicon glyphicon-home"></span>
-                        <span class="hidden-sm">Home</span>
+                        <span class="hidden-sm">
+                             Home
+                        </span>
                     </a>
                 </li>
                 <li ui-sref-active="active" class="dropdown pointer">
@@ -14,26 +16,27 @@
                         <span>
                             <span class="glyphicon glyphicon-th-list"></span>
                             <span class="hidden-sm">
-                                Coffee and Baked Goods!
+                                Main Menu
                             </span>
                             <b class="caret"></b>
                         </span>
                     </a>
                     <ul class="dropdown-menu">
+                        <li ui-sref-active="active" ><a ui-sref="drinkRecipe" data-toggle="collapse" data-target=".navbar-collapse.in"><span class="glyphicon glyphicon-tint"></span>
+                        &#xA0;<span >Drink Recipes</span></a></li>
                         <li ui-sref-active="active" ><a ui-sref="unitOfMeasure" data-toggle="collapse" data-target=".navbar-collapse.in"><span class="glyphicon glyphicon-asterisk"></span>
-                        &#xA0;<span >Unit of measure</span></a></li>
+                        &#xA0;<span >Unit of Measure</span></a></li>
                         <li ui-sref-active="active" ><a ui-sref="ingredients" data-toggle="collapse" data-target=".navbar-collapse.in"><span class="glyphicon glyphicon-asterisk"></span>
                         &#xA0;<span >Ingredients</span></a></li>
-                        <li ui-sref-active="active" ><a ui-sref="drinkRecipe" data-toggle="collapse" data-target=".navbar-collapse.in"><span class="glyphicon glyphicon-asterisk"></span>
-                        &#xA0;<span >Drink recipe</span></a></li>
+                        <li ui-sref-active="active" ><a ui-sref="bakedGood" data-toggle="collapse" data-target=".navbar-collapse.in"><span class="glyphicon glyphicon-fire"></span>
+                        &#xA0;<span >Baked Goods</span></a></li>
                         <li ui-sref-active="active" ><a ui-sref="bakeryCategory" data-toggle="collapse" data-target=".navbar-collapse.in"><span class="glyphicon glyphicon-asterisk"></span>
-                        &#xA0;<span >Bakery category</span></a></li>
+                        &#xA0;<span >Bakery Category</span></a></li>
                         <li ui-sref-active="active" ><a ui-sref="vendor" data-toggle="collapse" data-target=".navbar-collapse.in"><span class="glyphicon glyphicon-asterisk"></span>
                         &#xA0;<span >Vendor</span></a></li>
                         <li ui-sref-active="active" ><a ui-sref="allergens" data-toggle="collapse" data-target=".navbar-collapse.in"><span class="glyphicon glyphicon-asterisk"></span>
                         &#xA0;<span >Allergens</span></a></li>
-                        <li ui-sref-active="active" ><a ui-sref="bakedGood" data-toggle="collapse" data-target=".navbar-collapse.in"><span class="glyphicon glyphicon-asterisk"></span>
-                        &#xA0;<span >Baked good</span></a></li>
+
                     </ul>
                 </li>
             </ul>

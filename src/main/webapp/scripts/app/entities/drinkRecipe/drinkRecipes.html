@@ -1,21 +1,18 @@
 <div>
-    <h2>Drink Recipes</h2>
+    <h2>Coffee Drink Recipes</h2>
     <jh-alert></jh-alert>
     <div class="container-fluid">
         <div class="row">
-
-            <div class="btn-group flex-btn-group-container">
+            <div class="btn-group flex-btn-group-container pull-left">
                 <button class="btn btn-primary btn-sm" ui-sref="drinkRecipe.new" >
                     <span class="glyphicon glyphicon-plus"></span>
-                    <span 
-                       >Create new DrinkRecipe
+                    <span>
+                        New Recipe
                     </span>
                 </button>
-
-                <button class="btn btn-primary btn-sm" ui-sref="ingredients.new" >
-                    <span class="glyphicon glyphicon-plus"></span>
-                    <span
-                    >Create new Ingredient
+                <button class="btn btn-primary btn-sm" ui-sref="ingredients" >
+                    <span>
+                        Ingredients
                     </span>
                 </button>
             </div>
@@ -23,7 +20,7 @@
     </div>
     <br/>
     <div class="table-responsive">
-        <table class="jh-table table table-striped">
+        <table class="sp-tabledata table table-striped">
             <thead>
                 <tr>
                     <th><span>Coffee Drink</span></th>
@@ -40,20 +37,12 @@
                         </span>
                     </td>
                     <td class="text-right">
-                        <div class="btn-group flex-btn-group-container">
-                            <button type="submit"
-                                    ui-sref="drinkRecipe.edit({id:drinkRecipe.id})"
-                                    class="btn btn-primary btn-sm">
-                                <span class="glyphicon glyphicon-pencil"></span>
-                                <span class="hidden-xs hidden-sm"></span>
-                            </button>
                             <button type="submit"
                                     ui-sref="drinkRecipe.delete({id:drinkRecipe.id})"
                                     class="btn btn-danger btn-sm">                                    
                                 <span class="glyphicon glyphicon-remove-circle"></span>
                                 <span class="hidden-xs hidden-sm"></span>
                             </button>
-                        </div>
                     </td>
                 </tr>
             </tbody>

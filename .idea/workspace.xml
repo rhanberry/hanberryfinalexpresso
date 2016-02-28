@@ -2,28 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e48673bd-b6f2-46f0-9c2b-ab67d3b329b5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergens-detail.controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergens-detail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakedgood/bakedgood-detail.controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakedgood/bakedgood-detail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakeryCategory/bakeryCategory-detail.controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakeryCategory/bakeryCategory-detail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/unitofmeasure/unitofmeasure-detail.controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/unitofmeasure/unitofmeasure-detail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/vendor/vendor-detail.controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/vendor/vendor-detail.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/assets/main.css" afterPath="$PROJECT_DIR$/src/main/webapp/assets/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergens.js" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergens.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakedgood/bakedgood.js" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakedgood/bakedgood.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakedgood/bakedgoods.html" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakedgood/bakedgoods.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakeryCategory/bakeryCategory.js" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakeryCategory/bakeryCategory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergens-delete-dialog.html" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergens-delete-dialog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergens-dialog.html" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergens-dialog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergenss.html" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergenss.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakeryCategory/bakeryCategory-delete-dialog.html" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakeryCategory/bakeryCategory-delete-dialog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakeryCategory/bakeryCategory-dialog.html" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakeryCategory/bakeryCategory-dialog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakeryCategory/bakeryCategorys.html" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakeryCategory/bakeryCategorys.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipe-delete-dialog.html" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipe-delete-dialog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipe-dialog.html" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipe-dialog.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipes.html" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/unitofmeasure/unitofmeasure.js" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/unitofmeasure/unitofmeasure.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/unitofmeasure/unitofmeasures.html" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/unitofmeasure/unitofmeasures.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/vendor/vendor.js" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/vendor/vendor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/main/main.controller.js" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/main/main.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/ingredients/ingredients-dialog.html" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/ingredients/ingredients-dialog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/ingredients/ingredientss.html" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/ingredients/ingredientss.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/vendor/vendor-dialog.html" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/vendor/vendor-dialog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/vendor/vendors.html" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/vendor/vendors.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/error/error.js" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/error/error.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app/main/main.html" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/app/main/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/components/navbar/navbar.html" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/components/navbar/navbar.html" />
     </list>
@@ -82,61 +77,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="drinkRecipes.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipes.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.25">
-              <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23893805">
-              <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="drinkRecipe-dialog.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipe-dialog.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.125">
-              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/main/main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.5">
-              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/components/navbar/navbar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.75">
-              <caret line="14" column="77" selection-start-line="14" selection-start-column="77" selection-end-line="14" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.125">
-              <caret line="75" column="82" selection-start-line="75" selection-start-column="82" selection-end-line="75" selection-end-column="82" />
+            <state vertical-scroll-proportion="0.14851485">
+              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -169,23 +114,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/entities/UnitOfMeasureTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/services/impl/VendorServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/services/impl/UnitOfMeasureServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/services/impl/IngredientsServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/services/impl/DrinkRecipeServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/services/impl/BakeryCategoryServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/services/impl/BakedGoodServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/services/VendorServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/services/UnitOfMeasureServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/services/IngredientsServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/services/DrinkRecipeServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/services/BakeryCategoryServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/services/BakedGoodServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/services/AllergensServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/services/impl/AllergensServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/services/AllergensService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/entities/BakeryCategory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/entities/Allergens.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/entities/DrinkRecipe.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/entities/BakedGood.java" />
@@ -202,24 +130,41 @@
         <option value="$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/webservices/AllergensWebService.java" />
         <option value="$PROJECT_DIR$/src/test/javascript/spec/helpers/httpBackend.js" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/ingredients/ingredientss.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/ingredients/ingredients.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipe.js" />
         <option value="$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/services/impl/AllergensServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/unitOfMeasure/unitOfMeasures.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/unitOfMeasure/unitOfMeasure.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipes.html" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/main/main.controller.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/main/main.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/scripts/components/navbar/navbar.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakedGood/bakedGood.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakeryCategory/bakeryCategory.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergens.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/vendor/vendor.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakedGood/bakedGoods.html" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakedGood/bakedGood-delete-dialog.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergens-dialog.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergens-delete-dialog.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakedGood/bakedGood-dialog.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakeryCategory/bakeryCategory-delete-dialog.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakeryCategory/bakeryCategory-dialog.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipe-delete-dialog.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/unitOfMeasure/unitOfMeasure-delete-dialog.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/unitOfMeasure/unitOfMeasure-dialog.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/vendor/vendor-dialog.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/error/error.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/main.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipes.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/ingredients/ingredients-dialog.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/ingredients/ingredientss.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakeryCategory/bakeryCategorys.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergenss.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakedGood/bakedGoods.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/vendor/vendors.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/unitOfMeasure/unitOfMeasures.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/main/main.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipe-dialog.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/components/navbar/navbar.html" />
       </list>
     </option>
   </component>
@@ -255,8 +200,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="68" />
-    <option name="y" value="232" />
+    <option name="x" value="12" />
+    <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="1053" />
   </component>
@@ -468,7 +413,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
+              <option name="myItemId" value="form" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -499,40 +444,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hanberryfinal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hanberryfinalexpresso" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -592,295 +503,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hanberryfinal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hanberryfinalexpresso" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unitOfMeasure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hanberryfinal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hanberryfinalexpresso" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingredients" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hanberryfinal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hanberryfinalexpresso" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drinkRecipe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hanberryfinal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hanberryfinalexpresso" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bakeryCategory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hanberryfinal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hanberryfinalexpresso" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bakedGood" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hanberryfinal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hanberryfinalexpresso" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="allergens" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hanberryfinal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hanberryfinalexpresso" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hanberryfinal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hanberryfinalexpresso" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rickhanberryfinal" />
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -893,7 +516,7 @@
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../frostedfrakes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SchemaPlan" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -1556,7 +1179,7 @@
       <workItem from="1456538484695" duration="17941000" />
       <workItem from="1456613129956" duration="1680000" />
       <workItem from="1456617040163" duration="337000" />
-      <workItem from="1456617419886" duration="32334000" />
+      <workItem from="1456617419886" duration="41664000" />
     </task>
     <task id="LOCAL-00001" summary="Added layers and amended certain things.  Relations are not functioning as desired, will update on arrival at home">
       <created>1456273148714</created>
@@ -1654,7 +1277,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456679741798</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Updated README with instructions on populating fresh database">
+      <created>1456693457674</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1456693457674</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1690,11 +1319,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115817000" />
+    <option name="totallyTimeSpent" value="125147000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="68" y="232" width="1920" height="1053" extended-state="1" />
-    <editor active="true" />
+    <frame x="12" y="23" width="1920" height="1053" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -1703,12 +1332,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12754555" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38293445" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38293445" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3278237" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24174654" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24174654" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="EvoSuite" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1727,6 +1356,38 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="EvoSuite" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39978564" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16753381" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12754555" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38293445" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3278237" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24174654" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32466182" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
@@ -1759,7 +1420,8 @@
     <MESSAGE value="Classes still need test methods, Added Karma js testing, tomorrow selenium and ui fixes, then jar and sql script" />
     <MESSAGE value="Beginning to refactor frontend, Improved Ingredients, more tomorrow" />
     <MESSAGE value="More styling changes, pushing for revert point because main page is giving me fits" />
-    <option name="LAST_COMMIT_MESSAGE" value="More styling changes, pushing for revert point because main page is giving me fits" />
+    <MESSAGE value="Updated README with instructions on populating fresh database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README with instructions on populating fresh database" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1772,137 +1434,15 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/repository/UnitOfMeasureRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakedGood/bakedGood.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state vertical-scroll-proportion="-1.0707965">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/repository/UnitOfMeasureRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/repository/VendorRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10983264">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/repository/VendorRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14121339">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/repository/BakeryCategoryRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14121339">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/HanberryFinalProjectApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/webservices/BakedGoodWebServiceIntegrationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/entities/AllergensTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/repository/AllergensRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/services/AllergensServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/webservices/AllergensWebServiceIntegrationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/entities/Allergens.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="91" column="7" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/services/impl/AllergensServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="51" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1472#1473#0" expanded="false" />
-            <element signature="e#1518#1519#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/services/AllergensService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/webservices/AllergensWebService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="86" column="55" selection-start-line="86" selection-start-column="55" selection-end-line="86" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2203#2204#0" expanded="false" />
-            <element signature="e#2252#2253#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/javascript/spec/app/entities/allergens/allergens-detail.controller.spec.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakedGood/bakedGood-delete-dialog.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1910,7 +1450,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergens.controller.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakedGood/bakedGood-delete-dialog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19408503">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakedGood/bakedGood-dialog.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.19469027">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergens-dialog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.057301294">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakeryCategory/bakeryCategory.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1918,7 +1482,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/javascript/spec/helpers/httpBackend.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakeryCategory/bakeryCategory-delete-dialog.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1926,41 +1490,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakeryCategory/bakeryCategory-delete-dialog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.22181146">
+          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/javascript/karma.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/repository/AllergensRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/components/alert/alert.directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/components/alert/alert.service.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakeryCategory/bakeryCategory-dialog.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1976,68 +1514,162 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/ingredients/ingredients.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipe-dialog.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/rickhanberryfinal/services/impl/AllergensServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82300884">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/ingredients/ingredients-dialog.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/ingredients/ingredientss.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37185928">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipe.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4589372">
+        <state vertical-scroll-proportion="0.460177">
           <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipe-delete-dialog.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.096463025">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rickhanberryfinal/services/impl/BakedGoodServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipe-delete-dialog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4340836">
-          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.22181146">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/unitOfMeasure/unitOfMeasure-delete-dialog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22181146">
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/entity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/error/error.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/components/alert/alert.directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/components/form/form.directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/components/form/maxbytes.directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.017699115">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/components/form/minbytes.directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/components/form/uib-pager.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/components/form/uib-pagination.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/components/interceptor/errorhandler.interceptor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/components/interceptor/notification.interceptor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/components/util/base64.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/components/util/parse-links.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/components/util/sort.directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/components/util/truncate.filter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2058,15 +1690,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/main/main.controller.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/error/error.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.053097345">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/unitOfMeasure/unitOfMeasure.controller.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakeryCategory/bakeryCategory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30546623">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/vendor/vendors.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18151815">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/unitOfMeasure/unitOfMeasures.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14851485">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1980198">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/ingredients/ingredientss.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08250825">
+          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31353134">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakeryCategory/bakeryCategorys.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0990099">
+          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergenss.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08250825">
+          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakedGood/bakedGoods.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08250825">
+          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/main/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4620462">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47964796">
+          <caret line="35" column="85" selection-start-line="35" selection-start-column="85" selection-end-line="35" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/vendor/vendor-delete-dialog.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2074,122 +1794,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/components/navbar/navbar.controller.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipe-dialog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="4" selection-start-column="8" selection-end-line="5" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0990099">
+          <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/unitOfMeasure/unitOfMeasures.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakedGood/bakedGood-dialog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.375">
-          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.90759075">
+          <caret line="55" column="42" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/allergens/allergens.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakeryCategory/bakeryCategory-dialog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30546623">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.1650165">
+          <caret line="10" column="79" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakedGood/bakedGood.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/ingredients/ingredients-dialog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30546623">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.65346533">
+          <caret line="44" column="53" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakeryCategory/bakeryCategory.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/unitOfMeasure/unitOfMeasure-dialog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.1607717">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.1650165">
+          <caret line="10" column="75" selection-start-line="10" selection-start-column="75" selection-end-line="10" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/ingredients/ingredients.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/vendor/vendor-dialog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3215434">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/unitOfMeasure/unitOfMeasure.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.01607717">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/vendor/vendor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30546623">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.125">
-          <caret line="75" column="82" selection-start-line="75" selection-start-column="82" selection-end-line="75" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/bakedGood/bakedGoods.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4990758">
-          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0990099">
+          <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/components/navbar/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.75">
-          <caret line="14" column="77" selection-start-line="14" selection-start-column="77" selection-end-line="14" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/main/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipe-dialog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/app/entities/drinkRecipe/drinkRecipes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25">
-          <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23893805">
-          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.14851485">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding />
         </state>
       </provider>

@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-4 no-padding-left">
-                <button class="btn btn-primary" ui-sref="vendor.new" >
+                <button class="btn btn-primary btn-sm" ui-sref="vendor.new" >
                     <span class="glyphicon glyphicon-plus"></span>
                     <span 
                        >Create new Vendor
@@ -15,32 +15,18 @@
     </div>
     <br/>
     <div class="table-responsive">
-        <table class="jh-table table table-striped">
+        <table class="sp-tabledata table table-striped">
             <thead>
                 <tr>
-                    <th><span>ID</span></th>
                     <th><span>Vendor</span></th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
                 <tr ng-repeat="vendor in vendors track by vendor.id">
-                    <td><a ui-sref="vendor.detail({id:vendor.id})">{{vendor.id}}</a></td>
-                    <td>{{vendor.vendor}}</td>
+                    <td><a ui-sref="vendor.edit({id:vendor.id})">{{vendor.vendor}}</a></td>
                     <td class="text-right">
                         <div class="btn-group flex-btn-group-container">
-                            <button type="submit"
-                                    ui-sref="vendor.detail({id:vendor.id})"
-                                    class="btn btn-info btn-sm"> 
-                                <span class="glyphicon glyphicon-eye-open"></span>
-                                <span class="hidden-xs hidden-sm"></span>
-                            </button>
-                            <button type="submit"
-                                    ui-sref="vendor.edit({id:vendor.id})"
-                                    class="btn btn-primary btn-sm">
-                                <span class="glyphicon glyphicon-pencil"></span>
-                                <span class="hidden-xs hidden-sm"></span>
-                            </button>
                             <button type="submit"
                                     ui-sref="vendor.delete({id:vendor.id})"
                                     class="btn btn-danger btn-sm">                                    

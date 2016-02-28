@@ -3,11 +3,16 @@
     <jh-alert></jh-alert>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-4 no-padding-left">
-                <button class="btn btn-primary" ui-sref="ingredients.new" >
+            <div class="btn-group flex-btn-group-container pull-left">
+                <button class="btn btn-primary btn-sm" ui-sref="ingredients.new" >
                     <span class="glyphicon glyphicon-plus"></span>
-                    <span 
-                       >Create new Ingredient
+                    <span>
+                        Create Ingredient
+                    </span>
+                </button>
+                <button class="btn btn-primary btn-sm" ui-sref="unitOfMeasure" >
+                    <span>
+                        Units
                     </span>
                 </button>
             </div>
@@ -15,12 +20,12 @@
     </div>
     <br/>
     <div class="table-responsive">
-        <table class="jh-table table table-striped">
+        <table class="sp-tabledata table table-striped">
             <thead>
                 <tr>
                     <th><span>Ingredient</span></th>
                     <th><span>Cost</span></th>
-                    <th><span>Unit Of Measure</span></th>
+                    <th><span>Unit</span></th>
                     <th></th>
                 </tr>
             </thead>
