@@ -3,16 +3,16 @@
     <jh-alert></jh-alert>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-4 no-padding">
-                <button class="btn btn-primary" ui-sref="drinkRecipe.new" >
+
+            <div class="btn-group flex-btn-group-container">
+                <button class="btn btn-primary btn-sm" ui-sref="drinkRecipe.new" >
                     <span class="glyphicon glyphicon-plus"></span>
                     <span 
                        >Create new DrinkRecipe
                     </span>
                 </button>
-            </div>
-            <div class="col-xs-4 no-padding">
-                <button class="btn btn-primary" ui-sref="ingredients.new" >
+
+                <button class="btn btn-primary btn-sm" ui-sref="ingredients.new" >
                     <span class="glyphicon glyphicon-plus"></span>
                     <span
                     >Create new Ingredient
@@ -36,8 +36,8 @@
                     <td><a ui-sref="drinkRecipe.edit({id:drinkRecipe.id})">{{drinkRecipe.drinkRecipe}}</a></td>
                     <td>
                         <span ng-repeat="ingredients in drinkRecipe.ingredientss">
-                            <a class="form-control-static" ui-sref="ingredients.edit({id: {{ingredients.id}}})">{{ingredients.ingredient}}, {{ingredients.ingredientCost | currency}}/{{ingredients.unitOfMeasure.unitOfMeasure}}</a>{{$last ? '' : '; '}}
-                        <span>
+                            <a class="form-control-static" ui-sref="ingredients.edit({id: {{ingredients.id}}})">{{ingredients.ingredient}}, {{ingredients.ingredientCost | currency}}/{{ingredients.unitOfMeasure.unitOfMeasure}}</a>{{$last ? '' : '; '}}</br>
+                        </span>
                     </td>
                     <td class="text-right">
                         <div class="btn-group flex-btn-group-container">

@@ -18,24 +18,6 @@ angular.module('expressoApp')
                 resolve: {
                 }
             })
-            .state('bakeryCategory.detail', {
-                parent: 'entity',
-                url: '/bakeryCategory/{id}',
-                data: {
-                    pageTitle: 'BakeryCategory'
-                },
-                views: {
-                    'content@': {
-                        templateUrl: 'scripts/app/entities/bakeryCategory/bakeryCategory-detail.html',
-                        controller: 'BakeryCategoryDetailController'
-                    }
-                },
-                resolve: {
-                    entity: ['$stateParams', 'BakeryCategory', function($stateParams, BakeryCategory) {
-                        return BakeryCategory.get({id : $stateParams.id});
-                    }]
-                }
-            })
             .state('bakeryCategory.new', {
                 parent: 'bakeryCategory',
                 url: '/new',

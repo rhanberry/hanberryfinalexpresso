@@ -18,24 +18,6 @@ angular.module('expressoApp')
                 resolve: {
                 }
             })
-            .state('bakedGood.detail', {
-                parent: 'entity',
-                url: '/bakedGood/{id}',
-                data: {
-                    pageTitle: 'BakedGood'
-                },
-                views: {
-                    'content@': {
-                        templateUrl: 'scripts/app/entities/bakedGood/bakedGood-detail.html',
-                        controller: 'BakedGoodDetailController'
-                    }
-                },
-                resolve: {
-                    entity: ['$stateParams', 'BakedGood', function($stateParams, BakedGood) {
-                        return BakedGood.get({id : $stateParams.id});
-                    }]
-                }
-            })
             .state('bakedGood.new', {
                 parent: 'bakedGood',
                 url: '/new',

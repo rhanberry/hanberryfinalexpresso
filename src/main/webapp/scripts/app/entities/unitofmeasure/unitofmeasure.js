@@ -18,24 +18,6 @@ angular.module('expressoApp')
                 resolve: {
                 }
             })
-            .state('unitOfMeasure.detail', {
-                parent: 'entity',
-                url: '/unitOfMeasure/{id}',
-                data: {
-                    pageTitle: 'UnitOfMeasure'
-                },
-                views: {
-                    'content@': {
-                        templateUrl: 'scripts/app/entities/unitOfMeasure/unitOfMeasure-detail.html',
-                        controller: 'UnitOfMeasureDetailController'
-                    }
-                },
-                resolve: {
-                    entity: ['$stateParams', 'UnitOfMeasure', function($stateParams, UnitOfMeasure) {
-                        return UnitOfMeasure.get({id : $stateParams.id});
-                    }]
-                }
-            })
             .state('unitOfMeasure.new', {
                 parent: 'unitOfMeasure',
                 url: '/new',
