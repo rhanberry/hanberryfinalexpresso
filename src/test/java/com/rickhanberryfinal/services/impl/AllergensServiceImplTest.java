@@ -1,5 +1,6 @@
 package com.rickhanberryfinal.services.impl;
 
+import com.rickhanberryfinal.entities.Allergens;
 import com.rickhanberryfinal.repository.AllergensRepository;
 import org.junit.After;
 import org.junit.Before;
@@ -14,18 +15,22 @@ public class AllergensServiceImplTest {
 
     AllergensRepository allergensRepository;
 
-    @Before
-    public void setUp() throws Exception {
 
-    }
-
-    @After
-    public void tearDown() throws Exception {
-
-    }
 
     @Test
-    public void testSave() throws Exception {
+    public void testSave() throws Throwable {
+        AllergensServiceImpl allergensServiceImpl0 = new AllergensServiceImpl();
+        // Undeclared exception!
+        try {
+            allergensServiceImpl0.save((Allergens) null);
+            fail("Expecting exception: NullPointerException");
+
+        } catch(NullPointerException e) {
+            //
+            // no message in exception (getMessage() returned null)
+            //
+            assertThrownBy("com.rickhanberryfinal.services.impl.AllergensServiceImpl", e);
+        }
 
     }
 
