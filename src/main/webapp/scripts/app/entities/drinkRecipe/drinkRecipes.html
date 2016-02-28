@@ -1,13 +1,21 @@
 <div>
-    <h2>DrinkRecipes</h2>
+    <h2>Drink Recipes</h2>
     <jh-alert></jh-alert>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-4 no-padding-left">
+            <div class="col-xs-4 no-padding">
                 <button class="btn btn-primary" ui-sref="drinkRecipe.new" >
                     <span class="glyphicon glyphicon-plus"></span>
                     <span 
                        >Create new DrinkRecipe
+                    </span>
+                </button>
+            </div>
+            <div class="col-xs-4 no-padding">
+                <button class="btn btn-primary" ui-sref="ingredients.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span
+                    >Create new Ingredient
                     </span>
                 </button>
             </div>
@@ -18,7 +26,6 @@
         <table class="jh-table table table-striped">
             <thead>
                 <tr>
-                    <th><span>ID</span></th>
                     <th><span>Coffee Drink</span></th>
                     <th><span>Ingredients</span></th>
                     <th></th>
@@ -26,21 +33,14 @@
             </thead>
             <tbody>
                 <tr ng-repeat="drinkRecipe in drinkRecipes track by drinkRecipe.id">
-                    <td><a ui-sref="drinkRecipe.detail({id:drinkRecipe.id})">{{drinkRecipe.id}}</a></td>
-                    <td>{{drinkRecipe.drinkRecipe}}</td>
+                    <td><a ui-sref="drinkRecipe.edit({id:drinkRecipe.id})">{{drinkRecipe.drinkRecipe}}</a></td>
                     <td>
                         <span ng-repeat="ingredients in drinkRecipe.ingredientss">
-                            <a class="form-control-static" ui-sref="ingredients.edit({id: {{ingredients.id}}})">{{ingredients.ingredient}} , {{ingredients.ingredientCost | currency}}</a>{{$last ? '' : ', '}}
+                            <a class="form-control-static" ui-sref="ingredients.edit({id: {{ingredients.id}}})">{{ingredients.ingredient}}, {{ingredients.ingredientCost | currency}}/{{ingredients.unitOfMeasure.unitOfMeasure}}</a>{{$last ? '' : '; '}}
                         <span>
                     </td>
                     <td class="text-right">
                         <div class="btn-group flex-btn-group-container">
-                            <button type="submit"
-                                    ui-sref="drinkRecipe.detail({id:drinkRecipe.id})"
-                                    class="btn btn-info btn-sm"> 
-                                <span class="glyphicon glyphicon-eye-open"></span>
-                                <span class="hidden-xs hidden-sm"></span>
-                            </button>
                             <button type="submit"
                                     ui-sref="drinkRecipe.edit({id:drinkRecipe.id})"
                                     class="btn btn-primary btn-sm">

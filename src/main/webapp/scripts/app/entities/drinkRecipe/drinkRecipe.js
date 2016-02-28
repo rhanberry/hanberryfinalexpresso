@@ -18,24 +18,6 @@ angular.module('expressoApp')
                 resolve: {
                 }
             })
-            .state('drinkRecipe.detail', {
-                parent: 'entity',
-                url: '/drinkRecipe/{id}',
-                data: {
-                    pageTitle: 'DrinkRecipe'
-                },
-                views: {
-                    'content@': {
-                        templateUrl: 'scripts/app/entities/drinkRecipe/drinkRecipe-detail.html',
-                        controller: 'DrinkRecipeDetailController'
-                    }
-                },
-                resolve: {
-                    entity: ['$stateParams', 'DrinkRecipe', function($stateParams, DrinkRecipe) {
-                        return DrinkRecipe.get({id : $stateParams.id});
-                    }]
-                }
-            })
             .state('drinkRecipe.new', {
                 parent: 'drinkRecipe',
                 url: '/new',

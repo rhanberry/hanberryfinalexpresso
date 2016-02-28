@@ -18,24 +18,6 @@ angular.module('expressoApp')
                 resolve: {
                 }
             })
-            .state('ingredients.detail', {
-                parent: 'entity',
-                url: '/ingredients/{id}',
-                data: {
-                    pageTitle: 'Ingredients'
-                },
-                views: {
-                    'content@': {
-                        templateUrl: 'scripts/app/entities/ingredients/ingredients-detail.html',
-                        controller: 'IngredientsDetailController'
-                    }
-                },
-                resolve: {
-                    entity: ['$stateParams', 'Ingredients', function($stateParams, Ingredients) {
-                        return Ingredients.get({id : $stateParams.id});
-                    }]
-                }
-            })
             .state('ingredients.new', {
                 parent: 'ingredients',
                 url: '/new',

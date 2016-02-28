@@ -29,7 +29,6 @@ public class AllergensServiceImplTest {
             //
             // no message in exception (getMessage() returned null)
             //
-            assertThrownBy("com.rickhanberryfinal.services.impl.AllergensServiceImpl", e);
         }
 
     }
