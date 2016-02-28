@@ -3,11 +3,25 @@
     <jh-alert></jh-alert>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-4 no-padding-left">
-                <button class="btn btn-primary" ui-sref="bakedGood.new" >
-                    <span class="glyphicon glyphicon-plus"></span>
+            <div class="btn-group flex-btn-group-container pull-left">
+                <button class="btn btn-primary btn-sm" ui-sref="bakedGood.new" >
                     <span>
-                        Create new BakedGood
+                        New Baked Good
+                    </span>
+                </button>
+                <button class="btn btn-primary btn-sm" ui-sref="bakeryCategory" >
+                    <span>
+                        Category
+                    </span>
+                </button>
+                <button class="btn btn-primary btn-sm" ui-sref="vendor" >
+                    <span>
+                        Vendor
+                    </span>
+                </button>
+                <button class="btn btn-primary btn-sm" ui-sref="allergens" >
+                    <span>
+                        Allergen
                     </span>
                 </button>
             </div>
@@ -15,7 +29,7 @@
     </div>
     <br/>
     <div class="table-responsive">
-        <table class="jh-table table table-striped">
+        <table class="sp-tabledata table table-striped">
             <thead>
                 <tr>
                     <th><span>Baked Good</span></th>
