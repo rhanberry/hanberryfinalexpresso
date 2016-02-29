@@ -56,9 +56,7 @@ Hide ng-cloak on page load, https://docs.angularjs.org/api/ng/directive/ngCloak
 }
 
 
-/* ==========================================================================
-Custom alerts for notification
-========================================================================== */
+
 
 .alerts .alert{
     text-overflow: ellipsis;
@@ -123,7 +121,6 @@ Custom alerts for notification
     opacity: 1;
 }
 
-/* entity tables helpers */
 
 /* Remove Bootstrap padding from the element
    http://stackoverflow.com/questions/19562903/remove-padding-from-columns-in-bootstrap-3 */
