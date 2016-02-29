@@ -2,6 +2,7 @@ package com.rickhanberryfinal.services.impl;
 
 import com.rickhanberryfinal.entities.Allergens;
 import com.rickhanberryfinal.repository.AllergensRepository;
+import com.rickhanberryfinal.services.AllergensService;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,38 +14,33 @@ import static org.junit.Assert.*;
  */
 public class AllergensServiceImplTest {
 
-    AllergensRepository allergensRepository;
+    private AllergensServiceImpl allergensServiceImpl;
+    private AllergensService allergensService;
 
 
+    @Before
+    public void setup(){
+        
+    }
 
     @Test
-    public void testSave() throws Throwable {
-        AllergensServiceImpl allergensServiceImpl0 = new AllergensServiceImpl();
-        // Undeclared exception!
-        try {
-            allergensServiceImpl0.save((Allergens) null);
-            fail("Expecting exception: NullPointerException");
+    public void testSave() {
 
-        } catch(NullPointerException e) {
-            //
-            // no message in exception (getMessage() returned null)
-            //
-        }
 
     }
 
     @Test
-    public void testFindAll() throws Exception {
+    public void testFindAll() {
 
     }
 
     @Test
-    public void testFindOne() throws Exception {
+    public void testFindOne() {
 
     }
 
     @Test
-    public void testDelete() throws Exception {
+    public void testDelete()  {
 
     }
 }
